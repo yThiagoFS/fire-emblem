@@ -1,0 +1,43 @@
+@media screen and  (max-width:1020px) {
+    #container{
+        
+        height: 1000px;
+        max-width: 900px;
+        width: 90%;
+        display: block
+    }
+    .conteudo1, .conteudo2, .conteudo-meio{
+        width: 90%;
+        margin: 20px auto;
+        height: 300px;
+    }
+    .texto-meio{
+        text-align: center;
+        width: 90%;
+        max-width: 500px;
+        
+        margin: 70px auto 20px auto;
+    }
+    #opcoes{
+        max-width: 500px;
+        width: 90%;
+        
+    }
+    .item1{
+        width: 80%;
+        border: 3px solid blue;
+        margin: 15px auto;
+        
+    }
+    .item2{
+        width: 80%;
+        border: 3px solid blue;
+        margin: 15px auto;
+        border-radius: 10px;
+        height: 90px;
+        
+    }
+    
+
+}
+

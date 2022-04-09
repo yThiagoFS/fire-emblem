@@ -1,0 +1,157 @@
+#boss{
+    transform: rotate(360deg);
+    transform: scaleX(-1);
+}
+
+@font-face {
+    font-family: 'Medieval';
+    src: url('../fontes/olondon_.otf') format('opentype'), url('../fontes/oldlondon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+html {
+
+    height: 100%;
+    
+    font-family: 'Medieval', 'sans-serif';
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #080808;
+    --bg-input:gray;
+    --bg-div:rgba(255, 255, 255, 0.733);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100%;
+    background-color: var(--bg);
+    background-image: url(https://cdn.discordapp.com/attachments/954504131895250994/960287608284528650/Pixel1648955928206.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#container{
+    width: 1400px;
+    height: 425px;
+    border: 10px ridge red;
+    border-radius: 10px;
+    margin:  5% auto;
+    display: flex;
+    background-color: var(--bg-div);
+    
+    
+}
+.conteudo1, .conteudo2,.conteudo-meio{
+    width: 420px;
+    height: 80%;
+    margin: 30px auto;
+    border: 3px solid red;
+    border-radius: 10px;
+    transform: scale3d(-1, 1, 1.0);
+}
+.texto-meio{
+    width: 300px;
+    height: 250px;
+    font-family: 'Medieval';
+    letter-spacing: 3px;
+    line-height: 20px;
+    margin: 30px 10px;
+    text-align: center;
+    color: var(--color-text);
+}
+
+.conteudo1{
+    background-image: url(/sprites/Lance_F.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.conteudo1>p{
+    display: none;
+    padding: 20px;
+}
+.conteudo1>h1, .conteudo2>h1, .conteudo-meio>h1{
+    text-align: center; 
+    transform: scale3d(-1.4, 1.0, 1.0);
+   
+}
+.conteudo1:hover, .conteudo2:hover, .conteudo-meio:hover{
+    
+    transform: scale3d(1.0, 1,1.0);
+    background-image: url('');
+    transition: all 2s ease-in-out;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.conteudo1:hover>h1, .conteudo2:hover>h1, .conteudo-meio:hover>h1{
+    transform: scale3d(1.4, 1.0, 1.0);
+}
+.conteudo1:hover>atributo, .conteudo2:hover>atributo1, .conteudo-meio:hover>atributo2{
+    transform: scale3d(1.4, 1.0, 1.0);
+}
+.conteudo1:hover p{
+    display: block;
+}  
+.conteudo2{
+    background-image: url(/sprites/Axe_F.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+
+}
+
+.conteudo-meio{
+    background-image:url(/sprites/Bow.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+label{
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 25px;
+    background-color: gray;
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+label::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--bg);
+    border-radius: 90px;
+    transition: 0.3s;
+
+}
+input:checked + label{
+    background-color: var(--bg-input)
+}
+input:checked + label::after{
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    
+}
+label:active:after {
+    width: 45px;
+}
+
