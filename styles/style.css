@@ -39,7 +39,8 @@ body{
     background-attachment: fixed;
 }
 #container{
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     height: 425px;
     border: 10px ridge red;
     border-radius: 10px;
