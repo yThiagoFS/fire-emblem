@@ -19,7 +19,7 @@ html {
     border: 10px ridge red;
     
   }
-  .btn{
+  .classe{
     position: relative;
     display: block;
     color: var(--color-text);
@@ -35,7 +35,7 @@ html {
     z-index: 20;
     
   }
-  .btn::before{
+  .classe::before{
     background: #ff7675;
     content: "";
     position: absolute;
@@ -46,38 +46,38 @@ html {
     transition: all 0.6s ease;
   }
   
-  .btn1::before{
+  .classe1::before{
     width: 0%;
     height: 100%;
   }
   
-  .btn1:hover::before{
+  .classe1:hover::before{
     width: 100%;
   }
   
   
-  .btn2::before{
+  .classe2::before{
     width: 100%;
     height: 0%;
   }
-  .btn2:hover::before{
+  .classe2:hover::before{
     height: 100%;
   }
   
-  .btn3::before{
+  .classe3::before{
     width: 100%;
     height: 0%;
     transform: translate(-50%,-50%) rotate(45deg);
   }
-  .btn3:hover::before{
+  .classe3:hover::before{
     height: 380%;
   }
   
-  .btn4::before{
+  .classe4::before{
     width: 100%;
     height: 0%;
     transform: translate(-50%,-50%) rotate(-45deg);
   }
-  .btn4:hover::before{
+  .classe4:hover::before{
     height: 380%;
   }
