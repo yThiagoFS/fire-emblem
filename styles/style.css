@@ -15,7 +15,7 @@ html {
 
     height: 100%;
     
-    font-family: 'Medieval', 'sans-serif';
+    font-family: Arial, Helvetica, sans-serif;
     --bg: #FCFCFC;
     --bg-panel: #EBEBEB;
     --color-headings: #0077FF;
@@ -27,6 +27,7 @@ html {
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 body{
     height: 100%;
@@ -73,10 +74,14 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.conteudo1>p{
+.conteudo1>p, .conteudo2>p, .conteudo-meio>p{
     display: none;
     padding: 20px;
+    
+    
 }
+
+
 .conteudo1>h1, .conteudo2>h1, .conteudo-meio>h1{
     text-align: center; 
     transform: scale3d(-1.4, 1.0, 1.0);
@@ -86,7 +91,7 @@ body{
     
     transform: scale3d(1.0, 1,1.0);
     background-image: url('');
-    transition: all 2s ease-in-out;
+    transition: all 1s ease;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -96,8 +101,9 @@ body{
 .conteudo1:hover>atributo, .conteudo2:hover>atributo1, .conteudo-meio:hover>atributo2{
     transform: scale3d(1.4, 1.0, 1.0);
 }
-.conteudo1:hover p{
+.conteudo1:hover p, .conteudo2:hover p, .conteudo-meio:hover p{
     display: block;
+    
 }  
 .conteudo2{
     background-image: url(/sprites/Axe_F.gif);
@@ -154,4 +160,5 @@ input:checked + label::after{
 label:active:after {
     width: 45px;
 }
+
 

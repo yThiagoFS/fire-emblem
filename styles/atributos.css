@@ -19,11 +19,15 @@ html {
     color: white;
     
 }
+.conteudo1:hover .atributo, .conteudo-meio:hover .atributo1,  .conteudo2:hover .atributo3{
+    transform: scale3d(1,1,1.0);
+    margin: auto;
+} 
 
 .atributo .vida, .erro ,.critico ,.dano, .acerto{
     box-sizing: content-box;
     width: 80%;
-    background-color:  white ;
+    background-color:  rgb(255, 253, 253) ;
     border-radius: 20px;
     border: 1px solid black;
     margin: 3% 0;
