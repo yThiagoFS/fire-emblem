@@ -69,7 +69,7 @@ body{
 }
 
 .conteudo1{
-    background-image: url(/sprites/Lance_F.gif);
+    background-image: url(../sprites/Lance_F.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -106,7 +106,7 @@ body{
     
 }  
 .conteudo2{
-    background-image: url(/sprites/Axe_F.gif);
+    background-image: url(../sprites/Axe_F.gif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
@@ -114,7 +114,7 @@ body{
 }
 
 .conteudo-meio{
-    background-image:url(/sprites/Bow.gif);
+    background-image:url(../sprites/Bow.gif);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% 100%;
