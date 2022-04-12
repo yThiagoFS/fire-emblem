@@ -92,7 +92,7 @@ body{
     
     transform: scale3d(1.0, 1,1.0);
     background-image: url('');
-    transition: all 1s ease;
+    transition: all 4s ease;
     overflow-y: scroll;
     overflow-x: hidden;
 }
