@@ -10,7 +10,7 @@ html {
     --bg-input:gray;
     --bg-div:rgba(255, 255, 255, 0.733);
 }
-.atributo, .atributo1, .atributo2{
+#atributo, #atributo1, #atributo2{
     padding: 10% 10px;
     text-align: center;
     width: 200px;
@@ -19,12 +19,12 @@ html {
     color: white;
     
 }
-.conteudo1:hover .atributo, .conteudo-meio:hover .atributo1,  .conteudo2:hover .atributo3{
+#conteudo1:hover #atributo, #conteudo-meio:hover #atributo1,  #conteudo2:hover #atributo3{
     transform: scale3d(1,1,1.0);
     margin: auto;
 } 
 
-.atributo .vida, .erro ,.critico ,.dano, .acerto{
+#atributo #vida, #erro ,#critico ,#dano, #acerto{
     box-sizing: content-box;
     width: 80%;
     background-color:  rgb(255, 253, 253) ;
@@ -34,7 +34,7 @@ html {
     
     
 }
-.bg-vida{
+#bg-vida{
     width: 35%;
     height: 100%;
     background-color: green;
@@ -42,31 +42,31 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida::before{
+#bg-vida::before{
     content: 'Vida';
 }
-.bg-erro{
+#bg-erro{
     width: 20%;
     height: 100%;
     background-color: rgb(208, 202, 38);
     border-radius: 20px;
     border: 1px solid rgb(208, 202, 38);
 }
-.bg-dano{
+#bg-dano{
     width: 18%;
     height: 100%;
     background-color: rgb(191, 26, 26);
     border-radius: 20px;
     border: 1px solid rgb(191, 26, 26);
 }
-.bg-critico{
+#bg-critico{
     width:40%;
     height: 100%;
     background-color: rgb(26, 81, 191);
     border-radius: 20px;
     border: 1px solid rgb(26, 81, 191);
 }
-.bg-acerto{
+#bg-acerto{
     width:80%;
     height: 100%;
     background-color: rgb(172, 26, 191);
@@ -78,7 +78,7 @@ html {
 
 
 
-.atributo1 .vida1, .erro1 ,.critico1 ,.dano1, .acerto1{
+#atributo1 #vida1, #erro1 ,#critico1 ,#dano1, #acerto1{
     box-sizing: content-box;
     width: 80%;
     background-color:  white ;
@@ -88,7 +88,7 @@ html {
     
     
 }
-.bg-vida1{
+#bg-vida1{
     width: 35%;
     height: 100%;
     background-color: green;
@@ -96,31 +96,31 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida1::before{
+#bg-vida1::before{
     content: 'Vida';
 }
-.bg-erro1{
+#bg-erro1{
     width: 20%;
     height: 100%;
     background-color: rgb(208, 202, 38);
     border-radius: 20px;
     border: 1px solid rgb(208, 202, 38);
 }
-.bg-dano1{
+#bg-dano1{
     width: 18%;
     height: 100%;
     background-color: rgb(191, 26, 26);
     border-radius: 20px;
     border: 1px solid rgb(191, 26, 26);
 }
-.bg-critico1{
+#bg-critico1{
     width:40%;
     height: 100%;
     background-color: rgb(26, 81, 191);
     border-radius: 20px;
     border: 1px solid rgb(26, 81, 191);
 }
-.bg-acerto1{
+#bg-acerto1{
     width:80%;
     height: 100%;
     background-color: rgb(172, 26, 191);
@@ -129,7 +129,7 @@ html {
 }
 /* hero3 */
 
-.atributo2 .vida2, .erro2 ,.critico2 ,.dano2, .acerto2{
+#atributo2 #vida2, #erro2 ,#critico2 ,#dano2, #acerto2{
     box-sizing: content-box;
     width: 80%;
     background-color:  white ;
@@ -139,7 +139,7 @@ html {
     
     
 }
-.bg-vida2{
+#bg-vida2{
     width: 35%;
     height: 100%;
     background-color: green;
@@ -147,31 +147,31 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida2::before{
+#bg-vida2::before{
     content: 'Vida';
 }
-.bg-erro2{
+#bg-erro2{
     width: 20%;
     height: 100%;
     background-color: rgb(208, 202, 38);
     border-radius: 20px;
     border: 1px solid rgb(208, 202, 38);
 }
-.bg-dano2{
+#bg-dano2{
     width: 18%;
     height: 100%;
     background-color: rgb(191, 26, 26);
     border-radius: 20px;
     border: 1px solid rgb(191, 26, 26);
 }
-.bg-critico2{
+#bg-critico2{
     width:40%;
     height: 100%;
     background-color: rgb(26, 81, 191);
     border-radius: 20px;
     border: 1px solid rgb(26, 81, 191);
 }
-.bg-acerto2{
+#bg-acerto2{
     width:80%;
     height: 100%;
     background-color: rgb(172, 26, 191);

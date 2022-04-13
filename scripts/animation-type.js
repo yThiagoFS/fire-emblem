@@ -1,5 +1,4 @@
 
-
 function typeWrite(elemento) {
     const textoArray = elemento.innerHTML.split('');
     elemento.innerHTML = '';
@@ -7,7 +6,9 @@ function typeWrite(elemento) {
         setTimeout(function () {
             elemento.innerHTML += letra;
         }, 50 * i)
+        
     })
+    
 }
 
 const titulo = document.getElementById('titulo1')
