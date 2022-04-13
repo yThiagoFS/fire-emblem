@@ -173,6 +173,7 @@ body{
     border: 3px solid red;
     border-radius: 10px;
     transform: scale3d(-1, 1, 1.0);
+    color: var(--color-text);
 }
  .texto-meio{
     width: 300px;

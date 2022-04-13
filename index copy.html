@@ -17,38 +17,52 @@
    
     
 <body id="body">
-    <div class="wrapper-button"><button class="botao-inicial" onclick="inicio()">Inicie sua Jornada</button></div>
-    <div class="conteudo-inicial">
-        <div class="container">
-            <div class="toggle">
-                <input type="checkbox" id="switch" name="theme">
-                <label for="switch">Toggle</label>
+    <header>
+        <div class="toggle">
+            <input type="checkbox" id="switch" name="theme">
+            <label for="switch">Toggle</label>
+        </div>  
+    </header>
+
+    <main id="main">
+
+        <div class="wrapper-button"><button class="botao-inicial" onclick="inicio()">Inicie sua Jornada</button></div>
+
+        <div class="conteudo-inicial">
+            <div class="container">
+                <div class="toggle">
+                    <input type="checkbox" id="switch" name="theme">
+                    <label for="switch">Toggle</label>
+                </div>
             </div>
+            <<input type="button" value="feminino" onclick="classF()">
+            <input type="button" value="masculino" onclick="classM()">
+               <div id="container" class="">
+            
+            
+            
+            </div>
+            <div class="opcoes">
+                <div class="middle">
+                    <a href="" class="classe classe1">Lanceira</a>
+                    <a href="" class="classe classe2">Arqueira</a>
+                    <a href="" class="classe classe3">Guerreira</a>
+                    <!--<a href="" class="btn btn4">Hover Me</a>-->
+                  </div>
+            </div>
+            
+            <form>
+                <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()">
+            </form>
         </div>
-        <<input type="button" value="feminino" onclick="classF()">
-        <input type="button" value="masculino" onclick="classM()">
-           <div id="container" class="">
-        
-        
-        
-        </div>
-        <div class="opcoes">
-            <div class="middle">
-                <a href="" class="classe classe1">Lanceira</a>
-                <a href="" class="classe classe2">Arqueira</a>
-                <a href="" class="classe classe3">Guerreira</a>
-                <!--<a href="" class="btn btn4">Hover Me</a>-->
-              </div>
-        </div>
-        
-        <form>
-            <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()">
-        </form>
-    </div>
+    </main>
     
+    
+</body>
+
 <script src="./scripts/combate.js"></script>
 <script src="./scripts/dark-mode.js"></script>
 <script src="./scripts/animation-type.js"></script>
 <script src="./scripts/interface.js"></script>
-</body>
+
 </html>
