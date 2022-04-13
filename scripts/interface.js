@@ -37,12 +37,10 @@ function classM(){
 </div>
 </div>
 `
-    document.querySelector(".classes-masculino").style.display ='flex'
-
-    document.getElementById('container').classList.toggle('classes-masculino');
+    document.getElementById('container').classList.add('classes-masculino');
 }
 function classF(){
-    var container = document.querySelector(".classes-masculino")
+    var container = document.querySelector("#container")
     container.innerHTML = `<div class="conteudo1">
     <h1>Lanceira</h1>
     <p id="titulo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ducimus. Eius, aliquam. Nobis magni provident, amet quasi ut ipsam. Soluta ipsam aspernatur corporis aliquam voluptatem exercitationem deleniti et corrupti odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus neque porro in provident ut, delectus deleniti deserunt magnam minima ratione necessitatibus odit eveniet quaerat facilis quia alias animi eaque?</p>
@@ -57,7 +55,7 @@ function classF(){
     
 </div>
 <div class="conteudo-meio">
-    <h1 style="text-align: center">Qualquer Coisa</h1>
+    <h1 style="text-align: center">Arqueira</h1>
     <p id="titulo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus sint nisi praesentium, sapiente quam laudantium amet quae corporis quisquam magnam tempore quis vel veniam, exercitationem hic odio, nam accusantium.</p>
     <div class="atributo1">
         <div class="vida1"><div class="bg-vida1">35</div></div>
@@ -81,5 +79,6 @@ function classF(){
 </div>
 `
     document.querySelector(".classes-masculino").style.display ='flex'
-    document.getElementById('container').classList.toggle('classes-masculino');
+    document.getElementById('container').classList.remove('classes-masculino');
+    
 }
