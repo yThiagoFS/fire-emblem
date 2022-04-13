@@ -1,3 +1,5 @@
-function classM(){
-   document.getElementById("conteudo1").classList.toggle("conteudo1-f")
+function classF(){
+    var container = document.getElementById('container')
+    container.innerHTML = ''
+
 }

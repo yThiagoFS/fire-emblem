@@ -42,7 +42,6 @@ body{
     max-width: 1400px;
     width: 100%;
     height: 425px;
-    
     border: 10px ridge red;
     border-radius: 10px;
     margin:  5% auto;
@@ -51,16 +50,15 @@ body{
     
     
 }
-
-#conteudo1,#conteudo2,#conteudo-meio{
+.conteudo1, .conteudo2,.conteudo-meio{
     width: 420px;
     height: 80%;
     margin: 30px auto;
     border: 3px solid red;
     border-radius: 10px;
-    transform: scale3d(-1.0, 1, 1.0);
+    transform: scale3d(-1, 1, 1.0);
 }
-#texto-meio{
+.texto-meio{
     width: 300px;
     height: 250px;
     font-family: 'Medieval';
@@ -71,42 +69,44 @@ body{
     color: var(--color-text);
 }
 
-#conteudo1{
+.conteudo1{
     background-image: url(../sprites/Lance_F.gif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-#conteudo1>p,  #conteudo2>p, #conteudo-meio>p{
+.conteudo1>p, .conteudo2>p, .conteudo-meio>p{
     display: none;
     padding: 20px;
+    
+    
 }
 
 
-#conteudo1>h1,  #conteudo2>h1, #conteudo-meio>h1{
+.conteudo1>h1, .conteudo2>h1, .conteudo-meio>h1{
     text-align: center; 
     transform: scale3d(-1.4, 1.0, 1.0);
    
 }
-#conteudo1:hover,  #conteudo2:hover, #conteudo-meio:hover{
+.conteudo1:hover, .conteudo2:hover, .conteudo-meio:hover{
     
+    transform: scale3d(1.0, 1,1.0);
     background-image: url('');
+    transition: all 4s ease;
     overflow-y: scroll;
     overflow-x: hidden;
-    animation: animacao 2s ease-in normal;
 }
-#conteudo1:hover>h1, #conteudo2:hover>h1, #conteudo-meio:hover>h1{
-    transform: scale3d(1.4, 1.0, 1.0); 
+.conteudo1:hover>h1, .conteudo2:hover>h1, .conteudo-meio:hover>h1{
+    transform: scale3d(1.4, 1.0, 1.0);
 }
-#conteudo1:hover>atributo, #conteudo2:hover>atributo1, .conteudo-meio:hover>atributo2{
-    transform: scale3d(1.4, 1.0, 1.0); 
+.conteudo1:hover>atributo, .conteudo2:hover>atributo1, .conteudo-meio:hover>atributo2{
+    transform: scale3d(1.4, 1.0, 1.0);
 }
-#conteudo1:hover p,  #conteudo2:hover p, .conteudo-meio:hover p{
-    
+.conteudo1:hover p, .conteudo2:hover p, .conteudo-meio:hover p{
     display: block;
     
 }  
-#conteudo2{
+.conteudo2{
     background-image: url(../sprites/Axe_F.gif);
     background-repeat: no-repeat;
     background-position: center center;
@@ -114,7 +114,7 @@ body{
 
 }
 
-#conteudo-meio{
+.conteudo-meio{
     background-image:url(../sprites/Bow.gif);
     background-repeat: no-repeat;
     background-position: center center;
@@ -163,14 +163,3 @@ label:active:after {
 }
 
 
-.conteudo1-f{
-    background-image: url('https://cdn.motor1.com/images/mgl/XBoBnE/s1/ferrari-daytona-sp3-anteriore.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-@keyframes animacao {
-    0% {transform: rotateY(0deg)}
-    100%{ transform: rotateY(180deg)}
-}
