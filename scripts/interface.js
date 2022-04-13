@@ -1,3 +1,32 @@
+function inicio(){
+    var itensInicio = document.getElementById('body');
+    itensInicio.innerHTML = ` <div class="container">
+    <div class="toggle">
+        <input type="checkbox" id="switch" name="theme">
+        <label for="switch">Toggle</label>
+    </div>
+</div>
+<<input type="button" value="feminino" onclick="classF()">
+<input type="button" value="masculino" onclick="classM()">
+<div id="container" class="">
+    
+
+    
+</div>
+<div class="opcoes">
+    <div class="middle">
+        <a href="" class="classe classe1">Lanceira</a>
+        <a href="" class="classe classe2">Arqueira</a>
+        <a href="" class="classe classe3">Guerreira</a>
+        <!--<a href="" class="btn btn4">Hover Me</a>-->
+      </div>
+</div>
+`
+
+
+
+}
+
 function classM(){
     var container = document.getElementById("container")
     container.innerHTML = `<div class="conteudo1">
