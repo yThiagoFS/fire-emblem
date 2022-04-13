@@ -1,5 +1,3 @@
-function classF(){
-    var container = document.getElementById('container')
-    container.innerHTML = ''
-
+function classM(){
+    document.getElementById("container").classList.toggle("classes-masculino")
 }

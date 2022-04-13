@@ -1,5 +1,3 @@
-
-   
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +10,7 @@
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/atributos.css">
     <link rel="stylesheet" href="./styles/buttons.css">
-    <link rel="stylesheet" href="./styles/animations.css">
+    
     <title>Combate</title>
 </head>
 
@@ -25,9 +23,9 @@
             <label for="switch">Toggle</label>
         </div>
     </div>
-    <input type="button" value="Feminino" onclick="classF()">
-    <input type="button" value="Masculino" onclick="classM()">
-   <div id="container">
+    <<input type="button" value="feminino" onclick="classF()">
+    <input type="button" value="masculino" onclick="classM()">
+   <div id="container" class="classes-masculino">
         
         <div class="conteudo1">
             <h1>Lanceira</h1>
@@ -74,16 +72,14 @@
           </div>
     </div>
     
-
+   
     <form>
         <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()">
     </form>
-    <script src="./scripts/combate.js"></script>
+
+<script src="./scripts/combate.js"></script>
 <script src="./scripts/dark-mode.js"></script>
 <script src="./scripts/animation-type.js"></script>
-    
+<script src="./scripts/interface.js"></script>
 </body>
-
-
-
 </html>
