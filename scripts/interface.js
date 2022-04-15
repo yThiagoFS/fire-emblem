@@ -1,22 +1,20 @@
 function inicio() {
-    var itensInicio = document.getElementById('main');
+    var container = document.getElementById("container")
+    var itensInicio = document.getElementById('inicio');
+    
+    container.style.display = 'none'
+    container.innerHTML = ``
     itensInicio.innerHTML = ` 
 
 
-<form>
-   
+
     <div class="botoes-genero">
         <h1>
         Escolha o gênero do seu Personagem:
         </h1>
         <input type="button" id="botao-feminino" value="feminino" onclick="classF()">
         <input type="button" id="botao-masculino" value="masculino" onclick="classM()">
-    </div>
-</form>
-    
-
-
-`
+    </div>`
 
 
 
@@ -65,7 +63,10 @@ function classM() {
 </div>
 </div>
 `
+    container.style.display = 'flex'
     document.getElementById('container').classList.add('classes-masculino');
+    document.getElementById('inicio').innerHTML = ``
+    
 }
 function classF() {
     var container = document.querySelector("#container")
@@ -113,6 +114,8 @@ function classF() {
 <div class="opcoes">
 
 `
+container.style.display = 'flex'
+    document.getElementById('inicio').innerHTML = ``
     document.querySelector(".classes-masculino").style.display = 'flex'
     document.getElementById('container').classList.remove('classes-masculino');
 
