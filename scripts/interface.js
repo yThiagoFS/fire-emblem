@@ -1,32 +1,34 @@
-function inicio(){
+function inicio() {
     var itensInicio = document.getElementById('main');
-    itensInicio.innerHTML = ` <div class="container">
-    
-</div>
-<<input type="button" value="feminino" onclick="classF()">
-<input type="button" value="masculino" onclick="classM()">
+    itensInicio.innerHTML = ` 
+
 <div id="container" class="">
+<form>
+   
+    <div class="botoes-genero">
+        <h1>
+        Escolha o gênero do seu Personagem:
+        </h1>
+        <input type="button" id="botao-feminino" value="feminino" onclick="classF()">
+        <input type="button" id="botao-masculino" value="masculino" onclick="classM()">
+    </div>
+</form>
     
 
-    
-</div>
-<div class="opcoes">
-    <div class="middle">
-        <a href="" class="classe classe1">Lanceira</a>
-        <a href="" class="classe classe2">Arqueira</a>
-        <a href="" class="classe classe3">Guerreira</a>
-        <!--<a href="" class="btn btn4">Hover Me</a>-->
-      </div>
-</div>
+
 `
 
 
 
 }
 
-function classM(){
+function classM() {
     var container = document.getElementById("container")
-    container.innerHTML = `<div class="conteudo1">
+    container.innerHTML = `
+    
+    <button onclick="inicio()" class="voltar-genero">Voltar</button>
+    
+    <div class="conteudo1">
     <h1>Lanceiro</h1>
     <p id="titulo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ducimus. Eius, aliquam. Nobis magni provident, amet quasi ut ipsam. Soluta ipsam aspernatur corporis aliquam voluptatem exercitationem deleniti et corrupti odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus neque porro in provident ut, delectus deleniti deserunt magnam minima ratione necessitatibus odit eveniet quaerat facilis quia alias animi eaque?</p>
 
@@ -65,9 +67,13 @@ function classM(){
 `
     document.getElementById('container').classList.add('classes-masculino');
 }
-function classF(){
+function classF() {
     var container = document.querySelector("#container")
-    container.innerHTML = `<div class="conteudo1">
+    container.innerHTML = `
+    
+    <button onclick="inicio()" class="voltar-genero">Voltar</button>
+
+    <div class="conteudo1">
     <h1>Lanceira</h1>
     <p id="titulo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ducimus. Eius, aliquam. Nobis magni provident, amet quasi ut ipsam. Soluta ipsam aspernatur corporis aliquam voluptatem exercitationem deleniti et corrupti odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus neque porro in provident ut, delectus deleniti deserunt magnam minima ratione necessitatibus odit eveniet quaerat facilis quia alias animi eaque?</p>
 
@@ -103,8 +109,11 @@ function classF(){
     </div>
 </div>
 </div>
+
+<div class="opcoes">
+
 `
-    document.querySelector(".classes-masculino").style.display ='flex'
+    document.querySelector(".classes-masculino").style.display = 'flex'
     document.getElementById('container').classList.remove('classes-masculino');
-    
+
 }

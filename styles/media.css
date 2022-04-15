@@ -1,43 +1,52 @@
-@media screen and  (max-width:1020px) {
+@media screen and  (max-width:1330px) {
     #container{
-        
-        height: 1000px;
+        height: 1200px;
         max-width: 900px;
         width: 90%;
-        display: block
-    }
-    .conteudo1, .conteudo2, .conteudo-meio{
-        width: 90%;
-        margin: 20px auto;
-        height: 300px;
-    }
-    .texto-meio{
-        text-align: center;
-        width: 90%;
-        max-width: 500px;
-        
-        margin: 70px auto 20px auto;
-    }
-    #opcoes{
-        max-width: 500px;
-        width: 90%;
-        
-    }
-    .item1{
-        width: 80%;
-        border: 3px solid blue;
-        margin: 15px auto;
-        
-    }
-    .item2{
-        width: 80%;
-        border: 3px solid blue;
-        margin: 15px auto;
-        border-radius: 10px;
-        height: 90px;
+        display: block;
         
     }
     
+    .conteudo1, .conteudo2, .conteudo-meio{
+        width:70%;
+        height:300px;
+        position:relative;
+        top:10%;
+        margin: 4% auto;
+    }
 
+    
+}
+/* Media para os Botões de seleção de Gênero */
+@media screen and (max-width:1330px) {
+    
 }
 
+/* Media para o Botão de Voltar */
+
+@media screen and (max-width:1330px) {
+    .voltar-genero{
+        position:absolute;
+        margin: 0 -1%;
+        font-size:30px;
+        background-color:transparent;
+        border:none;
+        font-weight:bolder;
+        text-decoration: underline; 
+      }
+}
+@media screen and  (max-width:1080px) {
+    .voltar-genero{
+        margin: 0 -2%;
+    }
+}
+@media screen and  (max-width:850px) {
+    .voltar-genero{
+        margin: 0 -3%;
+    }
+}
+@media screen and  (max-width:695px) {
+    .voltar-genero{
+        margin: 0 -4%;
+    }
+}

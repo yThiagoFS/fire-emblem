@@ -35,21 +35,56 @@
                     <label for="switch">Toggle</label>
                 </div>
             </div>
-            <<input type="button" value="feminino" onclick="classF()">
-            <input type="button" value="masculino" onclick="classM()">
+            
                <div id="container" class="">
-            
+                   
+                <form>
+                    
+                    <div class="botoes-genero">
+                        <h1>
+                            Escolha o gênero do seu Personagem:
+                        </h1>
+                        <input type="button" id="botao-feminino" value="feminino" onclick="classF()">
+                        <input type="button" id="botao-masculino" value="masculino" onclick="classM()">
+                    </div>
+                </form>
             
             
             </div>
-            <div class="opcoes">
-                <div class="middle">
-                    <a href="" class="classe classe1">Lanceira</a>
-                    <a href="" class="classe classe2">Arqueira</a>
-                    <a href="" class="classe classe3">Guerreira</a>
-                    <!--<a href="" class="btn btn4">Hover Me</a>-->
-                  </div>
-            </div>
+            <form action="" id="opcoes-classes">
+                <div class="opcoes">
+                    <div class="middle">
+
+                        <button onclick="select1()">
+                            <a href="" class="classe classe1">Lanceira</a>
+                        </button>
+
+                        <button onclick="select2()">
+                            <a href="" class="classe classe2">Arqueira</a>
+                        </button>
+
+                        <button onclick="select3()">
+                            <a href="" class="classe classe3">Guerreira</a>
+                        </button>
+
+                        <!--Classes Masculinas-->
+
+                        <button onclick="select4()">
+                            <a href="" class="classe classe1">Lanceiro</a>
+                        </button>
+
+                        <button onclick="select5()">
+                            <a href="" class="classe classe2">Guerreiro</a>
+                        </button>
+
+                        <button onclick="select6()">
+                            <a href="" class="classe classe3">Quebra-Escudos</a>
+                        </button>
+                        
+                      </div>
+                </div>
+            </form>
+            <!---->
             
             <form>
                 <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()">

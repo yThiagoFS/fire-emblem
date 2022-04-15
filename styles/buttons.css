@@ -1,3 +1,6 @@
+/* Icone Utilizado: https://www.flaticon.com/br/icones-gratis/espada Flaticon
+
+
 html {
 
     height: 100%;
@@ -10,6 +13,100 @@ html {
     --bg-input:gray;
     --bg-div:rgba(255, 255, 255, 0.733);
 }
+/* Botão de Iniciar Jornada */
+.wrapper-button{
+    
+  width:100%;
+  height:100%
+}
+.botao-inicial{
+  position:absolute;
+  left:50%;
+  top:50%;
+  padding:20px;
+  transform: translate(-50%, -50%);
+  background-color:#33333397;
+  color:white;
+  font-family:'Medieval', sans-serif;
+  font-size:13vh;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black, inset 3px 3px 3px black;
+}
+.botao-inicial:hover{
+  border-radius:130px;
+  color:red;
+  cursor:url('../img/espadas.png'), pointer;
+  transition: 0.5s all ease-in;
+  
+}
+
+/* Botões FEMININO/MASCULINO */
+.botoes-genero{
+  width:600px;
+  height:auto;
+  display:flex;
+  justify-content:space-around;
+  position:absolute;
+  top:48%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color:rgba(255, 255, 255, 0);
+}
+.botoes-genero>h1{
+  position:absolute;
+  top:-50%;
+  
+}
+#botao-feminino{
+  height:205px;
+  padding:40px;
+  height:auto;
+  border:1px solid black;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
+  background-color:#33333391;
+  color:white;
+  font-size:50px;
+  font-variant:small-caps;
+  border-radius:20px;
+  
+}
+#botao-feminino:hover, #botao-masculino:hover{
+  background-color:#333333de;
+  color:red;
+  cursor:pointer;
+  transition: 0.5s all ease-in-out;
+  box-shadow:none;
+}
+#botao-masculino{
+  padding:40px;
+  height:auto;
+  border:1px solid black;
+  box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
+  background-color:#33333391;
+  color:white;
+  font-size:40px;
+  font-variant:small-caps;
+  border-radius:20px;
+}
+/* Botão para voltar e selecionar o Gênero  */
+
+.voltar-genero{
+  position:absolute;
+  top: 20%;
+  left:47%;
+  font-size:30px;
+  background-color:transparent;
+  border:none;
+  font-weight:bolder;
+  text-decoration: underline;
+}
+.voltar-genero:hover{
+  color:red;
+  cursor:pointer;
+}
+
+
+/* Botões para Selecionar as Classes */ 
 .middle{
     background-color: var(--bg-div);
     display: flex;

@@ -40,33 +40,8 @@ body{
 }
 
 
-/* Opção - MASCULINO */
-.wrapper-button{
-    
-    width:100%;
-    height:100%
-}
-.botao-inicial{
-    position:absolute;
-    left:50%;
-    top:50%;
-    padding:20px;
-    transform: translate(-50%, -50%);
-    background-color:#33333397;
-    color:white;
-    font-family:'Medieval', sans-serif;
-    font-size:13vh;
-    border: 1px solid black;
-    box-shadow: 3px 3px 3px black, inset 3px 3px 3px black;
-}
-.botao-inicial:hover{
-    border-radius:130px;
-    color:red;
-    transform:scale(-0.5);
-    transition: 1.3s all ease-in;
-    
-}
 
+/* Opção - MASCULINO */
 .conteudo-inicial{
     display:none;
 }
@@ -85,11 +60,12 @@ body{
 }
 .classes-masculino .conteudo1, .classes-masculino .conteudo2, .classes-masculino .conteudo-meio{
     width: 420px;
-    height: 80%;
-    margin: 30px auto;
+    height: 65%;
+    margin: 90px auto 30px  auto;
     border: 3px solid red;
     border-radius: 10px;
     transform: scale3d(-1, 1, 1.0);
+    color: var(--color-text);
 }
 .classes-masculino .texto-meio{
     width: 300px;
@@ -157,7 +133,7 @@ body{
 #container{
     max-width: 1400px;
     width: 100%;
-    height: 425px;
+    height: 500px;
     border: 10px ridge red;
     border-radius: 10px;
     margin:  5% auto;
@@ -168,23 +144,14 @@ body{
 }
  .conteudo1,  .conteudo2,  .conteudo-meio{
     width: 420px;
-    height: 80%;
-    margin: 30px auto;
+    height: 65%;
+    margin: 90px auto 30px  auto;
     border: 3px solid red;
     border-radius: 10px;
     transform: scale3d(-1, 1, 1.0);
     color: var(--color-text);
 }
- .texto-meio{
-    width: 300px;
-    height: 250px;
-    font-family: 'Medieval';
-    letter-spacing: 3px;
-    line-height: 20px;
-    margin: 30px 10px;
-    text-align: center;
-    color: var(--color-text);
-}
+
 
  .conteudo1{
     background-image: url(../sprites/Lance_F.gif);
