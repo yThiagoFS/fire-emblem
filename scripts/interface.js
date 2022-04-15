@@ -2,7 +2,7 @@ function inicio() {
     var itensInicio = document.getElementById('main');
     itensInicio.innerHTML = ` 
 
-<div id="container" class="">
+
 <form>
    
     <div class="botoes-genero">
