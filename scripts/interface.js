@@ -79,7 +79,7 @@ function classF() {
 
     <div class="envelope-container">
         <div class="conteudo1">
-        <h1>Lanceira</h1>
+        <h1>Lanceiro</h1>
         <p id="titulo1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, ducimus. Eius, aliquam. Nobis magni provident, amet quasi ut ipsam. Soluta ipsam aspernatur corporis aliquam voluptatem exercitationem deleniti et corrupti odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. A temporibus neque porro in provident ut, delectus deleniti deserunt magnam minima ratione necessitatibus odit eveniet quaerat facilis quia alias animi eaque?</p>
         <div class="atributo">
             <div class="vida"><div class="bg-vida">35</div></div>
@@ -91,7 +91,7 @@ function classF() {
         
         </div>
         <div class="conteudo-meio">
-        <h1 style="text-align: center">Arqueira</h1>
+        <h1 style="text-align: center">Espadachim</h1>
         <p id="titulo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus sint nisi praesentium, sapiente quam laudantium amet quae corporis quisquam magnam tempore quis vel veniam, exercitationem hic odio, nam accusantium.</p>
         <div class="atributo1">
             <div class="vida1"><div class="bg-vida1">35</div></div>
@@ -102,7 +102,7 @@ function classF() {
         </div>
         </div>
         <div class="conteudo2">
-        <h1 style="text-align: center; ">Guerreira</h1>
+        <h1 style="text-align: center; ">Quebra-Escudo</h1>
         <p id="titulo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni accusamus modi ab incidunt facilis nobis perspiciatis veritatis, cumque facere explicabo? Odit tempore error recusandae temporibus fugit quasi soluta dolorem!</p>
         <div class="atributo2">
             <div class="vida2"><div class="bg-vida2">35</div></div>
@@ -114,8 +114,6 @@ function classF() {
         </div>
         </div>
     </div>
-
-<div class="opcoes">
 
 `
 container.style.display = 'flex'

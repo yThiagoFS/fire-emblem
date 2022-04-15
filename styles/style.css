@@ -47,8 +47,9 @@ body{
 }
 .envelope-container{
     display:flex;
-    margin: 10px;
+    margin: 0px 15px 0px 25px;
     max-width:100%;
+    width:100%;
 }
 .classes-masculino .container{
     max-width: 1400px;
