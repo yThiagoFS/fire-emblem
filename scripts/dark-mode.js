@@ -13,7 +13,8 @@ const initialColors = {
     colorHeadings: getStyle(html, "--color-headings"),
     colorText: getStyle(html, "--color-text"),
     bgInput:getStyle(html,"--bg-input"),
-    bgDiv:getStyle(html,"--bg-div")
+    bgDiv:getStyle(html,"--bg-div"),
+    bgImg:getStyle(html,"--bg-img")
 }
 
 const darkMode = {
@@ -22,7 +23,8 @@ const darkMode = {
     colorHeadings: "#3664FF",
     colorText: "#ffffff",
     bgInput:"#ffffff",
-    bgDiv:"rgba(79, 73, 73, 0.733)"
+    bgDiv:"rgba(79, 73, 73, 0.733)",
+    bgImg:"url(../img/dark-times.gif)",
 }
 
 const transformKey = key => 
@@ -39,4 +41,6 @@ const changeColors = (colors) => {
 checkbox.addEventListener("change", ({target}) => {
     target.checked ? changeColors(darkMode) : changeColors(initialColors)
 })
+
+
 

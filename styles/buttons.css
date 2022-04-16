@@ -84,7 +84,7 @@ html {
 }
 #botao-feminino:hover, #botao-masculino:hover{
   background-color:#333333de;
-  color:red;
+  color:#957833;
   cursor:url("https://cdn-icons.flaticon.com/png/128/3763/premium/3763558.png?token=exp=1650048715~hmac=23c3f71113b0c64d8eb78aab774a9858"), pointer;
   transition: 0.5s all ease-in-out;
   box-shadow:none;
