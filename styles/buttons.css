@@ -67,6 +67,7 @@ html {
 .botoes-genero>h1{
   position:absolute;
   top:-50%;
+  color:var(--color-text);
   
 }
 #botao-feminino{
