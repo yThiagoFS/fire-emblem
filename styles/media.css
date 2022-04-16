@@ -7,34 +7,42 @@
     }
     .envelope-container{
         max-height: 1100px;
-        top:22%;
+        top:9.5%;
         max-width:800px;
         width: 100%;
         display:block;
-        position:absolute;
+        position:relative;
+        
     }
     
-    .conteudo1, .conteudo2 ,.conteudo-meio{
+    .conteudo1{
         max-width:500px;
         max-height:300px;
         width:100%;
         height:100%;
-        display:block;
-        position:relative;
-        left:13%;
-        top:0%;
+        position:absolute;
+        left:9%;
         }
-
-        .classe-masculino .conteudo1, .classe-masculino .conteudo2 , .classe-masculino.conteudo-meio{
+        .conteudo2{
+          
           max-width:500px;
           max-height:300px;
           width:100%;
           height:100%;
-          display:block;
-          position:relative;
-          left:13%;
-          top:0%;
-          }
+          position:absolute;
+          top:30%;
+          left:9%;
+        }
+        .conteudo-meio{
+          max-width:500px;
+          max-height:300px;
+          width:100%;
+          height:100%;
+          position:absolute;
+          top:60%;
+          left:9%;
+        }
+        
 }
 
 

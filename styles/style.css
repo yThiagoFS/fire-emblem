@@ -51,37 +51,6 @@ body{
     max-width:100%;
     width:100%;
 }
-.classes-masculino .container{
-    max-width: 1400px;
-    width: 100%;
-    height: 425px;
-    border: 10px ridge red;
-    border-radius: 10px;
-    margin:  5% auto;
-    display: flex;
-    background-color: var(--bg-div);
-    
-    
-}
-.classes-masculino .conteudo1, .classes-masculino .conteudo2, .classes-masculino .conteudo-meio{
-    width: 420px;
-    height: 65%;
-    margin: 90px 5px 30px  5px;
-    border: 3px solid red;
-    border-radius: 10px;
-    transform: scale3d(-1, 1, 1.0);
-    color: var(--color-text);
-}
-.classes-masculino .texto-meio{
-    width: 300px;
-    height: 250px;
-    font-family: 'Medieval';
-    letter-spacing: 3px;
-    line-height: 20px;
-    margin: 30px 10px;
-    text-align: center;
-    color: var(--color-text);
-}
 
 .classes-masculino .conteudo1{
     background-image: url(../sprites/Lance_M.gif);
@@ -89,51 +58,7 @@ body{
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.classes-masculino .conteudo1>p, .classes-masculino .conteudo2>p,.classes-masculino .conteudo-meio>p{
-    display: none;
-    padding: 20px;
-    
-    
-}
 
-
-.classes-masculino .conteudo1>h1,.classes-masculino .conteudo2>h1,.classes-masculino .conteudo-meio>h1{
-    text-align: center; 
-    transform: scale3d(-1.4, 1.0, 1.0);
-   
-}
-.classes-masculino .conteudo1:hover, .classes-masculino .conteudo2:hover,.classes-masculino .conteudo-meio:hover{
-    
-    transform: scale3d(1.0, 1,1.0);
-    background-image: url('');
-    transition: all 4s ease;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
-.classes-masculino .conteudo1:hover>h1, .classes-masculino .conteudo2:hover>h1, .classes-masculino .conteudo-meio:hover>h1{
-    transform: scale3d(1.4, 1.0, 1.0);
-}
-.classes-masculino .conteudo1:hover>atributo,.classes-masculino .conteudo2:hover>atributo1,.classes-masculino .conteudo-meio:hover>atributo2{
-    transform: scale3d(1.4, 1.0, 1.0);
-}
-.classes-masculino .conteudo1:hover p,.classes-masculino  .conteudo2:hover p, .classes-masculino .conteudo-meio:hover p{
-    display: block;
-    
-}  
-.classes-masculino .conteudo2{
-    background-image: url(../sprites/Axe_M.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-
-}
-
-.classes-masculino .conteudo-meio{
-    background-image:url(../sprites/Sword.gif);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-}
 /* Opção: FEMININO */
 #container{
     max-width: 1400px;
