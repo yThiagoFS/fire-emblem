@@ -42,9 +42,7 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida::before{
-    content: 'Vida';
-}
+
 .bg-erro{
     width: 20%;
     height: 100%;
@@ -96,9 +94,7 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida1::before{
-    content: 'Vida';
-}
+
 .bg-erro1{
     width: 20%;
     height: 100%;
@@ -147,9 +143,7 @@ html {
     border: 1px solid green;
 
 }
-.bg-vida2::before{
-    content: 'Vida';
-}
+
 .bg-erro2{
     width: 20%;
     height: 100%;
@@ -164,6 +158,7 @@ html {
     border-radius: 20px;
     border: 1px solid rgb(191, 26, 26);
 }
+
 .bg-critico2{
     width:40%;
     height: 100%;

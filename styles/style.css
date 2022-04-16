@@ -32,7 +32,7 @@ html {
 body{
     height: 100%;
     background-color: var(--bg);
-    background-image: url(https://cdn.discordapp.com/attachments/954504131895250994/960287608284528650/Pixel1648955928206.gif);
+    background-image: url("../img/dragon.gif"); /* (https://cdn.discordapp.com/attachments/954504131895250994/960287608284528650/Pixel1648955928206.gif); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100% 100%;

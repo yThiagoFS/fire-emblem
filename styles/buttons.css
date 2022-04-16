@@ -16,17 +16,19 @@ html {
 /* Botão de Iniciar Jornada */
 
 .botao-inicial{
+  background-image:url("../img/madeira1.png");
+  background-size:cover;
+  background-position:center center;
   position:absolute;
   left:50%;
   top:50%;
   padding:20px;
   transform: translate(-50%, -50%);
-  background-color:#33333397;
+  background-color:transparent;
   color:white;
   font-family:'Medieval', sans-serif;
   font-size:13vh;
-  border: 1px solid black;
-  box-shadow: 3px 3px 3px black, inset 3px 3px 3px black;
+  
 }
 .botao-inicial:hover{
   border-radius:130px;
@@ -103,12 +105,13 @@ html {
 .voltar-genero{
   position:absolute;
   top: 20%;
-  left:45%;
+  left:47%;
   font-size:30px;
   background-color:transparent;
   border:none;
   font-weight:bolder;
   text-decoration: underline;
+  color:var(--color-text);
 }
 .voltar-genero:hover{
   color:red;
