@@ -16,7 +16,11 @@ function inicio() {
             <input type="button" id="botao-feminino" value="feminino" onclick="classF()">
             <input type="button" id="botao-masculino" value="masculino" onclick="classM()">
         </div>
-    </div>`
+    </div>
+    <audio autoplay loop>
+        <source src="../audios/X2Download.com - TES V Skyrim Soundtrack - The Streets of Whiterun (128 kbps).mp3" type="audio/mp3">
+    </audio> `
+    
 
 
 
