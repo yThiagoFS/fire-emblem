@@ -147,17 +147,17 @@ function select1(){
     container.innerHTML = `
     <div id="container" class="">
 
-            <div class="envelope-historia-personagem">
-                <div class="foto-personagem">
-                
-                </div>
-                <div class="historia-personagem"><p id="historia-lanceira">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-                        Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-                        Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-                </p>
-                </div>
-            </div>
+    <div class="envelope-historia-personagem">
+    <div class="foto-personagem">
+    
+    </div>
+    <div class="historia-personagem"><p id="historia-lanceira">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+    </p>
+    </div>
+</div>
                    
         </div>
     
