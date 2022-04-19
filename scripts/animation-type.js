@@ -6,11 +6,11 @@ function typeWrite(elemento) {
     textoArray.forEach((letra, i) => {
         setTimeout(function () {
             elemento.innerHTML += letra;
-        }, 50 * i)
+        }, 30 * i)
     })
 }
 
-const titulo = document.getElementById('titulo1')
+const titulo = document.getElementById('historia-lanceira')
 typeWrite(titulo);
 
 function typeWrite2(elemento) {

@@ -121,14 +121,20 @@ html {
 
 
 /* Botões para Selecionar as Classes */ 
+#opcoes-classes{
+position:absolute;
+top:80%;
+left:50%;
+transform:translate(-50%, 0%);
+border: 10px ridge rgba(136, 48, 48, 0.793);
+margin:10px;
+}
+
 .middle{
     background-color: var(--bg-div);
     display: flex;
     width: 100%;
     max-width: 1200px;
-    margin: auto;
-    border: 10px ridge red;
-    
   }
   .classe{
     position: relative;
@@ -137,8 +143,7 @@ html {
     font-size: 14px;
     font-family: "montserrat";
     text-decoration: none;
-    margin: 30px auto;
-    border: 2px solid #ff7675;
+    
     padding: 14px 60px;
     text-transform: uppercase;
     overflow: hidden;

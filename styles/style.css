@@ -146,6 +146,33 @@ body{
     background-size: 100% 100%;
 }
 
+
+
+/* Css Da área com a foto e a história do personagem */ 
+.envelope-historia-personagem{
+    width:100%;
+    height:100%;
+    position:relative;
+    display:flex;
+    background-color:white;
+}
+.foto-personagem{
+    width:50%;
+    height:90%;
+    background-image:url(../img/Lance_F.jpeg);
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    margin:2% 2%;
+}
+.historia-personagem{
+    width:40%;
+    position:absolute;
+    left:55%;
+    top:5.6%;
+}
+
+
+
 /* Dark Mode */
 
 input[type=checkbox]{

@@ -1,0 +1,13 @@
+` 
+    <div class="envelope-botoes-genero">
+        <div class="botoes-genero">
+            <h1>
+            Escolha o gênero do seu Personagem:
+            </h1>
+            <input type="button" id="botao-feminino" value="feminino" onclick="classF()">
+            <input type="button" id="botao-masculino" value="masculino" onclick="classM()">
+        </div>
+    </div>
+    <audio autoplay loop>
+        <source src="../audios/X2Download.com - TES V Skyrim Soundtrack - The Streets of Whiterun (128 kbps).mp3" type="audio/mp3">
+    </audio> `
