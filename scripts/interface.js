@@ -46,7 +46,7 @@ function classM() {
         
         </div>
         <div class="conteudo-meio">
-        <h1 style="text-align: center">Espadachim</h1>
+        <h1 style="text-align: center">Quebra-Escudos</h1>
         <p id="titulo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos necessitatibus sint nisi praesentium, sapiente quam laudantium amet quae corporis quisquam magnam tempore quis vel veniam, exercitationem hic odio, nam accusantium.</p>
         <div class="atributo1">
             <div class="vida1"><div class="bg-vida1"><i class="fa-solid fa-heart"></i>35</div></div>
@@ -57,7 +57,7 @@ function classM() {
         </div>
         </div>
         <div class="conteudo2">
-        <h1 style="text-align: center; ">Quebra-Escudo</h1>
+        <h1 style="text-align: center; ">Espadachim</h1>
         <p id="titulo3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa magni accusamus modi ab incidunt facilis nobis perspiciatis veritatis, cumque facere explicabo? Odit tempore error recusandae temporibus fugit quasi soluta dolorem!</p>
         <div class="atributo2">
             <div class="vida2"><div class="bg-vida2"><i class="fa-solid fa-heart"></i>35</div></div>
