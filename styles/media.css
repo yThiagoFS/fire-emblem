@@ -20,8 +20,7 @@
         max-height:300px;
         width:100%;
         height:100%;
-        position:absolute;
-        left:9%;
+        margin: 0 auto;
         }
         .conteudo2{
           
@@ -29,18 +28,14 @@
           max-height:300px;
           width:100%;
           height:100%;
-          position:absolute;
-          top:30%;
-          left:9%;
+          margin: 5% auto;
         }
         .conteudo-meio{
           max-width:500px;
           max-height:300px;
           width:100%;
           height:100%;
-          position:absolute;
-          top:60%;
-          left:9%;
+          margin: 5% auto;
         }
         
 }
@@ -97,26 +92,11 @@
 @media screen and (max-width:1330px) {
     .voltar-genero{
         position:absolute;
-        margin: 0 2%;
+        margin: 0 auto;
         font-size:30px;
         background-color:transparent;
         border:none;
         font-weight:bolder;
         text-decoration: underline; 
       }
-}
-@media screen and  (max-width:1080px) {
-    .voltar-genero{
-        margin: 0 1%;
-    }
-}
-@media screen and  (max-width:850px) {
-    .voltar-genero{
-        margin: 0 -2%;
-    }
-}
-@media screen and  (max-width:695px) {
-    .voltar-genero{
-        margin: 0 -1%;
-    }
 }

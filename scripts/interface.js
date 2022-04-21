@@ -145,7 +145,7 @@ function select1(){
     var container = document.getElementById('container')
 
     container.innerHTML = `
-    <div id="container" class="">
+     
 
     <div class="envelope-historia-personagem">
     <div class="foto-personagem">
@@ -158,9 +158,6 @@ function select1(){
     </p>
     </div>
 </div>
-                   
-        </div>
-    
     `
     container.style.display = 'flex'
     document.getElementById('inicio').innerHTML = ``

@@ -21,7 +21,7 @@ html {
     --color-headings: #0077FF;
     --color-text: #080808;
     --bg-input:gray;
-    --bg-div:rgba(255, 255, 255, 0.733);
+    --bg-div:rgba(255, 255, 255, 0.529);
     --bg-img:url(https://cdn.discordapp.com/attachments/954504131895250994/960287608284528650/Pixel1648955928206.gif);
 }
 
@@ -154,15 +154,17 @@ body{
     height:100%;
     position:relative;
     display:flex;
-    background-color:white;
+    background-color: var(--bg-div);
 }
 .foto-personagem{
-    width:50%;
-    height:90%;
+    width:40%;
+    height:70%;
     background-image:url(../img/lanceira-rosto.png);
     background-repeat:no-repeat;
     background-size:100% 100%;
-    margin:2% 2%;
+    margin:-2% 2% 0 2%;
+    position:relative;
+    left:5%;
 }
 .historia-personagem{
     width:40%;
