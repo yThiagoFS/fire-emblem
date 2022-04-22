@@ -2,6 +2,7 @@
 
 const container = document.getElementById('container')
 const inicioTela = document.getElementById('inicio')
+const opcoesCombate = document.getElementById('opcoes-combate')
 
 //Tela de inicio do jogo
 

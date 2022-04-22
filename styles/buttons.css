@@ -28,6 +28,7 @@ html {
   color:white;
   font-family:'Medieval', sans-serif;
   font-size:13vh;
+  display:block;
   
 }
 .botao-inicial:hover{
@@ -197,3 +198,22 @@ margin:10px;
   .classe4:hover::before{
     height: 380%;
   }
+
+  .classe5::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .classe5:hover::before{
+    height: 380%;
+  }
+  .classe6::before{
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%,-50%) rotate(45deg);
+  }
+  .classe6:hover::before{
+    height: 380%;
+  }
+
+  

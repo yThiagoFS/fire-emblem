@@ -1,8 +1,8 @@
 var hero = {
     nome: ['Herói'],
     hp: [35],
-    sprite: ['./sprites/pirate_axe.gif'],
-    img: ['./img/pirate_axe.png'],
+    sprite: ['../sprites/Sword.gif'],
+    img: ['../img/img/Sword1.jpg'],
     ataque: [18],
     erro: [2],
     acerto: [8],
@@ -12,8 +12,8 @@ var hero = {
 var boss = {
     nome: ['Calango Trevoso'],
     hp: [40],
-    sprite: ['./sprites/lizard_axe.gif'],
-    img: ['./img/lizard_axe.png'],
+    sprite: ['../sprites/calango.gif'],
+    img: ['../img/img/calango.jpg'],
     ataque: [16],
     erro: [3],
     acerto: [8],
@@ -35,10 +35,11 @@ function atacar(){
 }
 
 
+//Ataque do herói
+
 function ataqueHero(){
     //Hero
     random = Math.floor(Math.random() * 9)
-    var res = document.getElementById('res')
 
     if(random <= hero.erro){
         dano = 0
@@ -53,7 +54,7 @@ function ataqueHero(){
     }
 
 
-    var heroImg = document.getElementById('hero')
+    var heroImg = document.getElementById('heroImg')
 
     heroImg.setAttribute('src', hero.sprite);
     
@@ -64,10 +65,10 @@ function ataqueHero(){
 
     delay = 1000
     var timerId = setTimeout(function(){
-        var hpb = document.getElementById('range')
-        val = hpb.value
-        max = hpb.max
-        min = hpb.min
+        var bossVida = document.getElementById('range2')
+        val = bossVida.value
+        max = bossVida.max
+        min = bossVida.min
         val -= dano
         
         porcent = (val - min) * 100 / (max - min)
@@ -75,10 +76,10 @@ function ataqueHero(){
             porcent = 0
         }
 
-        hpb.style.backgroundSize = porcent + '% 100%'
-        hpb.value = val 
+        bossVida.style.backgroundSize = porcent + '% 100%'
+        bossVida.value = val 
 
-        if(hpb.value == 0){
+        if(bossVida.value == 0){
             window.alert('você destruiu o meu ovo')
         }else{
             ataqueBoss()
@@ -88,9 +89,11 @@ function ataqueHero(){
 }
 
 
+//Ataque do boss
+
 function ataqueBoss(){
     //boss
-    var res = document.getElementById('res')
+    random = Math.floor(Math.random() * 9)
 
     if(random <= boss.erro){
         dano = 0
@@ -104,7 +107,7 @@ function ataqueBoss(){
     }
 
 
-    var bossImg = document.getElementById('boss')
+    var bossImg = document.getElementById('bossImg')
 
     delay = 1000
     var timerId = setTimeout(function(){
@@ -114,7 +117,7 @@ function ataqueBoss(){
         delay = 2400
         var timerId = setTimeout(function(){
             
-            var hph = document.getElementById('range2')
+            var hph = document.getElementById('range1')
             val = hph.value
             max = hph.max
             min = hph.min
@@ -136,7 +139,7 @@ function ataqueBoss(){
 
         hph.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
         hph.value = val   
-            var bossImg = document.getElementById('boss')
+            var bossImg = document.getElementById('bossImg')
             bossImg.setAttribute('src', boss.img);    
         }, delay);  
 
@@ -144,26 +147,55 @@ function ataqueBoss(){
 
 }
 
+
+/* Container += style align items e justify content center */
 function combate(){
-    var body = document.getElementById('body')
-    body.innerHTML = `
-    <main class="container">
-    <div class="row">
-        <div class="col-md-4">
-             <img src="${boss.img}" id="boss" alt="">
-             <input type="range" value="${boss.hp}" min="0" max="${boss.hp}" id="range" disabled oninput="rangenumber.value=value"/>
-             <p>${boss.nome}</p>
-        </div>
-        <div class="col-md-4" id="res"></div>
-        <div class="col-md-4">
-            <img src="${hero.img}" id="hero" alt="">
-            <input type="range" value="${hero.hp}" min="0" max="${hero.hp}" id="range2" disabled oninput="rangenumber.value=value"/>
-            <p>${hero.nome}</p>
-        </div>
+
+const res = document.getElementById('res')    
+
+opcoesCombate.style.display = 'block'
+   
+container.innerHTML = `
+
+    <div id="hero">
+    <form>
+        <input type="range" min="0" max="${hero.hp}" value="${hero.hp}" id="range1" onclick="atacar()">
+    </form>
+    <img class="imgHero" id="heroImg" src="${hero.img}">
+</div>
+
+
+
+<div id="textos">
+
+    <div class="dialogos" id='res'>
+
     </div>
-    </main>
-    <input type="button" value="atacar" onclick="atacar()">
-    `
+
+</div>
+
+
+<div id="boss">
+    <form>
+        <input type="range" min="0" max="${boss.hp}" value="${boss.hp}" id="range2" onclick="atacar()">
+    </form>
+    <img class="imgBoss" id="bossImg" src="${boss.img}">
+
+
+</div>
+
+<div class="opcoes-ataque-hero">
+
+</div>
+
+<div class="opcoes-ataque-boss">
+
+</div>            
+            
+ `
+           
+            
+        
     
 }
 
@@ -172,3 +204,10 @@ function combate(){
     
 
 
+       /*  <img src="${hero.img}" id="hero" alt="">
+        <input type="range" value="${hero.hp}" min="0" max="${hero.hp}" id="range2" disabled oninput="rangenumber.value=value"/>
+        <p>${hero.nome}</p>
+
+    <img src="${boss.img}" id="boss" alt="">
+    <input type="range" value="${boss.hp}" min="0" max="${boss.hp}" id="range" disabled oninput="rangenumber.value=value"/>
+    <p>${boss.nome}</p> */ 

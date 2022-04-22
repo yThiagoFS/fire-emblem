@@ -1,0 +1,51 @@
+#container{
+    align-items:center;
+    justify-content:center;
+}
+
+#hero{
+    width:350px;
+    height:50%;
+    margin:0 10px;
+    
+}
+#boss{
+    width:350px;
+    height:50%;
+    margin:0 10px;
+    
+}
+
+#textos{
+    width:350px;
+    height:50%;
+    margin:0 10px;
+    margin-top:37px;
+}
+.dialogos{
+    width:100%;
+    height:100%;
+    background-color:white;
+    border:1px solid black;
+    box-shadow:1px 3px 6px black, inset 1px 3px 6px black;
+}
+.resultados{
+    width:250px;
+    height:25%;
+    margin:10px auto;
+    background-color:white;
+    border:1px solid black;
+    box-shadow:1px 3px 6px black, inset 1px 3px 6px black;
+}
+.imgHero{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale3d(-1.0, 1.0, 1.0);
+}
+.imgBoss{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale3d(-1.0, 1.0, 1.0);
+}

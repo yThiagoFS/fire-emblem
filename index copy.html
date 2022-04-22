@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,37 +11,55 @@
     <link rel="stylesheet" href="./styles/atributos.css">
     <link rel="stylesheet" href="./styles/buttons.css">
     <link rel="stylesheet" href="./styles/media.css">
-    
+    <link rel="stylesheet" href="./styles/combate.css">
+
     <title>Combate</title>
 </head>
 
 
-    
+
 <body id="body">
     <header>
         <div class="toggle">
             <input type="checkbox" id="switch" name="theme">
             <label for="switch">Toggle</label>
-        </div>  
+        </div>
     </header>
 
     <main id="main">
         <form id="inicio">
-            <div class="wrapper-button"><button class="botao-inicial" onclick="inicio()">Inicie sua Jornada</button></div>
+            <div class="wrapper-button"><button class="botao-inicial" onclick="inicio()">Inicie sua Jornada</button>
+            </div>
         </form>
-        
-        <div id="container" class="">
-    
-    
-        </div>
-        </div>
 
-        <div class="conteudo-inicial">
-            
-               
+        <div id="container" class="">
+
+
+           
+
+
+        </div>
+        <div id="opcoes-combate">
             <form action="" id="opcoes-classes">
                 <div class="opcoes">
                     <div class="middle">
+                        <button onclick="atacar()"">
+                        <a href=" #" class="classe classe5">Atacar</a></button>
+                        <button onclick="recuperar()">
+                            <a href="#" class="classe classe6">Recuperar Vida</a></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="conteudo-inicial">
+
+
+            <form action="" id="opcoes-classes">
+                <div class="opcoes">
+                    <div class="middle">
+
+                        <!--Classes Femininas-->
 
                         <button onclick="select1()">
                             <button class="classe classe1">Lanceira</button>
@@ -67,23 +86,25 @@
                         <button onclick="select6()">
                             <a href="" class="classe classe3">Espadachim</a>
                         </button>
+
                         
-                      </div>
+
+                    </div>
                 </div>
             </form>
             <!---->
-            
+
             <form>
                 <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()">
             </form>
         </div>
     </main>
 
-    
 
-    
-    
-    
+
+
+
+
 </body>
 
 <script src="./scripts/combate.js"></script>

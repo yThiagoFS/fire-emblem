@@ -163,7 +163,9 @@ body{
     color: var(--color-text);
 }
 
-
+#opcoes-combate{
+    display:none;
+}
 
 /* Dark Mode */
 
