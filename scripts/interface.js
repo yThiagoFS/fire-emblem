@@ -68,19 +68,19 @@ function classM() {
         
     </div>
 
-    <form action="" id="opcoes-classes">
+    <form id="opcoes-classes">
     <div class="opcoes">
         <div class="middle">
-    <button onclick="select4()">
-                <a href="" class="classe classe1">Lanceiro</a>
+    <button onclick="select(4)">
+                <a href="#" class="classe classe1">Lanceiro</a>
             </button>
 
-            <button onclick="select5()">
-                <a href="" class="classe classe2">Quebra-Escudos</a>
+            <button onclick="select(5)">
+                <a href="#" class="classe classe2">Quebra-Escudos</a>
             </button>
 
-            <button onclick="select6()">
-                <a href="" class="classe classe3">Espadachim</a>
+            <button onclick="select(6)">
+                <a href="#" class="classe classe3">Espadachim</a>
             </button>
             
           </div>
@@ -135,19 +135,19 @@ function classF() {
         </div>
         </div>
     </div>
-    <form action="" id="opcoes-classes">
+    <form id="opcoes-classes">
                 <div class="opcoes">
                     <div class="middle">
 
-                        <button onclick="select1()">
+                        <button onclick="select(1)">
                             <a href="#" class="classe classe1">Lanceira</a>
                         </button>
 
-                        <button onclick="select2()">
+                        <button onclick="select(2)">
                             <a href="#" class="classe classe2">Caçadora</a>
                         </button>
 
-                        <button onclick="select3()">
+                        <button onclick="select(3)">
                             <a href="#" class="classe classe3">Guerreira</a>
                         </button>
 
@@ -162,129 +162,132 @@ function classF() {
 
 }
 
-function select1(){
-    var container = document.getElementById('container')
 
-    container.innerHTML = `
-     
+function select(sel){
+    switch(sel){
+        case 1:
+            var container = document.getElementById('container')
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-lanceira">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
-    
-}
-function select2(){
-    var container = document.getElementById('container')
+            container.innerHTML = `
+             
+        
+            <div class="envelope-historia-personagem">
+           
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            
+            break;
+        
+        case 2:
+            var container = document.getElementById('container')
+            container.innerHTML = `
 
-    container.innerHTML = `
-     
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            document.getElementById('inicio').innerHTML = `` 
+            break;
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-cacadora">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
-    
-}
-function select3(){
-    var container = document.getElementById('container')
+        case 3:
+            var container = document.getElementById('container')
+            container.innerHTML = `
 
-    container.innerHTML = `
-     
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            document.getElementById('inicio').innerHTML = ``
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-guerreira">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
-    
-}
 
-function select4(){
-    var container = document.getElementById('container')
+            break;
 
-    container.innerHTML = `
-     
+        case 4:
+            var container = document.getElementById('container')
+            container.innerHTML = `
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-lanceiro">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
-    
-}
-function select5(){
-    var container = document.getElementById('container')
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            document.getElementById('inicio').innerHTML = ``
 
-    container.innerHTML = `
-     
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-quebra-escudos">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
-    
-}
-function select5(){
-    var container = document.getElementById('container')
+            break;
 
-    container.innerHTML = `
-     
+        case 5:
+            var container = document.getElementById('container')
+            container.innerHTML = `
 
-    <div class="envelope-historia-personagem">
-   
-    <div class="historia-personagem"><p id="historia-espadachim">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-            Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
-    </p>
-    </div>
-    </div>
-    `
-    container.style.display = 'flex'
-    container.style.width = '700px';
-    document.getElementById('inicio').innerHTML = ``
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            document.getElementById('inicio').innerHTML = ``
+
+
+            break;
+
+        case 6:
+            var container = document.getElementById('container')
+            container.innerHTML = `
+
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-cacadora">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur egestas accumsan facilisis. Nulla malesuada nisi dolor, quis pellentesque risus aliquam in. Nulla nec eros semper, ultrices urna vel, dictum lorem. Ut non sollicitudin augue, ut varius nulla. Etiam nec cursus mi. Aenean lacinia ex id elit mollis hendrerit. Nunc accumsan sagittis libero, non imperdiet urna ornare ac. Vestibulum condimentum justo eget ornare faucibus. Phasellus ut massa ex. Integer quis metus quam. Vivamus quis odio velit.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+                    Suspendisse sit amet bibendum diam. Sed sit amet euismod velit, vestibulum pharetra felis. Aenean a tellus sem. Maecenas mauris urna, luctus eu sapien ut, convallis varius libero. Morbi vitae quam ornare, euismod urna ut, mollis ipsum. Fusce accumsan eleifend velit, eget mattis turpis. Mauris sit amet sodales odio. Suspendisse fringilla id quam vel porttitor. Praesent bibendum neque lorem. Sed sit amet neque malesuada, ultrices justo at, malesuada orci. Aliquam id accumsan dui.
+            </p>
+            </div>
+            </div>
+            `
+            container.style.display = 'flex'
+            container.style.width = '700px';
+            document.getElementById('inicio').innerHTML = ``
+
+
+            break;
+
+    }
 }
