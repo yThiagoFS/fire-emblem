@@ -156,21 +156,11 @@ body{
     display:flex;
     background-color: var(--bg-div);
 }
-.foto-personagem{
-    width:40%;
-    height:70%;
-    background-image:url(../img/lanceira-rosto.png);
-    background-repeat:no-repeat;
-    background-size:100% 100%;
-    margin:-2% 2% 0 2%;
-    position:relative;
-    left:5%;
-}
+
 .historia-personagem{
-    width:40%;
-    position:absolute;
-    left:55%;
-    top:5.6%;
+    width:100%;
+    padding:30px;
+    color: var(--color-text);
 }
 
 

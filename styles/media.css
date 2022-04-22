@@ -43,50 +43,10 @@
 
 /* Media para os Botões de seleção de Gênero */
 @media screen and (max-width:1330px) {
-.botoes-genero{
-    width:100px;
-    height:auto;
-    display:block;
-    margin:0 0;
-    background-color:rgba(255, 255, 255, 0);
+  #opcoes-classes{
+    position:fixed;
+    top:0;
   }
-  .botoes-genero>h1{
-    position:absolute;
-    top:-50%;
-  }
-  #botao-feminino{
-    height:205px;
-    padding:40px;
-    height:auto;
-    border:1px solid black;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
-    background-color:#33333391;
-    color:white;
-    font-size:50px;
-    font-variant:small-caps;
-    border-radius:20px;
-    
-  }
-  #botao-feminino:hover, #botao-masculino:hover{
-    background-color:#333333de;
-    color:red;
-    cursor:url("https://cdn-icons.flaticon.com/png/128/3763/premium/3763558.png?token=exp=1650048715~hmac=23c3f71113b0c64d8eb78aab774a9858"), pointer;
-    transition: 0.5s all ease-in-out;
-    box-shadow:none;
-  }
-  #botao-masculino{
-    padding:40px;
-    height:auto;
-    border:1px solid black;
-    box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
-    background-color:#33333391;
-    color:white;
-    font-size:40px;
-    font-variant:small-caps;
-    border-radius:20px;
-  }
-  
-
 }
 
 @media screen and (max-width:1330px) {
