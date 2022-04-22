@@ -24,7 +24,7 @@ const darkMode = {
     colorText: "#ffffff",
     bgInput:"#ffffff",
     bgDiv:"rgba(79, 73, 73, 0.733)",
-    bgImg:"url(../img/dark-times.gif)",
+    bgImg:"url(../img/gifnoite.gif)",
 }
 
 const transformKey = key => 

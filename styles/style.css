@@ -22,7 +22,7 @@ html {
     --color-text: #080808;
     --bg-input:gray;
     --bg-div:rgba(255, 255, 255, 0.529);
-    --bg-img:url(https://cdn.discordapp.com/attachments/954504131895250994/960287608284528650/Pixel1648955928206.gif);
+    --bg-img:url(../img/gifdia.gif);
 }
 
 * {

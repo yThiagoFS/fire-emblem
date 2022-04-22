@@ -287,5 +287,4 @@ function select5(){
     container.style.display = 'flex'
     container.style.width = '700px';
     document.getElementById('inicio').innerHTML = ``
-    
 }
