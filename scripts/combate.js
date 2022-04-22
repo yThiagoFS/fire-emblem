@@ -154,6 +154,8 @@ function combate(){
 const res = document.getElementById('res')    
 
 opcoesCombate.style.display = 'block'
+
+
    
 container.innerHTML = `
 
@@ -194,8 +196,9 @@ container.innerHTML = `
             
  `
            
-            
-        
+            container.style.display = 'flex';
+            container.style.alignItems = 'center';
+            container.style.justifyContent = 'center';        
     
 }
 
