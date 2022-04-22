@@ -1,25 +1,3 @@
-var hero = {
-    nome: ['Herói'],
-    hp: [35],
-    sprite: ['../sprites/Sword.gif'],
-    img: ['../img/img/Sword1.jpg'],
-    ataque: [18],
-    erro: [2],
-    acerto: [8],
-    crit: [4]
-}
-
-var boss = {
-    nome: ['Calango Trevoso'],
-    hp: [40],
-    sprite: ['../sprites/calango.gif'],
-    img: ['../img/img/calango.jpg'],
-    ataque: [16],
-    erro: [3],
-    acerto: [8],
-    crit: [3]
-
-}
 
 var delay = 0
 var val = 0
@@ -36,6 +14,58 @@ function atacar(){
 
 
 //Ataque do herói
+
+function ataqueFake(){
+
+    random = 8
+
+    if(random <= hero.erro){
+        dano = 0
+        res.innerHTML += `<p>${hero.nome}: Errou o ataque</p>`
+        console.log('erro')
+    }else if(random <= hero.acerto){
+        dano = hero.ataque
+        res.innerHTML += `<p>${hero.nome}: Acertou o ataque</p>`
+    }else{
+        dano = hero.ataque + hero.crit
+        res.innerHTML += `<p>${hero.nome}: Dano critíco</p>`
+    }
+
+
+    var heroImg = document.getElementById('heroImg')
+
+    heroImg.setAttribute('src', hero.sprite);
+    
+    delay = 2700
+    var timerId = setTimeout(function(){
+        heroImg.setAttribute('src', hero.img);
+    }, delay);
+
+    delay = 1000
+    var timerId = setTimeout(function(){
+        var bossVida = document.getElementById('range2')
+        val = bossVida.value
+        max = bossVida.max
+        min = bossVida.min
+        val -= dano
+        
+        porcent = (val - min) * 100 / (max - min)
+        if( porcent <= 0){
+            porcent = 0
+        }
+
+        bossVida.style.backgroundSize = porcent + '% 100%'
+        bossVida.value = val 
+
+        if(bossVida.value == 0){
+            window.alert('você destruiu o meu ovo')
+        }
+
+    }, delay);
+    
+    
+}
+
 
 function ataqueHero(){
     //Hero

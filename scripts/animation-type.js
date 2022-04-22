@@ -10,7 +10,7 @@ function typeWrite(elemento) {
     })
 }
 
-const titulo = document.getElementById('historia-lanceira')
+var titulo = document.getElementById('historia-espadachim')
 typeWrite(titulo);
 
 function typeWrite2(elemento) {

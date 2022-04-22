@@ -3,13 +3,13 @@
     transform: scaleX(-1);
 }
 
-@font-face {
+/* @font-face {
     font-family: 'Medieval';
     src: url('../fontes/olondon_.otf') format('opentype'), url('../fontes/oldlondon.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     
-}
+} */
 
 html {
 
@@ -76,6 +76,7 @@ body{
     max-width: 1400px;
     width: 100%;
     height: 500px;
+    
     border: 10px ridge rgba(136, 48, 48, 0.793);
     border-radius: 20px;
     margin:  5% auto;
@@ -86,8 +87,7 @@ body{
 }
  .conteudo1,  .conteudo2,  .conteudo-meio{
     width: 420px;
-    height:100%;
-    max-height: 65%;
+    height: 65%;
     margin: 90px auto 30px  auto;
     border: 3px solid red;
     border-radius: 10px;
@@ -121,6 +121,7 @@ body{
     transition: all 4s ease;
     overflow-y: scroll;
     overflow-x: hidden;
+    background-color: var(--bg-div);
 }
  .conteudo1:hover>h1,  .conteudo2:hover>h1,  .conteudo-meio:hover>h1{
     transform: scale3d(1.4, 1.0, 1.0);
@@ -156,16 +157,28 @@ body{
     position:relative;
     display:flex;
     background-color: var(--bg-div);
+    margin: 0 auto;
 }
 
 .historia-personagem{
     width:100%;
     padding:30px;
     color: var(--color-text);
+    margin-top:3%;
 }
 
 #opcoes-combate{
     display:none;
+}
+.imagem-personagem{
+    width:100%;
+    max-width:300px;
+    height:20%;
+    position:relative;
+    display:block;
+    left:31%;
+    top:0%;
+    
 }
 
 /* Dark Mode */

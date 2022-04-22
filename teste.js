@@ -1,14 +1,8 @@
-var array = {
-    sprite 
-    hp +5
-    crit -1
-    dano -5
-    erro
-    gen = m
+var array = [5,4,3,2,1]
 
-}
+console.log(array)
+array[0] = 10
+console.log(array)
 
-function escolha(){
 
-}
-123456
+

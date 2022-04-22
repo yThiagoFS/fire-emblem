@@ -120,6 +120,22 @@ html {
   cursor:pointer;
 }
 
+/* Botão da história (continuar, selects)*/
+.envelope-botoes-historia{
+  max-height:300px;
+}
+.botao-historia{
+  max-width:300px;
+  width:100%;
+  height:10%;
+  background-color:var(--bg-div);
+  font-size:20px;
+  font-weight:bolder;
+  display:block;
+  margin: 3% auto;
+  color: var(--color-text);
+}
+
 
 /* Botões para Selecionar as Classes */ 
 #opcoes-classes{
