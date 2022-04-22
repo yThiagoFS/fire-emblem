@@ -1,10 +1,14 @@
+//Constantes
+
+const container = document.getElementById('container')
+const inicioTela = document.getElementById('inicio')
+
+//Tela de inicio do jogo
+
 function inicio() {
-    var container = document.getElementById("container")
-    var itensInicio = document.getElementById('inicio');
-    
     container.style.display = 'none'
     container.innerHTML = ``
-    itensInicio.innerHTML = 
+    inicioTela.innerHTML = 
     ` 
     <div class="envelope-botoes-genero">
         <div class="botoes-genero">
@@ -22,8 +26,9 @@ function inicio() {
 
 }
 
+// Seletor de classes Masculinas 
+
 function classM() {
-    var container = document.getElementById("container")
     container.innerHTML = `
     
     <button onclick="inicio()" class="voltar-genero">Voltar</button>
@@ -88,12 +93,14 @@ function classM() {
 </form>
 `
     container.style.display = 'flex'
-    document.getElementById('container').classList.add('classes-masculino');
-    document.getElementById('inicio').innerHTML = ``
+    container.classList.add('classes-masculino');
+    inicioTela.innerHTML = ``
     
 }
+
+// Seletor de classes Femininas
+
 function classF() {
-    var container = document.querySelector("#container")
     container.innerHTML = `
     
     <button onclick="inicio()" class="voltar-genero">Voltar</button>
@@ -156,21 +163,19 @@ function classF() {
 
 `
     container.style.display = 'flex'
-    document.getElementById('inicio').innerHTML = ``
+    inicioTela.innerHTML = ``
     document.querySelector(".classes-masculino").style.display = 'flex'
-    document.getElementById('container').classList.remove('classes-masculino');
+    container.classList.remove('classes-masculino');
 
 }
 
+//Tranferir para uma arquivo que só irá conter a história. 
 
 function select(sel){
     switch(sel){
         case 1:
-            var container = document.getElementById('container')
-
             container.innerHTML = `
              
-        
             <div class="envelope-historia-personagem">
            
             <div class="historia-personagem"><p id="historia-cacadora">
@@ -187,7 +192,6 @@ function select(sel){
             break;
         
         case 2:
-            var container = document.getElementById('container')
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -202,11 +206,9 @@ function select(sel){
             `
             container.style.display = 'flex'
             container.style.width = '700px';
-            document.getElementById('inicio').innerHTML = `` 
             break;
 
         case 3:
-            var container = document.getElementById('container')
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -221,13 +223,9 @@ function select(sel){
             `
             container.style.display = 'flex'
             container.style.width = '700px';
-            document.getElementById('inicio').innerHTML = ``
-
-
             break;
 
         case 4:
-            var container = document.getElementById('container')
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -242,13 +240,9 @@ function select(sel){
             `
             container.style.display = 'flex'
             container.style.width = '700px';
-            document.getElementById('inicio').innerHTML = ``
-
-
             break;
 
         case 5:
-            var container = document.getElementById('container')
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -263,13 +257,9 @@ function select(sel){
             `
             container.style.display = 'flex'
             container.style.width = '700px';
-            document.getElementById('inicio').innerHTML = ``
-
-
             break;
 
         case 6:
-            var container = document.getElementById('container')
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -284,9 +274,6 @@ function select(sel){
             `
             container.style.display = 'flex'
             container.style.width = '700px';
-            document.getElementById('inicio').innerHTML = ``
-
-
             break;
 
     }
