@@ -2,7 +2,7 @@
     #container{
         height:1200px;
         width:700px;
-        display:none;
+        display:flex;
         
     }
     .envelope-container{

@@ -76,11 +76,10 @@ body{
     max-width: 1400px;
     width: 100%;
     height: 500px;
-    
     border: 10px ridge rgba(136, 48, 48, 0.793);
     border-radius: 20px;
     margin:  5% auto;
-    display: none;
+    display: flex;
     background-color: var(--bg-div);
     
     

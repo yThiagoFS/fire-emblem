@@ -1,0 +1,63 @@
+#inventario{
+    width:100%;
+    height:100%;
+    background-color:white;
+    z-index:100;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.item{
+    width:200px;
+    height:100px;
+    margin: 0 10px;
+    background:blue;
+    cursor:pointer;
+}
+.imagem1{
+    width:100%;
+    height:100%;
+    object-fit:100%;
+}
+.imagem2{
+    width:100%;
+    height:100%;
+    object-fit:100%;
+}
+.imagem3{
+    width:100%;
+    height:100%;
+    object-fit:100%;
+}
+.imagem4{
+    width:100%;
+    height:100%;
+    object-fit:100%;
+}
+.imagem5{
+    width:100%;
+    height:100%;
+    object-fit:100%;
+}
+.descricao-item1,
+.descricao-item2,
+.descricao-item3,
+.descricao-item4,
+.descricao-item5{
+    width:100%;
+    background:white;
+    padding:10px;
+    height:auto;
+    display:none;
+    box-shadow:0 0 20px black;
+}
+.item1:hover .descricao-item1,
+.item2:hover .descricao-item2,
+.item3:hover .descricao-item3,
+.item4:hover .descricao-item4,
+.item5:hover .descricao-item5{
+    display:block;
+}
+
+
