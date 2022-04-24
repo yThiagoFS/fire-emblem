@@ -1,4 +1,3 @@
-
 var delay = 0
 var val = 0
 var max = 0
@@ -88,7 +87,7 @@ function ataqueHero(){
 
     heroImg.setAttribute('src', hero.sprite);
     
-    delay = 2700
+    delay = hero.animacao
     var timerId = setTimeout(function(){
         heroImg.setAttribute('src', hero.img);
     }, delay);
@@ -144,7 +143,7 @@ function ataqueBoss(){
         bossImg.setAttribute('src', boss.sprite); 
         
         
-        delay = 2400
+        delay = boss.animacao
         var timerId = setTimeout(function(){
             
             var hph = document.getElementById('range1')
@@ -163,7 +162,7 @@ function ataqueBoss(){
         hph.value = val 
 
         if(hph.value == 0){
-            window.alert('você perdeu')
+            res.innerHTML = `<p>“Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”</p>`
         }
 
 
@@ -228,7 +227,8 @@ container.innerHTML = `
            
             container.style.display = 'flex';
             container.style.alignItems = 'center';
-            container.style.justifyContent = 'center';        
+            container.style.justifyContent = 'center';   
+            container.style.width = '1400px';     
     
 }
 

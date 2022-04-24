@@ -1,56 +1,65 @@
 #inventario{
-    width:100%;
-    height:100%;
-    background-color:white;
+    width:50%;
+    height:80%;
+    background-color:var(--bg-div);
     z-index:100;
     display:flex;
     align-items:center;
     justify-content:center;
-    flex-wrap:wrap;
+    flex-direction:column;
+    margin: 5% auto;
+    
 }
 .item{
-    width:200px;
-    height:100px;
-    margin: 0 10px;
-    background:blue;
+    position:relative;
+    top:-1%;
+    left:0;
+    width:100%;
+    height:50px;
+    margin:18px 0 ;
     cursor:pointer;
+    display:flex;
+    align-items:center;
+}
+#inventario>h1{
+    color:var(--color-text);
+    font-size:35px;
+    margin-top:10px;
 }
 .imagem1{
-    width:100%;
-    height:100%;
+    width:100px;
+    height:50px;
     object-fit:100%;
 }
 .imagem2{
-    width:100%;
-    height:100%;
+    width:100px;
+    height:50px;
     object-fit:100%;
 }
 .imagem3{
-    width:100%;
-    height:100%;
+    width:100px;
+    height:50px;
     object-fit:100%;
 }
 .imagem4{
-    width:100%;
-    height:100%;
+    width:100px;
+    height:50px;
     object-fit:100%;
 }
-.imagem5{
-    width:100%;
-    height:100%;
-    object-fit:100%;
-}
+
 .descricao-item1,
 .descricao-item2,
 .descricao-item3,
 .descricao-item4,
 .descricao-item5{
-    width:100%;
-    background:white;
+    word-wrap:break-word;
+    max-width:85%;
+    background-color:var(--bg-div);
     padding:10px;
-    height:auto;
+    height:50px;
     display:none;
-    box-shadow:0 0 20px black;
+    box-shadow:0 0 20px var(--color-text);
+    color:var(--color-text);
 }
 .item1:hover .descricao-item1,
 .item2:hover .descricao-item2,
@@ -61,3 +70,13 @@
 }
 
 
+
+#perfil{
+    width:60%;
+    height:70%;
+}
+
+/*
+background-image:url('https://cdnb.artstation.com/p/assets/images/images/002/587/631/large/marcos-poncio-menu-inventario.jpg?1463419680');
+background-size:225% 200%;
+background-position:center center;*/

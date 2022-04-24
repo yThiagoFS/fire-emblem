@@ -6,7 +6,8 @@ var hero = {
     ataque: [18],
     erro: [2],
     acerto: [8],
-    crit: [4]
+    crit: [4],
+    animacao: [2900]
 }
 
 var boss = {
@@ -17,7 +18,8 @@ var boss = {
     ataque: [],
     erro: [],
     acerto: [],
-    crit: []
+    crit: [],
+    animacao: []
 
 }
 
@@ -296,9 +298,13 @@ function select(sel){
                 <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
                 “Perdão por demorar com as introduções, eu sou Ru’thra, mas o senhor pode me chamar de Guardião a ponto de facilitar a sua memória. Estou em uma missão de exterminar as forças do mal, porém, minha fornalha de almas está quase no limite, caso eu continue, estou certo a perecer sem ao menos deter Ufattelig, o Rei Demônio, por eu não saber a sua localização ainda. Guerreiro, eu preciso de sua ajuda.”</p>
 
+                <button class="botao-historia" type="button" onclick="select(14)">Por quê você quer minha ajuda? </button>
+                <button class="botao-historia" type="button" onclick="select(15)">Ru’thra? Esse não é o rei do reino do Oeste?</button>
+                <button class="botao-historia" type="button" onclick="select(16)">Por quê eu?</button>
+
                 
 
-                <button class="botao-historia" type="button" onclick="select(13)"> Continuar </button>
+                
 
                 <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
                 
@@ -311,6 +317,222 @@ function select(sel){
                 container.style.maxWidth = '700px';
             
             break;
+
+            case 14:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Você foi um dos únicos guerreiros que me encontrou nessas terras desertas. O último humano que vi foi um dos meus súditos, que morreu em batalha a pouco tempo. Só você consegue me ajudar a derrotar Ufattelig.” 
+                </p>
+
+                <button class="botao-historia" type="button" onclick="select(17)">Entendido. Irei lhe ajudar.</button>
+                <button class="botao-historia" type="button" onclick="select(18)">Eu nunca concordei com isso! Vai se ferrar!</button>
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 15:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Sim rapaz. Eu sou o Rei Lanceiro, Ru’thra, o último guardião da linhagem de guardiões que foram levantados a fim de derrotar Ufattelig. Como você já deve ter adivinhado, nós falhamos com nosso propósito, mas ainda podemos cumpri-lo.”
+                </p>
+
+                <button class="botao-historia" type="button" onclick="select(17)">Entendido. Irei lhe ajudar.</button>
+                <button class="botao-historia" type="button" onclick="select(18)">Eu nunca concordei com isso! Vai se ferrar!</button>
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 16:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Guerreiro. Eu sou incapaz de prosseguir mais um passo. Minha fornalha de almas, minha fonte de energia, está perto de se esgotar, e com o seu fim, também chegará o meu. Eu preferiria queimar nas chamas de Tártaro ao invés de garantir que nada poderá ficar no caminho de Ufattelig, os Guardiões são os únicos seres capazes de derrotá-lo, ele é forte demais para qualquer outro ser humano.”
+                </p>
+
+                <button class="botao-historia" type="button" onclick="select(17)">Entendido. Irei lhe ajudar.</button>
+                <button class="botao-historia" type="button" onclick="select(18)">Eu nunca concordei com isso! Vai se ferrar!</button>
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 17:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
+                </p>
+
+                <button class="botao-historia" type="button" onclick="select(17)">Continuar</button>
+
+                
+                
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                //Ajustar
+
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 18:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Então terei que lhe matar e esperar a próxima pessoa que concorda… Você sabe demais. Não posso deixar com que meu plano aze para Ufattelig.”
+                
+                </p>
+
+                <button class="botao-historia" type="button" onclick="select(19)">E-Espera! Eu estava zoando! É só zoeira!</button>
+                <button class="botao-historia" type="button" onclick="select(20)">Vamo nessa monte de lata. Eu vou te matar até você morrer</button>
+
+                
+                
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                
+
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 19:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-espadachim">
+                “Imaginei que você voltaria a consciência a tempo.” 
+                “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
+                
+                </p>
+
+                
+
+                
+                
+                
+
+                
+
+                
+
+                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                
+                </div>
+                </div>
+                `
+                //Ajustar
+
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+            
+            break;
+
+            case 20:
+
+                boss.nome[0] = 'Guardião'
+                boss.hp[0] = 3000
+                boss.sprite[0] = '../sprites/guardion.gif'
+                boss.img[0] = '../img/img/guardion.jpg'
+                boss.ataque[0] = 300
+                boss.erro[0] = 0
+                boss.acerto[0] = 10
+                boss.crit[0] = 100 
+                boss.animacao[0] = 8500
+
+                combate()
+                container.style.display ='flex'
+                container.style.maxWidth = "1400px";
+                container.style.height = '500px';
+
+                ataqueHero()
+
+
+                
+            
+            break;
+
+
                 
 
     }
