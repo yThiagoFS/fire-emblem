@@ -1,7 +1,134 @@
+
+#perfil{
+    margin-top:80px;
+    background-color:var(--bg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:var(--color-text);
+    transition:0.5s all ease;
+    display:flex;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:50%;
+    height:60%;
+    min-width:300px;
+    min-height:400px;
+    box-shadow:0 0 40px var(--color-text);
+}
+
+.modal-perfil-container{
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:2000;
+    display:none;
+}
+
+
+
+.modal-inventario-container{
+    width:100vw;
+    height:100vh;
+    background-color:rgba(0,0,0,.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:flex;
+    display:none;
+}
+#inventario{
+    margin-top:80px;
+    background-color:var(--bg);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:var(--color-text);
+    transition:0.5s all ease;
+    display:flex;
+    position:relative;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width:50%;
+    height:75%;
+    min-width:300px;
+    min-height:400px;
+    box-shadow:0 0 40px var(--color-text);
+    padding:20px;
+}
+.item1,
+.item2,
+.item3,
+.item4{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.imagem1,
+.imagem2,
+.imagem3,
+.imagem4{
+    max-width:20%;
+    cursor:pointer;
+}
+.descricao-item1,
+.descricao-item2,
+.descricao-item3,
+.descricao-item4{
+    box-shadow: 0 0 20px var(--color-text);
+    color:var(--color-text);
+    width:90%;
+    height:30%;
+    word-wrap:break-word;
+    display:none;
+}
+.item1:hover .descricao-item1,
+.item2:hover .descricao-item2,
+.item3:hover .descricao-item3,
+.item4:hover .descricao-item4{
+    display:block;
+}
+
+.mostrar{
+    display:flex;
+    animation:modal .6s;
+}
+
+@keyframes modal{
+    from{
+        opacity:0;
+        transform:translate3d(0,-60px,0)
+    }
+    to{
+        opacity:1;
+        transform:translate3d(0,0,0)
+    }
+}
+
+
+
+/*
+background-image:url('https://cdnb.artstation.com/p/assets/images/images/002/587/631/large/marcos-poncio-menu-inventario.jpg?1463419680');
+background-size:225% 200%;
+background-position:center center;*/
+
+
+
+/* Modal do Inventario antigo*/
+
+/* 
 #inventario{
     width:50%;
     height:80%;
-    background-color:var(--bg-div);
+    background-color:var(--bg);
     z-index:100;
     display:flex;
     align-items:center;
@@ -68,15 +195,4 @@
 .item5:hover .descricao-item5{
     display:block;
 }
-
-
-
-#perfil{
-    width:60%;
-    height:70%;
-}
-
-/*
-background-image:url('https://cdnb.artstation.com/p/assets/images/images/002/587/631/large/marcos-poncio-menu-inventario.jpg?1463419680');
-background-size:225% 200%;
-background-position:center center;*/
+*/
