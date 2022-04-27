@@ -482,22 +482,15 @@ function select(sel){
                 “Imaginei que você voltaria a consciência a tempo.” 
                 “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
                 
-                </p>
-
-                
-
-                
-                
-                
-
-                
-
-                
+                </p>                
 
                 <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
                 
                 </div>
                 </div>
+
+                <button class="botao-historia" type="button" onclick="select(21)">Continuar</button>
+
                 `
                 //Ajustar
 
@@ -532,8 +525,209 @@ function select(sel){
             
             break;
 
+            case 21:
 
+                container.innerHTML = `
+
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-espadachim">
+            Greg então parte para os reino do Norte, encontrando vários inimigos no caminho, porém facilmente acabando com eles, e eventualmente, acabando trombando com Lacerta, imediatamente assumindo a instância de batalha, por ele ser o único homem-lagarto que havia encontrado até agora. 
+            
+            </p>
+
+            <button class="botao-historia" type="button" onclick="select(22)"> Continuar </button>
+
+            <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+
+
+            </div>
+            </div>
+
+
+            `
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
+            container.style.display = 'flex'
+            container.style.maxWidth = '700px';
+            container.style.maxHeight = '700px';
+            container.style.height= '700px';
+
+            break;
+
+            case  22:
+
+            // Adicionar nas falas:
+
+
+           // Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!
+
+
+           // Mas que diabos é isso? Uma lagartixa falante? 
+
+
+            //Eu irei lhe estripar e adornar seu corpo na frente          das ruínas!
+
+
+                combate()
+                container.style.display ='flex'
+                container.style.maxWidth = "1400px";
+                container.style.height = '500px';
+                break;
                 
 
+
+                case 23:
+             container.innerHTML = `
+
+            <div class="envelope-historia-personagem">
+        
+            <div class="historia-personagem"><p id="historia-espadachim">
+            Após derrotar Lacerta, Greg acaba encontrando um papel dentro de seu bolso (Lagartos tem bolsos?) que dizia a localização de seu próximo oponente, e uma nova pista da localização de Ufattelig; a princesa do reino do Sul, corrompida pelas forças do mal. 
+            
+            </p>
+
+            <button class="botao-historia" type="button" onclick="select(24)"> Continuar </button>
+
+            <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+
+
+            </div>
+            </div>
+
+
+            `
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
+            container.style.display = 'flex'
+            container.style.maxWidth = '700px';
+            container.style.maxHeight = '700px';
+            container.style.height= '700px';
+
+            break;
+
+
+            case 24:
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><p id="historia-espadachim">
+                Sua localização não fora a coisa mais inconspicua do mundo, por ainda utilizar o caído reino dos Quebra-Escudos como seu castelo. Ao contrário de Lacerta, a princesa, Securis, era com total certeza um desafio a altura de se superar. 
+                
+                </p>
+    
+                <button class="botao-historia" type="button" onclick="select(25)"> Continuar </button>
+    
+                <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+    
+    
+                </div>
+                </div>
+    
+    
+                `
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+                container.style.maxHeight = '700px';
+                container.style.height= '700px';
+    
+                break;
+
+
+                case 25:
+
+                // Adicionar nas falas:
+
+
+                // Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?
+
+
+
+                // Droga, odeio bater em mulheres. Olha, você não pode só se render?
+ 
+
+
+                //MACHISTA!
+!
+                //Combate = espadachim vs Securis (princesa)
+
+            combate()
+
+            container.style.display ='flex'
+
+            container.style.maxWidth = "1400px";
+
+            container.style.height = '500px';
+
+            break;
+
+            case 25:
+
+                container.innerHTML = `
+
+                <div class="envelope-historia-personagem">
+            
+                <div class="historia-personagem"><p id="historia-espadachim">
+                Após derrotar Securis, ao extrair informações torturando-a, em seu último suspiro a mesma havia lhe dado a terceira pista da localização de Ufattelig, mais um de seus oficiais (para variar) um antigo invocador ermitão, Vocator, que foi corrompido pela maldade, servindo Ufattelig de uma forma menos agressiva, apenas lhe fornecendo unidades de batalha, por conseguir invocá-las, e não ativamente indo atrás de prisioneiros ou de vítimas de sua magia. 
+                
+                </p>
+    
+                <button class="botao-historia" type="button" onclick="select(26)"> Continuar </button>
+    
+                <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+    
+    
+                </div>
+                </div>
+    
+    
+                `
+                var titulo = document.getElementById('historia-espadachim')
+                typeWrite(titulo)
+                container.style.display = 'flex'
+                container.style.maxWidth = '700px';
+                container.style.maxHeight = '700px';
+                container.style.height= '700px';
+    
+                break;
+
+
+                case 26:
+
+                       // Adicionar nas falas:
+
+
+                // Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…
+
+
+
+                // Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.
+ 
+
+
+                //Impossível! Você não vai passar!
+
+
+                // combate = espadachim vs Vocator
+
+                combate()
+
+                container.style.display ='flex'
+
+                container.style.maxWidth = "1400px";
+
+                container.style.height = '500px';
+
+                break;
+            
     }
+
+                
+   
+
+    
+       
 }
