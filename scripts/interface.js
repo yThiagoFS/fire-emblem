@@ -57,7 +57,7 @@ function inicio() {
     </div>
     `
 
-    document.getElementById('audio').innerHTML =`<source src="../audios/The Streets of Whiterun.mp3" type="audio/mpeg">`
+    document.getElementById('audio').innerHTML =`<source src="music/The Streets of Whiterun.mp3" type="audio/mpeg">`
     audio.play()
 
 }
