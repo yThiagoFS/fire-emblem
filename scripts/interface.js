@@ -6,6 +6,41 @@ const opcoesCombate = document.getElementById('opcoes-combate')
 
 //Tela de inicio do jogo
 
+
+function play(){
+    audio.play();
+}
+
+function pause(){
+    audio.pause();
+}
+
+function stop(){
+    audio.pause();
+    audio.currentTime = 0;
+}
+
+function aumentar_volume(){
+    if( audio.volume < 1)  audio.volume += 0.1;
+}
+
+function diminuir_volume(){
+    if( audio.volume > 0)  audio.volume -= 0.1;
+}
+     
+function mute(){
+    var btnMuted = document.querySelector('.mute')
+    btnMuted.classList.toggle('fa-volume-mute')
+
+
+
+    if( audio.muted ){
+        audio.muted = false;
+    }else{
+        audio.muted = true;
+    }
+}
+
 function inicio() {
     container.style.display = 'none'
     container.innerHTML = ``
@@ -22,8 +57,8 @@ function inicio() {
     </div>
     `
 
-    document.getElementById('audio').innerHTML =`<audio autoplay loop>
-    <source src="../audios/X2Download.com - TES V Skyrim Soundtrack - The Streets of Whiterun (128 kbps).mp3" type="audio/mp3"></audio>`
+    document.getElementById('audio').innerHTML =`<source src="../audios/The Streets of Whiterun.mp3" type="audio/mpeg">`
+    audio.play()
 
 }
 

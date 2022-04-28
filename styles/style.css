@@ -179,6 +179,14 @@ body{
     
 }
 
+.mute{
+    color: var(--color-text);
+    background-color: var(--bg-div);
+    font-size: 1.2em;
+    position: absolute;
+    top: 0;
+}
+
 
 
 
