@@ -146,10 +146,10 @@ function ataqueBoss(){
         delay = boss.animacao
         var timerId = setTimeout(function(){
             
-            var hph = document.getElementById('range1')
-            val = hph.value
-            max = hph.max
-            min = hph.min
+            var heroVida = document.getElementById('range1')
+            val = heroVida.value
+            max = heroVida.max
+            min = heroVida.min
             val -= dano
 
 
@@ -158,16 +158,16 @@ function ataqueBoss(){
             porcent = 0
         }
 
-        hph.style.backgroundSize = porcent + '% 100%'
-        hph.value = val 
+        heroVida.style.backgroundSize = porcent + '% 100%'
+        heroVida.value = val 
 
-        if(hph.value == 0){
-            res.innerHTML = `<p>“Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”</p>`
+        if(heroVida.value == 0){
+            res.innerHTML = `<p>“${boss.fala}”</p>`
         }
 
 
-        hph.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
-        hph.value = val   
+        heroVida.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+        heroVida.value = val   
             var bossImg = document.getElementById('bossImg')
             bossImg.setAttribute('src', boss.img);    
         }, delay);  

@@ -19,7 +19,9 @@ var boss = {
     erro: [],
     acerto: [],
     crit: [],
-    animacao: []
+    animacao: [],
+    fala: []
+
 
 }
 
@@ -503,15 +505,16 @@ function select(sel){
 
             case 20:
 
-                boss.nome[0] = 'Guardião'
-                boss.hp[0] = 3000
-                boss.sprite[0] = '../sprites/guardion.gif'
-                boss.img[0] = '../img/img/guardion.jpg'
-                boss.ataque[0] = 300
-                boss.erro[0] = 0
-                boss.acerto[0] = 10
-                boss.crit[0] = 100 
-                boss.animacao[0] = 8500
+                boss.nome = 'Guardião'
+                boss.hp = 3000
+                boss.sprite = '../sprites/guardion.gif'
+                boss.img = '../img/img/guardion.jpg'
+                boss.ataque = 300
+                boss.erro = 0
+                boss.acerto = 10
+                boss.crit = 100 
+                boss.animacao = 8500
+                boss.fala = 'Ih morreu!!'
 
                 combate()
                 container.style.display ='flex'
