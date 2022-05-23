@@ -828,7 +828,7 @@ function select(sel){
         
                     <button class="botao-historia" type="button" onclick="select(228)"> Continuar </button>
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -883,7 +883,7 @@ function select(sel){
         
                     <button class="botao-historia" type="button" onclick="select(230)"> Continuar </button>
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1028,7 +1028,7 @@ function select(sel){
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-quebra-escudos-f">
-                    Ao contrário do que se esperava, surpreendentemente, o mago estava em um campo completamente aberto, parecendo estar atrás do Espadachim em si, como se também estivesse ansioso para a luta, introduzindo-se formalmente. 
+                    Ao contrário do que se esperava, surpreendentemente, o mago estava em um campo completamente aberto, parecendo estar atrás da Quebra-Escudos em si, como se também estivesse ansioso para a luta, introduzindo-se formalmente.  
 
                     </p>    
         
@@ -1054,41 +1054,28 @@ function select(sel){
 
                     case 234: 
 
-                    hero.dialogo = `<p>Espadachim: “Guerreira! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitada!</p>`
+                    hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreira. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.“</p> <p>Quebra-Escudos: Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Mago Corrompido: Não seja por isso “amiga”, um mago como eu nem ao menos precisa de armas contra você…</p>`
                     combateFake('combate')
 
-                    //FAZER OS SPRITES 
 
-                    boss.nome = 'Espadachim Corrompido'
-                    boss.hp = 235
-                    boss.sprite = '../sprites/Espadachim Corrompido.gif'
-                    boss.img = '../img/img/Espadachim Corrompido.jpg'
-                    boss.ataque = 15
-                    boss.erro = 4
+
+        
+                    boss.nome = 'Mago Corrompido'
+                    boss.hp = 150
+                    boss.sprite = '../sprites/Mago Corrompido.gif'
+                    boss.img = '../img/img/Mago Corrompido.jpg'
+                    boss.ataque = 25
+                    boss.erro = 7
                     boss.acerto = 9
-                    boss.crit = 10 
-                    boss.animacao = 2300
+                    boss.crit = 10
+                    boss.animacao = 2300 ;
+
 
                      
-                   
-                    hero.dialogo = `<p>Espadachim: “Guerreira! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitada!</p>`
-                    combateFake('combate')
-
-                    //FAZER OS SPRITES 
-
-                    boss.nome = 'Espadachim Corrompido'
-                    boss.hp = 235
-                    boss.sprite = '../sprites/Espadachim Corrompido.gif'
-                    boss.img = '../img/img/Espadachim Corrompido.jpg'
-                    boss.ataque = 15
-                    boss.erro = 4
-                    boss.acerto = 9
-                    boss.crit = 10 
-                    boss.animacao = 2300
 
                     break;
 
-                    case 39: 
+                    case 235: 
 
                     container.innerHTML = `
 
@@ -1103,12 +1090,12 @@ function select(sel){
 
                     </p>
         
-                    <button class="botao-historia" type="button" onclick="select(40)"> Continuar
+                    <button class="botao-historia" type="button" onclick="select(236)"> Continuar
                     </button>
 
                    
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1125,7 +1112,7 @@ function select(sel){
 
                     break;
 
-                    case 40: 
+                    case 236: 
 
                     container.innerHTML = `
 
@@ -1147,7 +1134,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1191,7 +1178,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1229,7 +1216,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1284,7 +1271,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1320,7 +1307,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1355,7 +1342,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1388,7 +1375,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1425,7 +1412,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
@@ -1461,7 +1448,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="../img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="../img/img/Axe_F.jpg"></div>
         
         
                     </div>
