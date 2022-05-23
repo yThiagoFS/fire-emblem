@@ -184,46 +184,61 @@ const res = document.getElementById('res')
 
 opcoesCombate.style.display = 'block'
 
+opcoesCombate.innerHTML = `
+
+            <form action="" id="opcoes-classes">
+                <div class="opcoes">
+                    <div class="middle">
+                        <button onclick="atacar()">
+                        <a href=" #" class="classe classe5">Atacar</a></button>
+                        <button onclick="recuperar()">
+                            <a href="#" class="classe classe6">Recuperar Vida</a></button>
+                    </div>
+                </div>
+            </form>
+
+`
+
 
    
 container.innerHTML = `
 
-    <div id="hero">
-    <form>
-        <input type="range" min="0" max="${hero.hp}" value="${hero.hp}" id="range1" onclick="atacar()">
-    </form>
-    <img class="imgHero" id="heroImg" src="${hero.img}">
-</div>
+                <div id="hero">
+                <form>
+                    <input type="range" min="0" max="${hero.hp}" value="${hero.hp}" id="range1" onclick="atacar() disabled">
+                </form>
+                <img class="imgHero" id="heroImg" src="${hero.img}">
+            </div>
 
 
 
-<div id="textos">
+            <div id="textos">
 
-    <div class="dialogos" id='res'>
+                <div class="dialogos" id='res'>
 
-    </div>
+                </div>
 
-</div>
-
-
-<div id="boss">
-    <form>
-        <input type="range" min="0" max="${boss.hp}" value="${boss.hp}" id="range2" onclick="atacar()">
-    </form>
-    <img class="imgBoss" id="bossImg" src="${boss.img}">
+            </div>
 
 
-</div>
+            <div id="boss">
+                <form>
+                    <input type="range" min="0" max="${boss.hp}" value="${boss.hp}" id="range2" onclick="atacar()"disabled>
+                </form>
+                <img class="imgBoss" id="bossImg" src="${boss.img}">
 
-<div class="opcoes-ataque-hero">
 
-</div>
+            </div>
 
-<div class="opcoes-ataque-boss">
+            <div class="opcoes-ataque-hero">
 
-</div>            
-            
- `
+            </div>
+
+            <div class="opcoes-ataque-boss">
+
+            </div>            
+                        
+            `
            
             container.style.display = 'flex';
             container.style.alignItems = 'center';
@@ -231,6 +246,75 @@ container.innerHTML = `
             container.style.width = '1400px';     
     
 }
+
+function combateFake(selCombate){
+
+    const res = document.getElementById('res')    
+    
+    opcoesCombate.style.display = 'block'
+
+    opcoesCombate.innerHTML = `
+    
+    <form action="" id="opcoes-classes">
+    <div class="opcoes">
+        <div class="middle">
+            <button onclick="${selCombate}">
+            <a href=" #" class="classe classe5">CONTINUAR</a></button>
+            
+        </div>
+    </div>
+</form>
+
+    
+    `
+    
+    
+       
+    container.innerHTML = `
+    
+                    <div id="hero">
+                    <form>
+                        <input type="range" min="0" max="${hero.hp}" value="${hero.hp}" id="range1" onclick="atacar()" disabled>
+                    </form>
+                    <img class="imgHero" id="heroImg" src="${hero.img}">
+                </div>
+    
+    
+    
+                <div id="textos">
+    
+                    <div class="dialogos" id='res'>
+                        ${hero.dialogo}
+                    </div>
+    
+                </div>
+    
+    
+                <div id="boss">
+                    <form>
+                        <input type="range" min="0" max="${boss.hp}" value="${boss.hp}" id="range2" onclick="atacar()" disabled>
+                    </form>
+                    <img class="imgBoss" id="bossImg" src="${boss.img}">
+    
+    
+                </div>
+    
+                <div class="opcoes-ataque-hero">
+    
+                </div>
+    
+                <div class="opcoes-ataque-boss">
+    
+                </div>            
+                            
+                `
+               
+                container.style.display = 'flex';
+                container.style.alignItems = 'center';
+                container.style.justifyContent = 'center';   
+                container.style.width = '1400px';     
+        
+    }
 
         
 
