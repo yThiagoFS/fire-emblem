@@ -79,7 +79,7 @@ body{
     border: 10px ridge rgba(136, 48, 48, 0.793);
     border-radius: 20px;
     margin:  5% auto;
-    display: flex;
+    display: none;
     background-color: var(--bg-div);
     transition: 1s all ease;
 }
