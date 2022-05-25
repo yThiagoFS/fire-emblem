@@ -46,7 +46,7 @@
                 
                     <div class="historia-personagem"><p id="historia-Espadachim">
                     Sua jornada fora nada além do que um desejo carnal. A simples metodologia do reino do Oeste para conseguir alcançar os seus desejos independente de lealdade, honra, ou moral, a simples ideia de seguir o que você acredita era quase como um lema para os espadachins.
-                    Mercenários, bandidos, aventureiros, heróis ou soldados, qualquer meio que lhe possibilitasse os resultados desejados era mais que bem vindo, independente de quais meios deveriam ser tomados, por causa disso, os espadachins eram extremamente versáteis em seus cargos.
+                    Seguir seus desejos era extremamente importante, ao ponto que, as únicas coisas que lhe faziam voltar atrás com uma decisão geralmente eram desejos de outras pessoas, ou a sua motivação para seguir sua decisão não era mais tão intensa.
 
 
                     
@@ -75,8 +75,7 @@
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-Espadachim">
-                    A guerra contra Ufattelig foi uma terrível guerra para todos os reinos, os cavaleiros foram dizimados, os espadachins, que meio que já estavam separados mesmo, ficaram ainda mais distantes, os lanceiros, com sua disciplina e lealdade, haviam perdido seu mártir mais valioso, seu próprio rei, e as terras além do reino ficaram ainda mais caótica do que eram antes, com o ressurgimento e ocupação de forças malignas, que impregnava as florestas como rios, e matava a plantação como se fossem um poderoso veneno. 
-
+                    Mercenários, bandidos, aventureiros, heróis ou soldados, qualquer meio que lhe possibilitasse os resultados desejados era mais que bem vindo, independente de quais meios deveriam ser tomados, por causa disso, os espadachins eram extremamente versáteis em seus cargos, e normalmente impossíveis de se prever. Ver um espadachim andando por aí, era extremamente raro dizer se era um guerreiro que segue a luz, e ajuda velhinhas a levarem suas compras, ou um rufião que rouba doce de criança e bate na denominada velhinha, as variedades eram imprevisíveis! 
                     
                     </p>
 
@@ -105,7 +104,7 @@
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-Espadachim">
-                    Os Espadachim? Óbvio que encontrar um inimigo que era incapaz de meter o soco no primeiro encontro foi algo devastador, para todos os habitantes, algo mais impactante do que perder seu rei ou seu reino inteiro. Sua honra estava completamente dizimada, o que fez a maioria deles perder o espírito de luta e lentamente aguardar a sua morte, ou apenas desistir de seguir seus princípios, resultando em vários mercenários e até mesmo recrutas novos para Ufattelig, pelo simples fato de seus espíritos estiver em pedaços.
+                    Segue a história de Greg, um espadachim mercenário que fez seu nome nas terras além dos reinos, não só ganhando o seu tão desejado dinheiro, como também arrecadando reputação e oportunidades com seu nome. A guerra contra Ufattelig não lhe abalou nem um pouco, afinal sua lealdade e patriotismo ao seu reino já se foram faz tempo, porém uma preocupação queimava em seu peito; “e se eles perderem? E se as forças do mal acabarem com o mundo? Sem o mundo, não consigo seguir meus desejos, meus objetivos de vida!” Logo, o mesmo decidiu sair em uma jornada contra as forças do mal a fim de preservar a sua vida de desejos.
 
                     
                     </p>
@@ -133,8 +132,7 @@
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-Espadachim">
-                    ${hero.nome} foi uma das primeiras a levantar a bandeira de resistência contra Ufattelig, pois sabia que lutar ou desistir ainda resultaria em morte, de que importava cair lutando? Portanto, regularmente ia em expedições voluntárias com outros sobreviventes da guerra em tentativas de reconquistar território, e muitas vezes, essas pequenas batalhas resultaram em perdas para o lado da humanidade. Havia muitas poucas pessoas com habilidades em combate, pois a maioria dos guerreiros haviam morrido na grande guerra. 
-
+                    No começo de sua jornada, o mesmo já era consideravelmente forte o suficiente para derrotar criaturas como goblins, trolls ou até orcs, mesmo nunca tendo um talento inato, sua versatilidade era o que mais dominava o seu estilo de combate. Entretanto, e quanto a um inimigo extraordinário? Por não ser especializado em velocidade, era incapaz de correr e incapaz de uma batalha impossível de ser ganha, e por não ter uma força descomunal também não conseguia resolver os problemas com força bruta.
                     
                     </p>
 
@@ -165,7 +163,7 @@
                     
                     </p>
 
-                    <button class="botao-historia" type="button" onclick="select(10)"> Atacar o Ser de armadura </button>
+                    <button class="botao-historia" type="button" onclick="select(10)"> Atacar o ser de armadura </button>
                     <button class="botao-historia" type="button" onclick="select(11)"> Esperar e ver o que ele quer </button>
                     <button class="botao-historia" type="button" onclick="select(12)"> Tentar conversar com a figura</button>
                     
@@ -215,7 +213,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Olha só, achei que você era só um franguinho sem coragem de revidar o mínimo de intimidação, parece que subestimei você até demais.”</p>
+                        Guardião: “Olha só, achei que você era só um franguinho sem coragem de revidar o mínimo de intimidação, parece que subestimei você até demais.”</p>
 
                         
                         
@@ -239,7 +237,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Nada mal. Sua forma física não decai em nenhum aspecto. Não que você seja muito bom em alguma parte, já é satisfatório saber que você não é horrível.”</p>
+                        Guardião: “Nada mal. Sua forma física não decai em nenhum aspecto. Não que você seja muito bom em alguma parte, já é satisfatório saber que você não é horrível.”</p>
 
                         
                         
@@ -286,7 +284,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Perdão por demorar com as introduções, eu sou Ru’thra, mas o senhor pode me chamar de Guardião a ponto de facilitar a sua memória. Estou em uma missão de exterminar as forças do mal, porém, minha fornalha de almas está quase no limite, caso eu continue, estou certo a perecer sem ao menos deter Ufattelig, o Rei Demônio, por eu não saber a sua localização ainda. Guerreiro, eu preciso de sua ajuda.”</p>
+                        Guardião: “Perdão por demorar com as introduções, eu sou Ru’thra, mas o senhor pode me chamar de Guardião a ponto de facilitar a sua memória. Estou em uma missão de exterminar as forças do mal, porém, minha fornalha de almas está quase no limite, caso eu continue, estou certo a perecer sem ao menos deter Ufattelig, o Rei Demônio, por eu não saber a sua localização ainda. Guerreiro, eu preciso de sua ajuda.”</p>
 
                         <button class="botao-historia" type="button" onclick="select(14)">Por quê você quer minha ajuda? </button>
                         <button class="botao-historia" type="button" onclick="select(15)">Ru’thra? Esse não é o rei do reino do Oeste?</button>
@@ -314,7 +312,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Você foi um dos únicos guerreiros que me encontrou nessas terras desertas. O último humano que vi foi um dos meus súditos, que morreu em batalha a pouco tempo. Só você consegue me ajudar a derrotar Ufattelig.” 
+                        Guardião: “Você foi um dos únicos guerreiros que me encontrou nessas terras desertas. O último humano que vi foi um dos meus súditos, que morreu em batalha a pouco tempo. Só você consegue me ajudar a derrotar Ufattelig.” 
                         </p>
 
                         <button class="botao-historia" type="button" onclick="select(17)">Entendido. Irei lhe ajudar.</button>
@@ -401,7 +399,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
+                        Guardião: “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
                         </p>
 
                         <button class="botao-historia" type="button" onclick="select(21)">Continuar</button>
@@ -437,7 +435,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Então terei que lhe matar e esperar a próxima pessoa que concorda… Você sabe demais. Não posso deixar com que meu plano aze para Ufattelig.”
+                        Guardião: “Então terei que lhe matar e esperar a próxima pessoa que concorda… Você sabe demais. Não posso deixar com que meu plano vaze para Ufattelig.”
                         
                         </p>
 
@@ -475,8 +473,8 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
-                        “Imaginei que você voltaria a consciência a tempo.” 
-                        “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
+                        Guardião: “Imaginei que você voltaria a consciência a tempo.” 
+                        Guardião: “Vá para o Norte aventureiro, onde o caído reino dos cavaleiros ainda mantém suas ruínas. Encontre um dos capatazes de Ufattelig, Lacerta, um homem-lagarto que traz escravos e prisioneiros de guerra para o exército das forças do mal, ele será seu desafio mais fácil, porém ainda será um desafio. Encontre informações da localização de Ufattelig através dele, e quando você achá-lo, eu estarei lá.”
                         
                         </p>                
 
@@ -565,7 +563,7 @@
                     case  22:
 
 
-                        hero.dialogo = `<p>Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p> <p>Mas que diabos é isso? Uma lagartixa falante? </p> <p>Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>`
+                        hero.dialogo = `<p>Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!”</p> <p>Greg: “Mas que diabos é isso? Uma lagartixa falante?”</p> <p>Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”</p>`
 
 
                         boss.nome = 'Lagartixa Falante'
@@ -627,7 +625,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><p id="historia-Espadachim">
-                        Sua localização não fora a coisa mais inconspicua do mundo, por ainda utilizar o caído reino dos Espadachim como seu castelo. Ao contrário de Lacerta, a princesa, Securis, era com total certeza um desafio a altura de se superar. 
+                        Sua localização não fora a coisa mais inconspicua do mundo, por ainda utilizar o caído reino dos Quebra-Escudos como seu castelo. Ao contrário de Lacerta, a princesa, Securis, era com total certeza um desafio a altura de se superar. 
                         
                         </p>
             
@@ -653,7 +651,7 @@
 
                         case 25:
 
-                        hero.dialogo = `<p>Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</p> <p>Droga, odeio bater em mulheres. Olha, você não pode só se render?</p> <p>MACHISTA!</p>`
+                        hero.dialogo = `<p>Securis: “Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p>Greg: “Pra uma princesa, seu cabelo é bem uó, sua bruaca!”</p> <p>Securis: “ABSURDO! SE LIGA HEIN ESPADACHIM!”</p>`
                         combateFake('combate()')
 
                         boss.nome = 'Securis'
@@ -684,7 +682,7 @@
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><p id="historia-Espadachim">
-                        Após derrotar Securis, ao extrair informações torturando-a, em seu último suspiro a mesma havia lhe dado a terceira pista da localização de Ufattelig, mais um de seus oficiais (para variar) um antigo invocador ermitão, Vocator, que foi corrompido pela maldade, servindo Ufattelig de uma forma menos agressiva, apenas lhe fornecendo unidades de batalha, por conseguir invocá-las, e não ativamente indo atrás de prisioneiros ou de vítimas de sua magia. 
+                        Após derrotar Securis, a mesma convenientemente havia dissipado as forças do mal de seu corpo (bem convenientemente, como se fosse uma história…) informando o bravo “herói” de mais uma pista da localização de Ufattelig, mais um de seus oficiais (para variar) um antigo invocador ermitão, Vocator, que foi corrompido pela maldade, servindo Ufattelig de uma forma menos agressiva, apenas lhe fornecendo unidades de batalha, por conseguir invocá-las, e não ativamente indo atrás de prisioneiros ou de vítimas de sua magia, ou seja, um covardão que não aguenta ver sangue.
                         
                         </p>
             
@@ -710,7 +708,7 @@
 
                         case 27:
                             
-                        hero.dialogo = `<p>Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</p> <p>Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</p> <p>Impossível! Você não vai passar!</p>`
+                        hero.dialogo = `<p>Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p> <p>Greg: “Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.”</p> <p>Vocator: “Impossível! Você não vai passar!”</p>`
 
                         combateFake('combate()')
 
@@ -905,7 +903,7 @@
 
                             case 33: 
 
-                            hero.dialogo = `<p>Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</p>`
+                            hero.dialogo = `<p>Espadachim Corrompido: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Greg: “Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.”</p> <p>Espadachim Corrompido: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”</p>`
                             combateFake('combate')
 
                             //FAZER OS SPRITES 
@@ -975,7 +973,7 @@
                             <button class="botao-historia" type="button" onclick="select(41)"> Acho que vou dar uma olhada no que tem ali, com certeza não é algo de errado, né? Vai que encontro alguns pães de alho ali, com um churras e uma grelha daquelas!
                             </button>
 
-                            <button class="botao-historia" type="button" onclick="select()"> Não posso me distrair agora, por mais que eu queira muito, muito, muito ir… Não posso! Cada segundo importa, e não sei se o Ufattelig sei lá, pula da janela pra fugir!
+                            <button class="botao-historia" type="button" onclick="select(45)"> Não posso me distrair agora, por mais que eu queira muito, muito, muito ir… Não posso! Cada segundo importa, e não sei se o Ufattelig sei lá, pula da janela pra fugir!
                             </button>
                 
                             <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
@@ -1070,7 +1068,7 @@
                             
                             case 38: 
 
-                            hero.dialogo = `<p>Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</p> <p>Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</p>`
+                            hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.”</p> <p>Greg: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Mago Corrompido: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…”</p>`
                             combateFake('combate()')
 
                             boss.nome = 'Mago Corrompido'
@@ -1094,7 +1092,7 @@
                             <div class="historia-personagem"><p id="historia-espadachim">
                             Quem diria que um mago seria tão poderoso assim? Greg que o diga. Derrotá-lo foi mais difícil do que matar barata com veneno, nem quando achava que ganharia havia ganhado de fato, e a batalha havia se alastrado demais. Obviamente, após derrotá-lo, roubar seus pertences e roupa era o mais cordial, o que um cadáver tem a dizer sobre perder o que é seu?
                             Entre seus itens, havia um mapa da localização do castelo de Ufattelig, o qual usou para seguir em frente, no caminho, acaba lembrando-se de um fator indispensável!
-                            Greg: “AHH! EU NEM CONSEGUI SEQUER UMA PISTA DOS GUARDIÕES!”
+                            Greg: “AHH! EU NEM CONSEGUI SEQUER UMA PISTA DOS GUARDIÕES, O IDIOTA MORREU SÓ ME AMEAÇANDO!”
                             Mesmo que tivesse seus arrependimentos, a sua jornada estava beirando ao fim.
 
 
@@ -1129,7 +1127,7 @@
                             <div class="envelope-historia-personagem">
                         
                             <div class="historia-personagem"><p id="historia-espadachim">
-                            O castelo era extremamente imponente, chegando até as nuvens com suas torres altas, com a sua grama extremamente morta, e até com alguns restos mortais espalhados por aqui e ali. Como assim, o rei do mal não limpava o quintal? Absurdo!
+                            O castelo era extremamente imponente, chegando até as nuvens com suas torres altas, com a sua grama estranhamente viva, e até com alguns restos mortais espalhados por aqui e ali. Como assim, o rei do mal não limpava o quintal? Absurdo!
                             Ao olhar aos arredores do castelo, havia uma área mais morta do que o normal, onde a terra era seca e extremamente preta, lembrando o carvão, se quisesse, poderia simplesmente ignorar a anormalidade sem quaisquer problemas. Quem se importa que a terra parecia carvão naquela parte? Mas um pequeno impulso pulsava na cabeça de Greg, “O que será que tem lá? Eu quero ver o que tem lá”, por seguir seus desejos, tal escolha era algo normal em seu dia a dia, por pura curiosidade tinha vontade de trilhar caminhos paralelos a sua jornada.
 
 
@@ -1245,7 +1243,7 @@
 
                             case 43: 
 
-                            hero.dialogo = `<p> Dragão: CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</p> <p>Até o largartão parecia mais desafiante que você!</p> <p>IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</p>` 
+                            hero.dialogo = `<p> Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?” </p> <p>Greg: “Até o largartão parecia mais desafiante que você!” </p> <p>Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!” </p>` 
 
                             combateFake('combate()')
 
