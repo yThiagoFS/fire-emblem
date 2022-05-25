@@ -443,13 +443,25 @@ function select(sel){
             break;
 
             case 116:
+                        boss.nome = 'Guardião'
+                        boss.hp = 3000
+                        boss.sprite = './sprites/guardion.gif'
+                        boss.img = './img/img/guardion.jpg'
+                        boss.ataque = 300
+                        boss.erro = 0
+                        boss.acerto = 10
+                        boss.crit = 100 
+                        boss.animacao = 8500
+                        boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
+
+                        combate()
+                        container.style.display ='flex'
+                        container.style.maxWidth = "1400px";
+                        container.style.height = '500px';
+
+                        ataqueHero()
 
 
-
-
-
-
-                //ADICIONAR A FALA: Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”
 
                 // COMBATE QUE FAZ O JOGADOR PERDER
 
@@ -501,13 +513,27 @@ function select(sel){
 
                 // Chamar o combate contra a Lacerta
             
+               
+                 hero.dialogo = `<p>Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p><p>Vigvisir: “Já comi lagarto queimado em expedições.. Espero que não queime esse.”</p><p>Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”</p>`
                 
-                
-               /* Fala:
-                Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!”
-                Vigvisir: “Já comi lagarto queimado em expedições.. Espero que não queime esse.”
-                Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”*/ 
+                        boss.nome = 'Lagartixa Falante'
+                        boss.hp = 45
+                        boss.sprite = './sprites/calango.gif'
+                        boss.img = './img/img/calango.jpg'
+                        boss.ataque = 18
+                        boss.erro = 4
+                        boss.acerto = 8
+                        boss.crit = 10 
+                        boss.animacao = 2300
 
+                        hero.historia = 'select(120)'
+
+                        combateFake('combate()')
+                        
+                        container.style.display ='flex'
+                        container.style.maxWidth = "1400px";
+                        container.style.height = '500px';
+                        break;
 
                 
                
@@ -578,11 +604,32 @@ function select(sel){
 
                 // Combate contra a Securis
 
-                /*Adicionar as falas:  
-                Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”
-                Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”
-                Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”
-                */
+               
+                 hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p> 
+
+             
+            
+                  combateFake('combate()')
+
+                        boss.nome = 'Securis'
+                        boss.hp = 80
+                        boss.sprite = './sprites/Securis.gif'
+                        boss.img = './img/img/Securis.jpg'
+                        boss.ataque = 40
+                        boss.erro = 6
+                        boss.acerto = 7
+                        boss.crit = 8
+                        boss.animacao = 2300
+
+
+
+                    container.style.display ='flex'
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
+
+                 
 
             break;
 
@@ -620,11 +667,21 @@ function select(sel){
 
                 // Combate contra o Vocator
 
-                /* Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”
-                Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”
-                Vocator: “Impossível! Você não vai passar!”
-                */
+               hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>
 
+                
+             
+                        combateFake('combate()')
+
+                        boss.nome = 'Vocator'
+                        boss.hp = 110 
+                        boss.sprite = './sprites/voLcator.gif'
+                        boss.img = './img/img/volcator.jpg'
+                        boss.ataque = 25
+                        boss.erro = 4
+                        boss.acerto = 8
+                        boss.crit = 10 
+                        boss.animacao = 7200
             break;
 
             case 125:
@@ -798,11 +855,18 @@ function select(sel){
 
                 // Combate do Vigsivir contra o Espadachim
 
-                /*Adicionar as falas:
-                Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“ 
-                Vigvisir: “Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.”
-                Espadachim: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”
-                */
+             hero.dialogo = `<p>Espadachim Corrompido: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Vigvisir: “Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.”</p> <p>Espadachim Corrompido: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”</p>`
+                            combateFake('combate')
+
+                            boss.nome = 'Espadachim Corrompido'
+                            boss.hp = 235
+                            boss.sprite = './sprites/Espadachim Corrompido.gif'
+                            boss.img = './img/img/Espadachim Corrompido.jpg'
+                            boss.ataque = 15
+                            boss.erro = 4
+                            boss.acerto = 9
+                            boss.crit = 10 
+                            boss.animacao = 2300
 
             break;
 
@@ -980,10 +1044,18 @@ function select(sel){
 
                 // Combate entre o Vigvisir
 
-               /*  Mago: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.” 
-               Vigvisir: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!”
-               Mago: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…” 
-               */
+                hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.”</p> <p>Vigvisir: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!”</p> <p>Mago Corrompido: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…”</p>`
+                            combateFake('combate()')
+
+                            boss.nome = 'Mago Corrompido'
+                            boss.hp = 150
+                            boss.sprite = './sprites/Mago Corrompido.gif'
+                            boss.img = './img/img/Mago Corrompido.jpg'
+                            boss.ataque = 25
+                            boss.erro = 7
+                            boss.acerto = 9
+                            boss.crit = 10
+                            boss.animacao = 2300
 
 
             break;
@@ -1032,7 +1104,7 @@ function select(sel){
                 <div class="envelope-historia-personagem">
             
                 <div class="historia-personagem"><p id="historia-quebra-escudos-m">
-                O castelo era extremamente imponente, chegando até as nuvens com suas torres altas, com a sua grama extremamente morta, e até com alguns restos mortais espalhados por aqui e ali. Como assim, o rei do mal não limpava o quintal? Absurdo!
+                O castelo era extremamente imponente, chegando até as nuvens com suas torres altas, com a sua grama estranhamente viva, e até com alguns restos mortais espalhados por aqui e ali. Como assim, o rei do mal não limpava o quintal? Absurdo!
                 Ao olhar aos arredores do castelo, havia uma área mais morta do que o normal, onde a terra era seca e extremamente preta, lembrando o carvão, se quisesse, poderia simplesmente ignorar a anormalidade sem quaisquer problemas. Quem se importa que a terra parecia carvão naquela parte? Mas um pequeno impulso pulsava na cabeça de Vigvisir, “O que será que tem lá? Eu quero ver o que tem lá”, por seguir seus desejos, tal escolha era algo normal em seu dia a dia, por pura curiosidade tinha vontade de trilhar caminhos paralelos a sua jornada.
 
                 
@@ -1140,18 +1212,27 @@ function select(sel){
 
             case 141:
 
-               // Combate do Vigvisir contra o dragão 
-               /*Falas:
-               Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA L MINA FÉTIDA CONTRA MINHA NOBRE CARNE?” 
-               Vigvisir: “Até o largartão parecia mais desafiante que você!” 
-               Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!”
-               */
+              hero.dialogo = `<p> Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?” </p> <p>Vigvisir: “Até o largartão parecia mais desafiante que você!” </p> <p>Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!” </p>` 
 
-               /*Quando o dragao tiver 1 de vida:
-               Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”
-               “Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM,   Ufattelig!?” 
-               Vigvisir: “Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”
-               */
+                            combateFake('combate()')
+
+
+                            boss.nome = 'Dragão'
+                            boss.hp = 800
+                            boss.sprite = './sprites/dragon.gif'
+                            boss.img = './img/img/dragon1.jpg'
+                            boss.ataque = 35
+                            boss.erro = 7
+                            boss.acerto = 9
+                            boss.crit = 10 
+                            boss.animacao = 6200
+
+                            break;
+
+                            case 4333: 
+
+                            hero.dialogo = `<p>Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</p> <p>Dragão: “Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, UFATTELIG!?” </p> <p>${hero.nome}: Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</p>` 
+                            combateFake('select(142)')
 
             break;
 
@@ -1292,6 +1373,28 @@ function select(sel){
 
             break;
 
+                            case 4888: 
+
+                            boss.nome = 'Ufattelig'
+                            boss.hp = 1500
+                            boss.sprite = './sprites/Ufattelig.gif'
+                            boss.img = './img/img/Ufattelig.jpg'
+                            boss.ataque = hero.hp - 1
+                            boss.erro = 0
+                            boss.acerto = 10
+                            boss.crit = 0 
+                            boss.animacao = 2300
+
+                            combateFake('select(146)')
+                            ataqueFake()
+
+                            var titulo = document.getElementById('historia-espadachim')
+                            typeWrite(titulo)
+                            container.style.display = 'flex'
+                            container.style.maxWidth = '700px';
+                            container.style.maxHeight = '700px';
+                            container.style.height= '700px';
+
             case 146:
 
                 container.innerHTML = `
@@ -1391,18 +1494,34 @@ function select(sel){
 
             case 149:
 
-                // Combate do Guardião vs Ufatteing
+            boss.nome = 'Ufattelig'
+                            boss.hp = 1500
+                            boss.sprite = './sprites/Ufattelig.gif'
+                            boss.img = './img/img/Ufattelig.jpg'
+                            boss.ataque = 150
+                            boss.erro = 5
+                            boss.acerto = 8
+                            boss.crit = 10 
+                            boss.animacao = 2300
 
-                /*Falas:
-                Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”
-                Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
-                Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”
+                            hero.nome = 'Guardião'
+                            hero.hp = 1000
+                            hero.sprite = './sprites/guardion.gif'
+                            hero.img = './img/img/guardion.jpg'
+                            hero.ataque = 200
+                            hero.erro = 4
+                            hero.acerto = 8
+                            hero.crit = 10 
+                            hero.animacao = 2300
 
-                (Diálogo quase pós batalha) (Ativado quando Ufattelig estiver com menos de 50% de vida)
+                            hero.dialogo = `<p>Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</p> <p> Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
+                            Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”</p>`
 
-                Ufattelig: “Vo%ê @ão$%+!!,os *#@^im&$d!rá%...”
-                Guardião: “Morra imediatamente, praga! Não me importo com o que você tem a dizer!”
-                */
+                            typeWrite(titulo)
+                            container.style.display = 'flex'
+                            container.style.maxWidth = '700px';
+                            container.style.maxHeight = '700px';
+                            container.style.height= '700px';
 
             break;
 
