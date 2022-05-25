@@ -86,6 +86,10 @@ function ataqueHero(){
     var heroImg = document.getElementById('heroImg')
 
     heroImg.setAttribute('src', hero.sprite);
+
+    //Bloquear ataque
+    
+    opcoesCombate.style.display = 'none'
     
     delay = hero.animacao
     var timerId = setTimeout(function(){
@@ -174,7 +178,13 @@ function ataqueBoss(){
             bossImg.setAttribute('src', boss.img);    
         }, delay);  
 
+
+        //Bloquear ataque
+        opcoesCombate.style.display = 'block' 
+
     }, delay);
+
+    
 
 }
 

@@ -3,10 +3,10 @@
 const container = document.getElementById('container')
 const inicioTela = document.getElementById('inicio')
 const opcoesCombate = document.getElementById('opcoes-combate')
-const audio = document.getElementById('audio')
 
-//Tela de inicio do jogo
 
+
+// Audio e suas funcionalidades
 
 function play(){
     audio.play();
@@ -42,6 +42,9 @@ function mute(){
     }
 }
 
+
+//Tela de inicio do jogo
+
 function inicio() {
     container.style.display = 'none'
     container.innerHTML = ``
@@ -58,8 +61,12 @@ function inicio() {
     </div>
     `
 
-    audio.innerHTML =`<source src="../music/The Streets of Whiterun.mp3" type="audio/mpeg">`
+    
+    audio = new Audio('../music/The Streets of Whiterun.mp3')
     audio.play()
+    
+    
+    
 
 }
 
