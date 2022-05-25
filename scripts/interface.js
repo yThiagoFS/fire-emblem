@@ -3,6 +3,7 @@
 const container = document.getElementById('container')
 const inicioTela = document.getElementById('inicio')
 const opcoesCombate = document.getElementById('opcoes-combate')
+const audio = document.getElementById('audio')
 
 //Tela de inicio do jogo
 
@@ -57,7 +58,7 @@ function inicio() {
     </div>
     `
 
-    document.getElementById('audio').innerHTML =`<source src="../music/The Streets of Whiterun.mp3" type="audio/mpeg">`
+    audio.innerHTML =`<source src="../music/The Streets of Whiterun.mp3" type="audio/mpeg">`
     audio.play()
 
 }

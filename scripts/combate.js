@@ -109,7 +109,9 @@ function ataqueHero(){
         bossVida.value = val 
 
         if(bossVida.value == 0){
-            window.alert('você destruiu o meu ovo')
+            combateVitoria()
+            res.innerHTML = ``
+            res.innerHTML = `Vitória`
         }else{
             ataqueBoss()
         }
@@ -258,15 +260,14 @@ function combateFake(selCombate){
     <form action="" id="opcoes-classes">
     <div class="opcoes">
         <div class="middle">
+
             <button onclick="${selCombate}">
             <a href=" #" class="classe classe5">CONTINUAR</a></button>
             
         </div>
     </div>
-</form>
-
+    </form>`
     
-    `
     
     
        
@@ -314,6 +315,23 @@ function combateFake(selCombate){
                 container.style.justifyContent = 'center';   
                 container.style.width = '1400px';     
         
+    }
+
+    function combateVitoria(){
+        opcoesCombate.style.display = 'block'
+
+        opcoesCombate.innerHTML = `
+        <form action="" id="opcoes-classes">
+        <div class="opcoes">
+            <div class="middle">
+
+                <button onclick="${hero.historia}">
+                <a href=" #" class="classe classe5">CONTINUAR</a></button>
+                
+            </div>
+        </div>
+        </form>`
+
     }
 
         

@@ -3,12 +3,17 @@
             hp: [60],
             sprite: ['./sprites/Sword.gif'],
             img: ['./img/img/Sword1.jpg'],
+            perfil: ['./img/rostoHero/rostoEspadachim.png'],
             ataque: [18],
             erro: [2],
             acerto: [8],
             crit: [9],
             animacao: [2900],
-            dialogo: ['']
+            dialogo: [''],
+            progresso: [15],
+            chefes: [3],
+            historia: ['']
+            
         }
 
         var boss = {
@@ -27,6 +32,9 @@
         }
 
         function select(sel){
+
+            opcoesCombate.style.display = 'none'
+
             switch(sel){
                 
                     
@@ -417,6 +425,9 @@
                         typeWrite(titulo)
                         container.style.display = 'flex'
                         container.style.maxWidth = '700px';
+
+                        pause()
+                        stop()
                     
                     break;
 
@@ -452,6 +463,9 @@
                         typeWrite(titulo)
                         container.style.display = 'flex'
                         container.style.maxWidth = '700px';
+
+                        pause()
+                        stop()
                     
                     break;
 
@@ -480,6 +494,9 @@
                         typeWrite(titulo)
                         container.style.display = 'flex'
                         container.style.maxWidth = '700px';
+
+                        pause()
+                        stop()
                     
                     break;
 
@@ -511,8 +528,13 @@
                     break;
 
                     case 21:
+                        
+                        audio.innerHTML = ``
+                        audio.innerHTML =`<source src="../music/calangoMusic.mp3" type="audio/mpeg">`
+                        play()
+                        
 
-                        container.innerHTML = `
+                    container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -542,7 +564,8 @@
 
                     case  22:
 
-                    hero.dialogo = `<p>Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p> <p>Mas que diabos é isso? Uma lagartixa falante? </p> <p>Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>`
+
+                        hero.dialogo = `<p>Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p> <p>Mas que diabos é isso? Uma lagartixa falante? </p> <p>Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>`
 
 
                         boss.nome = 'Lagartixa Falante'
@@ -555,6 +578,8 @@
                         boss.crit = 10 
                         boss.animacao = 2300
 
+                        hero.historia = 'select(23)'
+
                         combateFake('combate()')
                         
                         container.style.display ='flex'
@@ -565,25 +590,27 @@
 
 
                         case 23:
-                    container.innerHTML = `
 
-                    <div class="envelope-historia-personagem">
-                
-                    <div class="historia-personagem"><p id="historia-Espadachim">
-                    Após derrotar Lacerta, Greg acaba encontrando um papel dentro de seu bolso (Lagartos tem bolsos?) que dizia a localização de seu próximo oponente, e uma nova pista da localização de Ufattelig; a princesa do reino do Sul, corrompida pelas forças do mal. 
+                        
+                        container.innerHTML = `
+
+                        <div class="envelope-historia-personagem">
                     
-                    </p>
+                        <div class="historia-personagem"><p id="historia-Espadachim">
+                        Após derrotar Lacerta, Greg acaba encontrando um papel dentro de seu bolso (Lagartos tem bolsos?) que dizia a localização de seu próximo oponente, e uma nova pista da localização de Ufattelig; a princesa do reino do Sul, corrompida pelas forças do mal. 
+                        
+                        </p>
 
-                    <button class="botao-historia" type="button" onclick="select(24)"> Continuar </button>
+                        <button class="botao-historia" type="button" onclick="select(24)"> Continuar </button>
 
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-
-
-                    </div>
-                    </div>
+                        <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
 
 
-                    `
+                        </div>
+                        </div>
+
+
+                        `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
                     container.style.display = 'flex'
