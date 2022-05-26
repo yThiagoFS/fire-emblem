@@ -531,7 +531,7 @@ function select(sel){
               
             //Trilha sonora de batalha
 
-            audio = new Audio('../music/calangoMusic.mp3')
+            audio = new Audio('./music/calangoMusic.mp3')
             audio.play()   
                 
 
@@ -722,7 +722,7 @@ function select(sel){
 
                 boss.nome = 'Vocator'
                 boss.hp = 110 
-                boss.sprite = './sprites/voLcator.gif'
+                boss.sprite = './sprites/volcator.gif'
                 boss.img = './img/img/volcator.jpg'
                 boss.ataque = 25
                 boss.erro = 4
@@ -1451,7 +1451,11 @@ function select(sel){
 
                     break;
 
-                    case 4888: 
+                    case 4888:
+                        
+                        container.style.display ='flex'
+                        container.style.maxWidth = "1400px";
+                        container.style.height = '500px';
 
                     boss.nome = 'Ufattelig'
                     boss.hp = 1500
@@ -1471,12 +1475,7 @@ function select(sel){
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
 
-                    container.style.display = 'flex'
-                   
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px';
+                    
 
                     
 

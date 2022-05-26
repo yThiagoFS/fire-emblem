@@ -62,7 +62,7 @@ function inicio() {
     `
 
     
-    audio = new Audio('../music/The Streets of Whiterun.mp3')
+    audio = new Audio('./music/The Streets of Whiterun.mp3')
     audio.play()
     
     
