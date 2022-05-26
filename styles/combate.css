@@ -25,6 +25,8 @@
     background-color:white;
     border:1px solid black;
     box-shadow:1px 3px 6px black, inset 1px 3px 6px black;
+    overflow-y:scroll;
+    overflow-x:hidden;
 }
 .imgHero{
     width:100%;

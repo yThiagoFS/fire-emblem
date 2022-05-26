@@ -6,8 +6,8 @@ var hero = {
     perfil: ['./img/rostoHero/rostoEspadachim.png'],
     ataque: [18],
     erro: [2],
-    acerto: [8],
-    crit: [9],
+    acerto: [6],
+    crit: [7],
     animacao: [2900],
     dialogo: [''],
     progresso: [15],
@@ -656,17 +656,21 @@ function select(sel){
                 case 25:
 
                 hero.dialogo = `<p>Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</p> <p>Droga, odeio bater em mulheres. Olha, você não pode só se render?</p> <p>MACHISTA!</p>`
-                combateFake('combate()')
+                
 
                 boss.nome = 'Securis'
                 boss.hp = 80
-                boss.sprite = './sprites/Securis.gif'
-                boss.img = './img/img/Securis.jpg'
+                boss.sprite = './sprites/princess.gif'
+                boss.img = './img/img/princess.jpg'
                 boss.ataque = 40
-                boss.erro = 6
-                boss.acerto = 7
+                boss.erro = 7
+                boss.acerto = 8
                 boss.crit = 8
-                boss.animacao = 2300
+                boss.animacao = 4800
+
+                hero.historia = 'select(26)'
+
+                combateFake('combate()')
 
 
             
@@ -714,7 +718,7 @@ function select(sel){
                     
                 hero.dialogo = `<p>Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</p> <p>Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</p> <p>Impossível! Você não vai passar!</p>`
 
-                combateFake('combate()')
+                hero.historia = 'select(28)'
 
                 boss.nome = 'Vocator'
                 boss.hp = 110 
@@ -724,7 +728,9 @@ function select(sel){
                 boss.erro = 4
                 boss.acerto = 8
                 boss.crit = 10 
-                boss.animacao = 7200
+                boss.animacao = 5100
+
+                combateFake('combate()')
 
 
         
@@ -887,7 +893,7 @@ function select(sel){
         
                     <button class="botao-historia" type="button" onclick="select(33)"> Continuar </button>
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -908,19 +914,30 @@ function select(sel){
                     case 33: 
 
                     hero.dialogo = `<p>Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</p>`
-                    combateFake('combate')
+                    
 
-                    //FAZER OS SPRITES 
+                    
 
                     boss.nome = 'Espadachim Corrompido'
                     boss.hp = 235
-                    boss.sprite = './sprites/Espadachim Corrompido.gif'
-                    boss.img = './img/img/Espadachim Corrompido.jpg'
+                    boss.sprite = './sprites/bossEspadachim.gif'
+                    boss.img = './img/img/bossEspadachim.jpg'
                     boss.ataque = 15
                     boss.erro = 4
                     boss.acerto = 9
                     boss.crit = 10 
-                    boss.animacao = 2300
+                    boss.animacao = 3400
+
+                    hero.historia = 'select(34)'
+
+                    combateFake('combate()')
+
+                    container.style.display ='flex'
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
+
 
                     
 
@@ -944,7 +961,7 @@ function select(sel){
         
                     <button class="botao-historia" type="button" onclick="select(35)"> Continuar </button>
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -977,10 +994,10 @@ function select(sel){
                     <button class="botao-historia" type="button" onclick="select(41)"> Acho que vou dar uma olhada no que tem ali, com certeza não é algo de errado, né? Vai que encontro alguns pães de alho ali, com um churras e uma grelha daquelas!
                     </button>
 
-                    <button class="botao-historia" type="button" onclick="select()"> Não posso me distrair agora, por mais que eu queira muito, muito, muito ir… Não posso! Cada segundo importa, e não sei se o Ufattelig sei lá, pula da janela pra fugir!
+                    <button class="botao-historia" type="button" onclick="select(46)"> Não posso me distrair agora, por mais que eu queira muito, muito, muito ir… Não posso! Cada segundo importa, e não sei se o Ufattelig sei lá, pula da janela pra fugir!
                     </button>
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1015,7 +1032,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1052,7 +1069,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1073,17 +1090,27 @@ function select(sel){
                     case 38: 
 
                     hero.dialogo = `<p>Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</p> <p>Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</p>`
-                    combateFake('combate()')
+                    
+                    hero.historia = 'select(39)'
 
                     boss.nome = 'Mago Corrompido'
                     boss.hp = 150
-                    boss.sprite = './sprites/Mago Corrompido.gif'
-                    boss.img = './img/img/Mago Corrompido.jpg'
+                    boss.sprite = './sprites/bossMago.gif'
+                    boss.img = './img/img/bossMago.jpg'
                     boss.ataque = 25
                     boss.erro = 7
                     boss.acerto = 9
                     boss.crit = 10
-                    boss.animacao = 2300
+                    boss.animacao = 4500
+
+                    combateFake('combate()')
+
+                    container.style.display ='flex'
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
+
 
                     break;
 
@@ -1107,7 +1134,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1146,7 +1173,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1190,7 +1217,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1228,7 +1255,7 @@ function select(sel){
 
                    
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1249,18 +1276,31 @@ function select(sel){
 
                     hero.dialogo = `<p> Dragão: CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</p> <p>Até o largartão parecia mais desafiante que você!</p> <p>IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</p>` 
 
-                    combateFake('combate()')
+                    hero.ataque= 0,
+                    hero.erro= 0,
+                    hero.acerto=0,
+                    hero.crit= [9],
+
+                    
 
 
                     boss.nome = 'Dragão'
-                    boss.hp = 800
+                    boss.hp = 100
                     boss.sprite = './sprites/dragon.gif'
-                    boss.img = './img/img/dragon1.jpg'
+                    boss.img = './img/img/dragon.jpeg'
                     boss.ataque = 35
                     boss.erro = 7
                     boss.acerto = 9
                     boss.crit = 10 
                     boss.animacao = 6200
+
+                    combateFake('combate()')
+
+                    container.style.display ='flex'
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
 
                     break;
 
@@ -1290,7 +1330,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1326,7 +1366,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1361,7 +1401,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1394,7 +1434,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1415,23 +1455,30 @@ function select(sel){
 
                     boss.nome = 'Ufattelig'
                     boss.hp = 1500
-                    boss.sprite = './sprites/Ufattelig.gif'
-                    boss.img = './img/img/Ufattelig.jpg'
+                    boss.sprite = './sprites/bossFinal.gif'
+                    boss.img = './img/img/bossFinal.jpg'
                     boss.ataque = hero.hp - 1
                     boss.erro = 0
                     boss.acerto = 10
                     boss.crit = 0 
-                    boss.animacao = 2300
+                    boss.animacao = 5800
 
-                    combateFake('select(48)')
-                    ataqueFake()
+                    combateFake('combateFinal()')
+                    
+
+                    hero.historia = 'select(48)'
 
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
+
                     container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
+
+                    
 
                     break;
 
@@ -1455,7 +1502,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1491,7 +1538,7 @@ function select(sel){
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
@@ -1512,8 +1559,8 @@ function select(sel){
 
                     boss.nome = 'Ufattelig'
                     boss.hp = 1500
-                    boss.sprite = './sprites/Ufattelig.gif'
-                    boss.img = './img/img/Ufattelig.jpg'
+                    boss.sprite = './sprites/bossFinal.gif'
+                    boss.img = './img/img/bossFinal.jpg'
                     boss.ataque = 150
                     boss.erro = 5
                     boss.acerto = 8
@@ -1532,14 +1579,17 @@ function select(sel){
 
                     hero.dialogo = `<p>Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</p> <p> Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
                     Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”</p>`
-
-                    typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                    
+                    combateFake('combate()')
 
                     
+                    container.style.display = 'flex'
+                   
+
+                    container.style.maxWidth = "1400px";
+
+                    container.style.height = '500px';
+                
                     
 
                     break;
@@ -1548,6 +1598,8 @@ function select(sel){
 
                     hero.dialogo = `<p>Ufattelig: “Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</p> <p>Guardião: “Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</p>   `
                     combateFake('select(51)')
+
+                    
 
                     break;
 
@@ -1567,12 +1619,11 @@ function select(sel){
 
                     </p>
         
-                    <button class="botao-historia" type="button" onclick="select(50)"> Continuar
-                    </button>
+                    
 
         
         
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg.jpg"></div>
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
         
         
                     </div>
