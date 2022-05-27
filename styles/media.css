@@ -1,42 +1,40 @@
 @media screen and  (max-width:1330px) {
     #container{
-        height:1200px;
-        width:700px;
+        max-height:1300px;
+        height:100%;
+        max-width:700px;
         display:flex;
+        position:relative;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
         
     }
-    .envelope-container{
-        max-height: 1100px;
-        top:9.5%;
-        max-width:800px;
-        width: 100%;
-        display:block;
-        position:relative;
-        
+    .voltar-genero{
+      position:absolute;
+      left:50%;
+      top:3%;
+      transform:translateX(-50%)
+      
     }
     
-    .conteudo1{
-        max-width:500px;
-        max-height:300px;
-        width:100%;
-        height:100%;
-        margin: 0 auto;
-        }
-        .conteudo2{
-          
-          max-width:500px;
-          max-height:300px;
-          width:100%;
-          height:100%;
-          margin: 5% auto;
-        }
-        .conteudo-meio{
-          max-width:500px;
-          max-height:300px;
-          width:100%;
-          height:100%;
-          margin: 5% auto;
-        }
+    .envelope-container{
+      display:flex;
+      flex-direction:column;
+  }
+    .conteudo1,
+    .conteudo-meio,
+    .conteudo2{
+      width:300px;
+      height:300px;
+      font-size:13px;
+    }
+    .atributo, 
+    .atributo1,
+    .atributo2{
+      display:none;
+    }
+    
         
 }
 
@@ -44,19 +42,73 @@
 /* Media para os Botões de seleção de Gênero */
 @media screen and (max-width:1330px) {
   #opcoes-classes{
-    position:fixed;
+    position:absolute;
+    top:100%;
+    max-width:500px;
+    left:50%;
+    display:flex;
+    margin-top:30px;
+    
+  }
+  .middle{
+    display:flex;
+    flex-direction:column;
+  }
+  .classe{
+    width:200px;
+  }
+  
+  .envelope-botoes-genero{
+    max-width:300px;
+    width:100%;
+    max-height:350px;
+    height:100%;
+  }
+  .botoes-genero{
+    width:100%;
+    font-size:10px;
+    display:flex;
+    flex-direction:column;
+    row-gap:10px;
+    height:100%;
+    align-items:center;
+    justify-content:center;
+    
+  }
+  
+
+  #botao-feminino{
+    
+    padding:20px;
+    height:auto;
+    border:1px solid black;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
+    background-color:var(--bg-input);
+    color:var(--bg-panel);
+    font-size:50px;
+    font-variant:small-caps;
+    border-radius:20px;
+    
+  }
+  #botao-masculino{
+    padding:20px;
+    height:auto;
+    border:1px solid black;
+    box-shadow: 2px 2px 2px rgb(0, 0, 0), inset 2px 2px 2px white;
+    background-color:var(--bg-input);
+    color:var(--bg-panel);
+    font-size:40px;
+    font-variant:small-caps;
+    border-radius:20px;
+  }
+
+  .botoes-genero>h1{
+    position:relative;
     top:0;
+    left:65%;
+    transform:translateX(-50%)
+    
   }
 }
 
-@media screen and (max-width:1330px) {
-    .voltar-genero{
-        position:absolute;
-        margin: 0 auto;
-        font-size:30px;
-        background-color:transparent;
-        border:none;
-        font-weight:bolder;
-        text-decoration: underline; 
-      }
-}
+
