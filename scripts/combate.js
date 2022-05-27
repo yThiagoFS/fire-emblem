@@ -3,8 +3,10 @@ var val = 0
 var max = 0
 var min = 0
 var dano = 0
+const regen = 15
 var random = 0
 var porcent = ''
+
 
 function atacar(){
     ataqueHero() 
@@ -216,7 +218,7 @@ opcoesCombate.innerHTML = `
                         <button onclick="atacar()">
                         <a href=" #" class="classe classe5">Atacar</a></button>
                         <button onclick="recuperar()">
-                            <a href="#" class="classe classe6">Recuperar Vida</a></button>
+                            <a href="#" class="classe classe6" id="vida">Poção de Vida ${hero.pocao}</a></button>
                     </div>
                 </div>
             </form>
@@ -357,7 +359,7 @@ function combateFake(selCombate){
                                 <button onclick="atacarFinal()">
                                 <a href=" #" class="classe classe5">Atacar</a></button>
                                 <button onclick="recuperar()">
-                                    <a href="#" class="classe classe6">Recuperar Vida</a></button>
+                            <a href="#" class="classe classe6" id="vida">Poção de Vida ${hero.pocao}</a></button>
                             </div>
                         </div>
                     </form>
@@ -562,6 +564,66 @@ function combateFake(selCombate){
         </form>`
 
     }
+
+
+        //Recuperar vida
+        function recuperar(){
+        
+                if(hero.pocao == 0){
+                    res.innerHTML += `As suas poções acabaram`
+                }else{
+
+                    var heroVida = document.getElementById('range1')
+                    val = heroVida.value
+                    max = heroVida.max
+                    min = heroVida.min
+    
+                    var contador = document.getElementById('vida')
+                    hero.pocao -= 1
+                    console.log(hero.pocao)
+
+                    
+
+                    if(val == max){
+                        res.innerHTML = `${hero.nome}: HP cheio` 
+                     }else{
+                         //Bloquear ataque
+                         opcoesCombate.style.display = 'none' 
+                         
+                        
+                         val = Number(val) + Number(regen)
+                         console.log(val)
+         
+                         porcent = (val - min) * 100 / (max - min)
+                         window.alert(porcent)
+                         if( porcent >= 100){
+                             porcent = 100
+                             heroVida.style.backgroundSize = porcent + '% 100%'
+                             window.alert('olá')
+                             val = Number(hero.hp)
+                             
+                             res.innerHTML += `${hero.nome}: recuperou ${regen} de HP`
+
+                             contador.innerHTML = `${hero.pocao}`
+                             
+                         }else{
+                             heroVida.style.backgroundSize = porcent + '% 100%'
+                            
+                             res.innerHTML += `${hero.nome}: recuperou ${regen} de HP`
+
+                             contador.innerHTML = `Poção de Vida ${hero.pocao}`
+                         
+                             
+                         }
+                         heroVida.value = val 
+                         ataqueBoss()
+                     }
+                    
+                }
+
+
+         
+            }
 
 
 

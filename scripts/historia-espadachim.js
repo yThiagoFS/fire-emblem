@@ -8,6 +8,7 @@ var hero = {
     erro: [2],
     acerto: [6],
     crit: [7],
+    pocao: [3],
     animacao: [2900],
     dialogo: [''],
     progresso: [15],
@@ -593,6 +594,10 @@ function select(sel){
 
                 case 23:
 
+                //Parar a música
+                pause()
+                stop()
+
                 
                 container.innerHTML = `
 
@@ -655,6 +660,10 @@ function select(sel){
 
                 case 25:
 
+                //Trilha Sonora
+                audio = new Audio('./music/princessMusic.mp3')
+                audio.play()  
+
                 hero.dialogo = `<p>Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</p> <p>Droga, odeio bater em mulheres. Olha, você não pode só se render?</p> <p>MACHISTA!</p>`
                 
 
@@ -684,6 +693,11 @@ function select(sel){
             break;
 
             case 26:
+
+                //Parar a música
+                pause()
+                stop()
+                
 
                 container.innerHTML = `
 
@@ -715,6 +729,10 @@ function select(sel){
 
 
                 case 27:
+
+                //Trilha sonora
+                audio = new Audio('./music/volcatorMusic.mp3')
+                audio.play()  
                     
                 hero.dialogo = `<p>Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</p> <p>Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</p> <p>Impossível! Você não vai passar!</p>`
 
@@ -748,6 +766,11 @@ function select(sel){
                 break;
 
                 case 28:
+
+                    //Parar a música
+                    pause()
+                    stop()
+
                     container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
@@ -796,7 +819,7 @@ function select(sel){
                     
                     </p>
         
-                    <button class="botao-historia" type="button" onclick="select(30)">  Irei lutar contra o segundo melhor Espadachim, claro que quando eu derrotá-lo, EU me tornarei o segundo melhor Espadachim! </button>
+                    <button class="botao-historia" type="button" onclick="select(30)">  Irei lutar contra o segundo melhor Espadachim, claro que quando eu derrotá-lo, EU me tornarei o melhor Espadachim! </button>
 
                     <button class="botao-historia" type="button" onclick="select(36)">  Irei lutar contra o mago real, é uma boa oportunidade de saber um pouco mais do porque os guardiões existem, e também bater em mago é muito legal! </button>
         
@@ -913,9 +936,10 @@ function select(sel){
 
                     case 33: 
 
-                    hero.dialogo = `<p>Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</p>`
-                    
+                    audio = new Audio('./music/espadachimMusic.mp3')
+                    audio.play()  
 
+                    hero.dialogo = `<p>Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</p>`
                     
 
                     boss.nome = 'Espadachim Corrompido'
@@ -945,6 +969,10 @@ function select(sel){
                     break;
 
                     case 34: 
+
+                    //Parar a música 
+                    pause()
+                    stop()
 
                     container.innerHTML = `
 
@@ -1089,6 +1117,10 @@ function select(sel){
                     
                     case 38: 
 
+                    //Trilha sonora
+                    audio = new Audio('./music/magoMusic.mp3')
+                    audio.play()  
+
                     hero.dialogo = `<p>Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</p> <p>Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</p>`
                     
                     hero.historia = 'select(39)'
@@ -1115,6 +1147,10 @@ function select(sel){
                     break;
 
                     case 39: 
+
+                    //Parar a música
+                    pause()
+                    stop()
 
                     container.innerHTML = `
 
