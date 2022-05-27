@@ -84,7 +84,7 @@ function ataqueHero(){
 
 
     var heroImg = document.getElementById('heroImg')
-
+    heroImg.style.border = "2px solid #2bff00"
     heroImg.setAttribute('src', hero.sprite);
 
     //Bloquear ataque
@@ -92,8 +92,10 @@ function ataqueHero(){
     opcoesCombate.style.display = 'none'
     
     delay = hero.animacao
-    var timerId = setTimeout(function(){
+    
+    var timerId = setTimeout(function(){        
         heroImg.setAttribute('src', hero.img);
+        heroImg.style.border = "none"
     }, delay);
 
     delay = 1000
@@ -128,6 +130,8 @@ function ataqueHero(){
 
 function ataqueBoss(){
     //boss
+
+    
     random = Math.floor(Math.random() * 9)
 
     if(random <= boss.erro){
@@ -143,10 +147,13 @@ function ataqueBoss(){
 
 
     var bossImg = document.getElementById('bossImg')
+    
 
     delay = 1000
     var timerId = setTimeout(function(){
-        bossImg.setAttribute('src', boss.sprite); 
+        bossImg.style.border = "2px solid #2bff00"
+        bossImg.setAttribute('src', boss.sprite);
+        
         
         
         delay = boss.animacao
@@ -174,8 +181,10 @@ function ataqueBoss(){
 
         heroVida.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
         heroVida.value = val   
+        
             var bossImg = document.getElementById('bossImg')
             bossImg.setAttribute('src', boss.img);   
+            bossImg.style.border = "none" 
 
             //Bloquear ataque
             opcoesCombate.style.display = 'block' 

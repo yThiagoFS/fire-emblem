@@ -540,7 +540,7 @@ function select(sel){
             <div class="envelope-historia-personagem">
         
             <div class="historia-personagem"><p id="historia-Espadachim">
-            ${hero.nome} então parte para os reino do Norte, encontrando vários inimigos no caminho, porém facilmente acabando com eles, e eventualmente, acabando trombando com Lacerta, imediatamente assumindo a instância de batalha, por ele ser o único homem-lagarto que havia encontrado até agora. 
+            ${hero.nome} então parte para o reino do Norte, encontrando vários inimigos no caminho, porém facilmente acabando com eles, e eventualmente, acabando trombando com Lacerta, imediatamente assumindo a instância de batalha, por ele ser o único homem-lagarto que havia encontrado até agora. 
             
             </p>
 

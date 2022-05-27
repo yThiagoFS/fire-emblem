@@ -605,7 +605,7 @@ function select(sel){
                 // Combate contra a Securis
 
                
-                 hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p> 
+                 hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p>`
 
              
             
@@ -667,7 +667,7 @@ function select(sel){
 
                 // Combate contra o Vocator
 
-               hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>
+               hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>`
 
                 
              

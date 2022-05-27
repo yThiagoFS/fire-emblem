@@ -1,6 +1,6 @@
 
-#perfil{
-    margin-top:80px;
+#perfil,
+#morteModal{
     background-color:var(--bg);
     display:flex;
     flex-direction:column;
@@ -19,8 +19,13 @@
     min-height:400px;
     box-shadow:0 0 40px var(--color-text);
 }
+#morteModal{
+    row-gap:10px;
+}
 
-.modal-perfil-container{
+.modal-perfil-container,
+.modal-inventario-container,
+.modal-morte-container{
     width:100vw;
     height:100vh;
     background-color:rgba(0,0,0,.5);
@@ -32,17 +37,6 @@
 }
 
 
-
-.modal-inventario-container{
-    width:100vw;
-    height:100vh;
-    background-color:rgba(0,0,0,.5);
-    position:fixed;
-    top:0;
-    left:0;
-    z-index:flex;
-    display:none;
-}
 #inventario{
     margin-top:80px;
     background-color:var(--bg);
@@ -100,6 +94,56 @@
 .mostrar{
     display:flex;
     animation:modal .6s;
+}
+
+
+
+/*Modal de Derrota*/
+.defeat__text{
+    font-size:45px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:2%;
+}
+.bossModalDerrota{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+.opcoesDerrota{
+    display:flex;
+    align-items:center;
+    row-gap:10px;
+    flex-direction:column;
+    
+}
+
+.opcao-tentar>button,
+.opcao-selecionar>button{
+    background-color:transparent;
+    padding:10px;
+    font-size:25px;
+    transition: all .8s  ease-in;
+    color:var(--color-text)
+}
+.opcao-tentar>button:hover,
+.opcao-selecionar>button:hover{
+    background-color:var(--color-text);
+    border: 1px solid white;
+    color:var(--bg);
+    cursor:pointer;
+}
+
+.bossImgModal{
+    width:100px;
+    height:100px;
+}
+.bossFrase{
+    font-weight:bold;
+    font-size:15px;
 }
 
 @keyframes modal{
