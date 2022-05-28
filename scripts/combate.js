@@ -277,6 +277,11 @@ container.innerHTML = `
 
 function combateFake(selCombate){
 
+                document.addEventListener('mousemove', () => {
+                    mediaJS()
+                    
+                })
+
                     const res = document.getElementById('res')    
                     
                     opcoesCombate.style.display = 'block'
@@ -339,18 +344,23 @@ function combateFake(selCombate){
                 container.style.display = 'flex';
                   
 
-                if(window.innerWidth > 1300){
-                    container.style.alignItems = 'center';
-                    container.style.justifyContent = 'center';   
-                    container.style.width = '1400px';   
-                    container.flexDirection = "row";
-                } else {
-                    container.style.maxWidth = "700px"
-                    container.style.width = "100%"
-                    container.style.height = "700px"
-                    container.style.rowGap = "15px";
-                }
+                
         
+    }
+
+    function mediaJS(){
+        if(window.innerWidth > 1300){
+            container.style.alignItems = 'center';
+            container.style.justifyContent = 'center';   
+            container.style.maxWidth = '1400px';
+            container.style.width = '100%'   
+            container.flexDirection = "row";
+        } else {
+            container.style.maxWidth = "700px"
+            container.style.width = "100%"
+            container.style.height = "700px"
+            container.style.rowGap = "15px";
+        }
     }
                     
 
