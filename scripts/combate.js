@@ -355,10 +355,11 @@ function combateFake(selCombate){
             container.style.maxWidth = '1400px';
             container.style.width = '100%'   
             container.flexDirection = "row";
+            container.style.height = "500px"
         } else {
-            container.style.maxWidth = "700px"
-            container.style.width = "100%"
-            container.style.height = "700px"
+            container.style.maxWidth = "700px";
+            container.style.width = "100%";
+            container.style.height = "700px";
             container.style.rowGap = "15px";
         }
     }
