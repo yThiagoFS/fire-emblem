@@ -335,13 +335,25 @@ function combateFake(selCombate){
                 </div>            
                             
                 `
-               
+
                 container.style.display = 'flex';
-                container.style.alignItems = 'center';
-                container.style.justifyContent = 'center';   
-                container.style.width = '1400px';     
+                  
+
+                if(window.innerWidth > 1300){
+                    container.style.alignItems = 'center';
+                    container.style.justifyContent = 'center';   
+                    container.style.width = '1400px';   
+                    container.flexDirection = "row";
+                } else {
+                    container.style.maxWidth = "700px"
+                    container.style.width = "100%"
+                    container.style.height = "700px"
+                    container.style.rowGap = "15px";
+                }
         
     }
+                    
+
 
     //FINAL DO JOGO
 

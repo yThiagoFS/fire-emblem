@@ -8,7 +8,6 @@
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        
     }
     .voltar-genero{
       position:absolute;
@@ -21,6 +20,8 @@
     .envelope-container{
       display:flex;
       flex-direction:column;
+      align-items:center;
+      max-height:1100px;
   }
     .conteudo1,
     .conteudo-meio,
@@ -35,7 +36,11 @@
       display:none;
     }
     
-        
+     #hero, 
+     #boss{
+       height:20%;
+     }   
+     
 }
 
 

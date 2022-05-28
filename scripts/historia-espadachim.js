@@ -568,7 +568,9 @@ function select(sel){
                 
                 
 
-                hero.dialogo = `<p>Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p> <p>Mas que diabos é isso? Uma lagartixa falante? </p> <p>Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>`
+                hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Mas que diabos é isso? Uma lagartixa falante? </span></p> 
+                    <p> Largatixa Falante: <span class="bossText"> Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>
+                </span>`
 
 
                 boss.nome = 'Lagartixa Falante'
@@ -664,7 +666,7 @@ function select(sel){
                 audio = new Audio('./music/princessMusic.mp3')
                 audio.play()  
 
-                hero.dialogo = `<p>Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</p> <p>Droga, odeio bater em mulheres. Olha, você não pode só se render?</p> <p>MACHISTA!</p>`
+                hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Droga, odeio bater em mulheres. Olha, você não pode só se render?</span></p> <p>Securis:<span class="bossText">MACHISTA!</span></p>`
                 
 
                 boss.nome = 'Securis'
@@ -734,7 +736,7 @@ function select(sel){
                 audio = new Audio('./music/volcatorMusic.mp3')
                 audio.play()  
                     
-                hero.dialogo = `<p>Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</p> <p>Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</p> <p>Impossível! Você não vai passar!</p>`
+                hero.dialogo = `<p>Vocator: <span class="bossText">Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</span></p> <p>${hero.nome}: <span class="heroText">Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</span></p> <p>Vocator: <span class="bossText">Impossível! Você não vai passar!</span></p>`
 
                 hero.historia = 'select(28)'
 
@@ -939,7 +941,7 @@ function select(sel){
                     audio = new Audio('./music/espadachimMusic.mp3')
                     audio.play()  
 
-                    hero.dialogo = `<p>Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</p> <p>quebra-escudos: Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</p>`
+                    hero.dialogo = `<p> Espadachim Corrompido: <span class="bossText">“Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</span></p> <p>${hero.nome}: <span class="heroText">Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</span></p> <p>Espadachim Corrompido: <span class="bossText">Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</span></p>`
                     
 
                     boss.nome = 'Espadachim Corrompido'
@@ -1121,7 +1123,7 @@ function select(sel){
                     audio = new Audio('./music/magoMusic.mp3')
                     audio.play()  
 
-                    hero.dialogo = `<p>Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</p> <p>Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</p> <p>Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</p>`
+                    hero.dialogo = `<p>Mago Corrompido:<span class="bossText">Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</span></p> <p>${hero.nome}:<span class="heroText">Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</span></p> <p>Mago Corrompido:<span class="bossText">Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</span></p>`
                     
                     hero.historia = 'select(39)'
 
@@ -1310,13 +1312,13 @@ function select(sel){
 
                     case 43: 
 
-                    hero.dialogo = `<p> Dragão: CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</p> <p>Até o largartão parecia mais desafiante que você!</p> <p>IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</p>` 
+                    hero.dialogo = `<p>Dragão: <span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}: <span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Dragão: <span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>` 
 
                     hero.ataque= 0,
                     hero.erro= 0,
                     hero.acerto=0,
                     hero.crit= [9],
-
+                    hero.historia = 'select(4333)'
                     
 
 
@@ -1341,8 +1343,8 @@ function select(sel){
                     break;
 
                     case 4333: 
-
-                    hero.dialogo = `<p>Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</p> <p>Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </p> <p>${hero.nome}: Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</p>` 
+                    
+                    hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
                     combateFake('select(44)')
 
                     break;
@@ -1426,8 +1428,8 @@ function select(sel){
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-espadachim">
-                    ${hero.nome}: “Ei Rei do mal, eu vou te encher de sopapo, ninguém precisa de guardião ou sei lá o que, eu tô muito forte já!”
-                    Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
+                    <p>${hero.nome}:<span class="heroText"> “Ei Rei do mal, eu vou te encher de sopapo, ninguém precisa de guardião ou sei lá o que, eu tô muito forte já!”</span></p>
+                    <p>Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
                     ${hero.nome}: “O que…?”
 
                     </p>
@@ -1489,6 +1491,8 @@ function select(sel){
 
                     case 4888:
                         
+
+                        hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
                         container.style.display ='flex'
                         container.style.maxWidth = "1400px";
                         container.style.height = '500px';
@@ -1612,8 +1616,8 @@ function select(sel){
                     hero.crit = 10 
                     hero.animacao = 2300
 
-                    hero.dialogo = `<p>Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</p> <p> Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
-                    Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”</p>`
+                    hero.dialogo = `<p>Guardião: <span class="heroText">“Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</span></p> <p> Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
+                    </p>Guardião:<span class="heroText"> “Não importa. Tenho que lhe deter aqui, e agora.”</span></p>`
                     
                     combateFake('combate()')
 
@@ -1631,7 +1635,7 @@ function select(sel){
 
                     case 5000:
 
-                    hero.dialogo = `<p>Ufattelig: “Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</p> <p>Guardião: “Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</p>   `
+                    hero.dialogo = `<p>Ufattelig: <span class="bossText">“Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</span></p> <p>Guardião: <span class="heroText">“Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</span></p>   `
                     combateFake('select(51)')
 
                     
