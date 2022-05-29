@@ -18,6 +18,8 @@ function atacar(){
 
 function ataqueFake(){
 
+    
+
     random = 8
 
     if(random <= hero.erro){
@@ -70,6 +72,9 @@ function ataqueFake(){
 
 function ataqueHero(){
     //Hero
+
+    
+
     random = Math.floor(Math.random() * 9)
 
     if(random <= hero.erro){
@@ -133,6 +138,7 @@ function ataqueHero(){
 function ataqueBoss(){
     //boss
 
+    
     
     random = Math.floor(Math.random() * 9)
 
@@ -206,6 +212,8 @@ function ataqueBoss(){
 /* Container += style align items e justify content center */
 function combate(){
 
+    
+
 const res = document.getElementById('res')    
 
 opcoesCombate.style.display = 'block'
@@ -240,7 +248,7 @@ container.innerHTML = `
 
             <div id="textos">
 
-                <div class="dialogos" id='res'>
+                <div id='res' class="dialogos">
 
                 </div>
 
@@ -277,10 +285,8 @@ container.innerHTML = `
 
 function combateFake(selCombate){
 
-                document.addEventListener('mousemove', () => {
-                    mediaJS()
-                    
-                })
+   
+                
 
                     const res = document.getElementById('res')    
                     
@@ -348,27 +354,15 @@ function combateFake(selCombate){
         
     }
 
-    function mediaJS(){
-        if(window.innerWidth > 1300){
-            container.style.alignItems = 'center';
-            container.style.justifyContent = 'center';   
-            container.style.maxWidth = '1400px';
-            container.style.width = '100%'   
-            container.flexDirection = "row";
-            container.style.height = "500px"
-        } else {
-            container.style.maxWidth = "700px";
-            container.style.width = "100%";
-            container.style.height = "700px";
-            container.style.rowGap = "15px";
-        }
-    }
+   
                     
 
 
     //FINAL DO JOGO
 
     function combateFinal(){
+
+        
 
         const res = document.getElementById('res')    
         
@@ -404,7 +398,7 @@ function combateFake(selCombate){
         
                     <div id="textos">
         
-                        <div class="dialogos" id='res'>
+                        <div id='res' class="dialogos">
         
                         </div>
         
@@ -430,10 +424,7 @@ function combateFake(selCombate){
                                 
                     `
                    
-                    container.style.display = 'flex';
-                    container.style.alignItems = 'center';
-                    container.style.justifyContent = 'center';   
-                    container.style.width = '1400px';     
+                     
             
         }
 
@@ -446,6 +437,8 @@ function combateFake(selCombate){
 
         function ataqueFinalHero(){
             //Hero
+            
+
             random = Math.floor(Math.random() * 9)
         
             if(random <= hero.erro){
@@ -499,13 +492,18 @@ function combateFake(selCombate){
                 }
         
             }, delay);
+
+            
         }
 
-        
+       
     
 
         function ataqueFinal(){
             //boss
+            
+            
+
             random = Math.floor(Math.random() * 9)
         
             if(random <= boss.erro){
@@ -566,12 +564,15 @@ function combateFake(selCombate){
                 
         
             }, delay);
-        
+            
             
         
         }
 
     function combateVitoria(){
+
+        
+
         opcoesCombate.style.display = 'block'
 
         opcoesCombate.innerHTML = `
@@ -585,7 +586,7 @@ function combateFake(selCombate){
             </div>
         </div>
         </form>`
-
+        mediaJS()
     }
 
 

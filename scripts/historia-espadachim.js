@@ -62,10 +62,7 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            containerSize()
             break;
 
             
@@ -92,10 +89,7 @@ function select(sel){
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
 
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            
             break;
 
             
@@ -122,10 +116,7 @@ function select(sel){
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
 
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            
             break;
 
             case 8:
@@ -149,10 +140,7 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            
             break;
 
 
@@ -177,13 +165,14 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            
             break;
 
             case 10:
+
+                document.addEventListener('mousemove', () => {
+                    mediaJS()
+                })
 
                 boss.nome = 'Guardião'
                 boss.hp = 3000
@@ -197,9 +186,7 @@ function select(sel){
                 
 
 
-                container.style.display ='flex'
-                container.style.maxWidth = "1400px";
-                container.style.height = '500px';
+                
                 
                 combateFake('select(11)')
                 ataqueFake()
@@ -210,6 +197,12 @@ function select(sel){
             break;
 
             case 11:
+                document.addEventListener('mousemove', () => {
+                    containerSize()
+                })
+                
+                
+                
                 opcoesCombate.style.display = 'none'
                 container.innerHTML = `
 
@@ -227,10 +220,11 @@ function select(sel){
                 </div>
                 </div>
                 `
+                
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                
+                
 
             break;
 
@@ -253,8 +247,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
 
             break;
 
@@ -276,8 +269,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
 
             break;
 
@@ -304,8 +296,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
             
             break;
 
@@ -333,8 +324,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
             
             break;
 
@@ -362,8 +352,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
             
             break;
 
@@ -391,8 +380,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
             
             break;
 
@@ -424,8 +412,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
 
                 pause()
                 stop()
@@ -462,8 +449,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
 
                 pause()
                 stop()
@@ -493,8 +479,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
+                containerSize()
 
                 pause()
                 stop()
@@ -502,6 +487,11 @@ function select(sel){
             break;
 
             case 20:
+
+                document.addEventListener('mousemove', () => {
+                    mediaJS()
+                    
+                })
 
                 boss.nome = 'Guardião'
                 boss.hp = 3000
@@ -515,9 +505,7 @@ function select(sel){
                 boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
 
                 combate()
-                container.style.display ='flex'
-                container.style.maxWidth = "1400px";
-                container.style.height = '500px';
+                
 
                 ataqueHero()
 
@@ -529,6 +517,7 @@ function select(sel){
             break;
 
             case 21:
+                containerSize()
               
             //Trilha sonora de batalha
 
@@ -557,15 +546,15 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            
 
             break;
 
             case  22:
                 
+                document.addEventListener('mousemove', () => {
+                    mediaJS()
+                })
                 
 
                 hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Mas que diabos é isso? Uma lagartixa falante? </span></p> 
@@ -587,9 +576,7 @@ function select(sel){
 
                 combateFake('combate()')
                 
-                container.style.display ='flex'
-                container.style.maxWidth = "1400px";
-                container.style.height = '500px';
+                
                 break;
                 
 
@@ -622,10 +609,7 @@ function select(sel){
                 `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            container.style.display = 'flex'
-            container.style.maxWidth = '700px';
-            container.style.maxHeight = '700px';
-            container.style.height= '700px';
+            containerSize()
 
             break;
 
@@ -652,15 +636,20 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
-                container.style.maxHeight = '700px';
-                container.style.height= '700px';
+                
+                
     
                 break;
 
 
                 case 25:
+                    
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
+                    
 
                 //Trilha Sonora
                 audio = new Audio('./music/princessMusic.mp3')
@@ -686,11 +675,7 @@ function select(sel){
 
             
 
-            container.style.display ='flex'
-
-            container.style.maxWidth = "1400px";
-
-            container.style.height = '500px';
+            
 
             break;
 
@@ -722,15 +707,18 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                container.style.display = 'flex'
-                container.style.maxWidth = '700px';
-                container.style.maxHeight = '700px';
-                container.style.height= '700px';
+                containerSize()
+                
     
                 break;
 
 
                 case 27:
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
 
                 //Trilha sonora
                 audio = new Audio('./music/volcatorMusic.mp3')
@@ -753,17 +741,6 @@ function select(sel){
                 combateFake('combate()')
 
 
-        
-
-
-
-                
-
-                container.style.display ='flex'
-
-                container.style.maxWidth = "1400px";
-
-                container.style.height = '500px';
 
                 break;
 
@@ -796,10 +773,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   containerSize()
         
                     
 
@@ -835,10 +809,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                  
                         
                 break;
 
@@ -866,10 +837,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -897,10 +865,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -928,15 +893,17 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                  
 
                     break;
 
 
                     case 33: 
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
 
                     audio = new Audio('./music/espadachimMusic.mp3')
                     audio.play()  
@@ -957,15 +924,6 @@ function select(sel){
                     hero.historia = 'select(34)'
 
                     combateFake('combate()')
-
-                    container.style.display ='flex'
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px';
-
-
-                    
 
 
                     break;
@@ -1001,10 +959,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   containerSize()
 
                     break;
 
@@ -1037,10 +992,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -1072,11 +1024,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
-
+                   
                     break;
 
                     case 37: 
@@ -1109,15 +1057,17 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
                     
                     case 38: 
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
 
                     //Trilha sonora
                     audio = new Audio('./music/magoMusic.mp3')
@@ -1182,10 +1132,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   containerSize()
 
                     break;
 
@@ -1221,10 +1168,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -1265,10 +1209,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -1303,14 +1244,16 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
                     case 43: 
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
 
                     hero.dialogo = `<p>Dragão: <span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}: <span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Dragão: <span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>` 
 
@@ -1343,6 +1286,11 @@ function select(sel){
                     break;
 
                     case 4333: 
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
                     
                     hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
                     combateFake('select(44)')
@@ -1378,10 +1326,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   containerSize()
 
                     break;
 
@@ -1414,10 +1359,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
 
@@ -1449,10 +1391,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   
 
                     break;
                     
@@ -1482,14 +1421,16 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                  
 
                     break;
 
                     case 4888:
+
+                        document.addEventListener('mousemove', () => {
+                            mediaJS()
+                            
+                        })
                         
 
                         hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
@@ -1551,10 +1492,7 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                   containerSize()
 
                     break;
 
@@ -1587,14 +1525,16 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
+                  
 
                     break;
 
                     case 50: 
+
+                    document.addEventListener('mousemove', () => {
+                        mediaJS()
+                        
+                    })
 
                     boss.nome = 'Ufattelig'
                     boss.hp = 1500
@@ -1615,6 +1555,7 @@ function select(sel){
                     hero.acerto = 8
                     hero.crit = 10 
                     hero.animacao = 2300
+                    hero.historia = 'select(5000)'
 
                     hero.dialogo = `<p>Guardião: <span class="heroText">“Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</span></p> <p> Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
                     </p>Guardião:<span class="heroText"> “Não importa. Tenho que lhe deter aqui, e agora.”</span></p>`
@@ -1622,19 +1563,14 @@ function select(sel){
                     combateFake('combate()')
 
                     
-                    container.style.display = 'flex'
                    
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px';
                 
                     
 
                     break;
 
                     case 5000:
-
+                    
                     hero.dialogo = `<p>Ufattelig: <span class="bossText">“Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</span></p> <p>Guardião: <span class="heroText">“Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</span></p>   `
                     combateFake('select(51)')
 
@@ -1672,14 +1608,8 @@ function select(sel){
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    container.style.display = 'flex'
-                    container.style.maxWidth = '700px';
-                    container.style.maxHeight = '700px';
-                    container.style.height= '700px';
-
-                    break;
-
-                
+                    containerSize()
+                    break;        
             
     }
 

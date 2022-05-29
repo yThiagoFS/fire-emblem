@@ -187,7 +187,27 @@ body{
     position: absolute;
     top: 0;
 }
-
+#container.fight{
+    align-items:center;
+    justify-content: center;   
+    max-width: 1400px;
+    width: 100%;   
+    flex-direction:row;
+    height:500px;
+        
+}
+#container.fightScreen{
+        max-width: 700px;
+        width: 100%;
+        height: 700px;
+        row-gap: 15px;
+}
+#container.story{
+    display: flex;
+    max-width: 700px;
+    max-height: 700px;
+    height: 700px;
+}
 
 
 

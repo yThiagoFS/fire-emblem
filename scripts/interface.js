@@ -215,3 +215,32 @@ function classF() {
 
 //Tranferir para uma arquivo que só irá conter a história. 
 
+function containerSize(){
+        container.classList.remove('fight')
+        container.classList.remove('figthScreen')
+        container.classList.add('story')
+}
+
+function mediaJS(){
+
+    document.addEventListener('mousemove', () => {
+
+        if(window.innerWidth > 1300){
+            container.classList.remove('story')
+            container.classList.remove('fightScreen')
+            container.classList.add('fight')
+            res.classList.add('fight')
+            res.classList.remove('fightScreen')
+            
+    } else {
+        container.classList.remove('story')
+        container.classList.remove('fight')
+        container.classList.add('fightScreen')
+        res.classList.remove('fight')
+        res.classList.add('fightScreen')
+        
+    }
+
+    })
+    
+}
