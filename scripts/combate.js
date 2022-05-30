@@ -586,7 +586,7 @@ function combateFake(selCombate){
             </div>
         </div>
         </form>`
-        mediaJS()
+       
     }
 
 
@@ -594,7 +594,7 @@ function combateFake(selCombate){
         function recuperar(){
         
                 if(hero.pocao == 0){
-                    res.innerHTML += `As suas poções acabaram`
+                    res.innerHTML += `<p> As suas poções acabaram </p>`
                 }else{
 
                     var heroVida = document.getElementById('range1')
