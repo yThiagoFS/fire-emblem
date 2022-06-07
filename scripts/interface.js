@@ -120,7 +120,7 @@ function classM() {
     <form id="opcoes-classes">
     <div class="opcoes">
         <div class="middle">
-            <button onclick="select(4)">
+            <button onclick="select(300)">
                 <a href="#" class="classe classe1">Lanceiro</a>
             </button>
 
