@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="stylesheet" href="./styles/combate.css">
     <link rel="stylesheet" href="./styles/modal.css">
-
     <title>Combate</title>
 </head>
 
@@ -29,6 +28,7 @@
     </header>
 
     <main id="main">
+        
         <form id="inicio">
             <div class="wrapper-button"><button class="botao-inicial" onclick="inicio()">Inicie sua Jornada</button>
             </div>
@@ -36,6 +36,7 @@
             
             
         </form>
+        
 
         <div id="container" class="">
 
@@ -56,6 +57,27 @@
                 </div>
             </form>
         </div>
+        <div id="modal-morte" class="modal-morte-container">
+            <div id="morteModal" class="morte-jogador">
+    
+    
+                <span class="defeat__text">DERROTA!!</span>
+    
+                <div class="bossModalDerrota">
+                    <div ><img class="bossImgModal" src=""/></div>
+                    <p class="bossFrase">Seu humano insolente</p>
+                </div>
+    
+                <div class="opcoesDerrota">
+    
+                    <div class="opcao-tentar">
+                        <button class="tentarNovamente">Tentar Novamente</button>
+                    </div>
+    
+                    <div class="opcao-selecionar">
+                        <button class="selecionarPersonagem">Selecionar personagem</button>
+                    </div>
+                </div>
 
         <div class="conteudo-inicial">
 
@@ -102,6 +124,8 @@
             <form>
                 <input type="range" min="0" max="10" value="10" id="range" onclick="atacar()" disabled>
             </form>
+
+            
         </div>
 
         
@@ -122,7 +146,6 @@
 <script src="./scripts/dark-mode.js"></script>
 <script src="./scripts/animation-type.js"></script>
 <script src="./scripts/interface.js"></script>
-<script src="./scripts/historia-quebra-escudos-m.js"></script>
 <script src="./scripts/historia-espadachim.js"></script>
 
 </html>

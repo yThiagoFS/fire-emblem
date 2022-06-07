@@ -42,7 +42,7 @@ function select(sel){
 
         case 5:
 
-            
+            addStoryClass()
                 hero.nome = 'Ronaldo'
                 hero.hp = 60
                 hero.sprite ='./sprites/Sword.gif'
@@ -78,7 +78,7 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            containerSize()
+            
             break;
 
             
@@ -186,10 +186,7 @@ function select(sel){
 
             case 10:
 
-                document.addEventListener('mousemove', () => {
-                    mediaJS()
-                })
-
+                
                 boss.nome = 'Guardião'
                 boss.hp = 3000
                 boss.sprite = './sprites/guardion.gif'
@@ -200,40 +197,38 @@ function select(sel){
                 boss.crit = 10 
                 boss.animacao = 2300
                 
-
-
+                
+                
                 
                 
                 combateFake('select(11)')
                 ataqueFake()
                 opcoesCombate.style.display = 'block'
-
+                
+                addFightClass()
                 
                 
             break;
 
             case 11:
                 
-                document.addEventListener('mousemove', () => {
-                    containerSize()
-                })
                 
                 
                 
                 opcoesCombate.style.display = 'none'
                 container.innerHTML = `
-
+                
                 <div class="envelope-historia-personagem">
-            
+                
                 <div class="historia-personagem"><span class='guardion'>Guardião:</span><p id="historia-Espadachim">
                 “Olha só, achei que você era só um franguinho sem coragem de revidar o mínimo de intimidação, parece que subestimei você até demais.”</p>
-
+                
                 
                 
                 <button class="botao-historia" type="button" onclick="select(13)"> Continuar </button>
                 
                 <div class="imagem-personagem"><img  src="./img/img/guardion.jpg"></div>
-
+                
                 </div>
                 </div>
                 `
@@ -242,6 +237,7 @@ function select(sel){
                 typeWrite(titulo)
                 
                 
+                addStoryClass()
 
             break;
 
@@ -264,7 +260,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
 
             break;
 
@@ -286,7 +282,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
 
             break;
 
@@ -313,7 +309,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
             
             break;
 
@@ -341,7 +337,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
             
             break;
 
@@ -369,7 +365,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
             
             break;
 
@@ -397,7 +393,7 @@ function select(sel){
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
             
             break;
 
@@ -429,7 +425,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
 
                 pause()
                 stop()
@@ -466,7 +462,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
 
                 pause()
                 stop()
@@ -496,7 +492,7 @@ function select(sel){
 
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
+                
 
                 pause()
                 stop()
@@ -505,11 +501,7 @@ function select(sel){
 
             case 20:
 
-                document.addEventListener('mousemove', () => {
-                    mediaJS()
-                    
-                })
-
+                
                 boss.nome = 'Guardião'
                 boss.hp = 3000
                 boss.sprite = './sprites/guardion.gif'
@@ -520,65 +512,65 @@ function select(sel){
                 boss.crit = 100 
                 boss.animacao = 8500
                 boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
-
+                
                 combate()
                 
-
+                
                 ataqueHero()
-
+                
                 //ARRUMAR MODAL DE MORTE  
-
+                
+                addFightClass()
 
                 
             
             break;
 
             case 21:
-                containerSize()
-              
-            //Trilha sonora de batalha
-
-            audio = new Audio('./music/calangoMusic.mp3')
-            audio.play()   
                 
-
-            container.innerHTML = `
-
-            <div class="envelope-historia-personagem">
-        
-            <div class="historia-personagem"><p id="historia-Espadachim">
-            ${hero.nome} então parte para o reino do Norte, encontrando vários inimigos no caminho, porém facilmente acabando com eles, e eventualmente, acabando trombando com Lacerta, imediatamente assumindo a instância de batalha, por ele ser o único homem-lagarto que havia encontrado até agora. 
-            
-            </p>
-
-            <button class="botao-historia" type="button" onclick="select(22)"> Continuar </button>
-
-            <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-
-
-            </div>
-            </div>
-
-
-            `
-            var titulo = document.getElementById('historia-Espadachim')
+                
+                //Trilha sonora de batalha
+                
+                audio = new Audio('./music/calangoMusic.mp3')
+                audio.play()   
+                
+                
+                container.innerHTML = `
+                
+                <div class="envelope-historia-personagem">
+                
+                <div class="historia-personagem"><p id="historia-Espadachim">
+                ${hero.nome} então parte para o reino do Norte, encontrando vários inimigos no caminho, porém facilmente acabando com eles, e eventualmente, acabando trombando com Lacerta, imediatamente assumindo a instância de batalha, por ele ser o único homem-lagarto que havia encontrado até agora. 
+                
+                </p>
+                
+                <button class="botao-historia" type="button" onclick="select(22)"> Continuar </button>
+                
+                <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
+                
+                
+                </div>
+                </div>
+                
+                
+                `
+                var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
             
-
+            addStoryClass()
+            
             break;
-
+            
             case  22:
                 
-                document.addEventListener('mousemove', () => {
-                    mediaJS()
-                })
                 
-
+                
+                
                 hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Mas que diabos é isso? Uma lagartixa falante? </span></p> 
-                    <p> Largatixa Falante: <span class="bossText"> Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>
+                <p> Largatixa Falante: <span class="bossText"> Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>
                 </span>`
-
-
+                
+                
                 boss.nome = 'Lagartixa Falante'
                 boss.hp = 45
                 boss.sprite = './sprites/calango.gif'
@@ -588,161 +580,169 @@ function select(sel){
                 boss.acerto = 8
                 boss.crit = 10 
                 boss.animacao = 2300
-
+                
                 hero.historia = 'select(23)'
-
+                
                 combateFake('combate()')
                 
+                addFightClass()
                 
                 break;
                 
-
-
+                
+                
                 case 23:
 
-                //Parar a música
-                pause()
-                stop()
-
+                    
+                    
+                    //Parar a música
+                    pause()
+                    stop()
+                    
+                    
+                    container.innerHTML = `
+                    
+                    <div class="envelope-historia-personagem">
+                    
+                    <div class="historia-personagem"><p id="historia-Espadachim">
+                    Após derrotar Lacerta, ${hero.nome} acaba encontrando um papel dentro de seu bolso (Lagartos tem bolsos?) que dizia a localização de seu próximo oponente, e uma nova pista da localização de Ufattelig; a princesa do reino do Sul, corrompida pelas forças do mal. 
+                    
+                    </p>
+                    
+                    <button class="botao-historia" type="button" onclick="select(24)"> Continuar </button>
+                    
+                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
+                    
+                    
+                    </div>
+                    </div>
+                    
+                    
+                    `
+                    var titulo = document.getElementById('historia-Espadachim')
+                    typeWrite(titulo)
+                    
+                    addStoryClass()
+                    
+                    break;
+                    
+                    
+                    case 24:
+                        
                 
-                container.innerHTML = `
-
-                <div class="envelope-historia-personagem">
-            
-                <div class="historia-personagem"><p id="historia-Espadachim">
-                Após derrotar Lacerta, ${hero.nome} acaba encontrando um papel dentro de seu bolso (Lagartos tem bolsos?) que dizia a localização de seu próximo oponente, e uma nova pista da localização de Ufattelig; a princesa do reino do Sul, corrompida pelas forças do mal. 
-                
-                </p>
-
-                <button class="botao-historia" type="button" onclick="select(24)"> Continuar </button>
-
-                <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-
-
-                </div>
-                </div>
-
-
-                `
-            var titulo = document.getElementById('historia-Espadachim')
-            typeWrite(titulo)
-            containerSize()
-
-            break;
-
-
-            case 24:
-                container.innerHTML = `
-
-                <div class="envelope-historia-personagem">
-            
-                <div class="historia-personagem"><p id="historia-Espadachim">
-                Sua localização não fora a coisa mais inconspicua do mundo, por ainda utilizar o caído reino dos Espadachim como seu castelo. Ao contrário de Lacerta, a princesa, Securis, era com total certeza um desafio a altura de se superar. 
-                
-                </p>
-    
-                <button class="botao-historia" type="button" onclick="select(25)"> Continuar </button>
-    
-                <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-    
-    
-                </div>
-                </div>
-    
-    
-                `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-                
-    
-                break;
+                        
+                        container.innerHTML = `
+                        
+                        <div class="envelope-historia-personagem">
+                        
+                        <div class="historia-personagem"><p id="historia-Espadachim">
+                        Sua localização não fora a coisa mais inconspicua do mundo, por ainda utilizar o caído reino dos Espadachim como seu castelo. Ao contrário de Lacerta, a princesa, Securis, era com total certeza um desafio a altura de se superar. 
+                        
+                        </p>
+                        
+                        <button class="botao-historia" type="button" onclick="select(25)"> Continuar </button>
+                        
+                        <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
+                        
+                        
+                        </div>
+                        </div>
+                        
+                        
+                        `
+                        var titulo = document.getElementById('historia-Espadachim')
+                        typeWrite(titulo)
+                        
+                        
+                        addStoryClass()
+                        
+                        break;
 
 
                 case 25:
                     
 
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
                     
-
-                //Trilha Sonora
-                audio = new Audio('./music/princessMusic.mp3')
-                audio.play()  
-
-                hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Droga, odeio bater em mulheres. Olha, você não pode só se render?</span></p> <p>Securis:<span class="bossText">MACHISTA!</span></p>`
+                    
+                    
+                    //Trilha Sonora
+                    audio = new Audio('./music/princessMusic.mp3')
+                    audio.play()  
+                    
+                    hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Droga, odeio bater em mulheres. Olha, você não pode só se render?</span></p> <p>Securis:<span class="bossText">MACHISTA!</span></p>`
+                    
+                    
+                    boss.nome = 'Securis'
+                    boss.hp = 80
+                    boss.sprite = './sprites/princess.gif'
+                    boss.img = './img/img/princess.jpg'
+                    boss.ataque = 40
+                    boss.erro = 7
+                    boss.acerto = 8
+                    boss.crit = 8
+                    boss.animacao = 4800
+                    
+                    hero.historia = 'select(26)'
+                    
+                    combateFake('combate()')
                 
-
-                boss.nome = 'Securis'
-                boss.hp = 80
-                boss.sprite = './sprites/princess.gif'
-                boss.img = './img/img/princess.jpg'
-                boss.ataque = 40
-                boss.erro = 7
-                boss.acerto = 8
-                boss.crit = 8
-                boss.animacao = 4800
-
-                hero.historia = 'select(26)'
-
-                combateFake('combate()')
-
-
-            
-
-            
-
-            break;
+                
+                    addFightClass()
+                
+                
+                
+                
+                break;
 
             case 26:
 
+                
+                
                 //Parar a música
                 pause()
                 stop()
                 
-
+                
                 container.innerHTML = `
-
+                
                 <div class="envelope-historia-personagem">
-            
+                
                 <div class="historia-personagem"><p id="historia-Espadachim">
                 Após derrotar Securis, ao extrair informações torturando-a, em seu último suspiro a mesma havia lhe dado a terceira pista da localização de Ufattelig, mais um de seus oficiais (para variar) um antigo invocador ermitão, Vocator, que foi corrompido pela maldade, servindo Ufattelig de uma forma menos agressiva, apenas lhe fornecendo unidades de batalha, por conseguir invocá-las, e não ativamente indo atrás de prisioneiros ou de vítimas de sua magia. 
                 
                 </p>
-    
+                
                 <button class="botao-historia" type="button" onclick="select(27)"> Continuar </button>
-    
+                
                 <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-    
-    
+                
+                
                 </div>
                 </div>
-    
-    
+                
+                
                 `
                 var titulo = document.getElementById('historia-Espadachim')
                 typeWrite(titulo)
-                containerSize()
                 
-    
+                
+                addStoryClass()
+                
                 break;
-
-
+                
+                
                 case 27:
-
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
-
+                    
+                    
+                    
+                    
+                    
                 //Trilha sonora
                 audio = new Audio('./music/volcatorMusic.mp3')
                 audio.play()  
-                    
+                
                 hero.dialogo = `<p>Vocator: <span class="bossText">Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</span></p> <p>${hero.nome}: <span class="heroText">Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</span></p> <p>Vocator: <span class="bossText">Impossível! Você não vai passar!</span></p>`
-
+                    
                 hero.historia = 'select(28)'
 
                 boss.nome = 'Vocator'
@@ -754,114 +754,123 @@ function select(sel){
                 boss.acerto = 8
                 boss.crit = 10 
                 boss.animacao = 5100
-
+                
                 combateFake('combate()')
-
-
-
+                
+                
+                addFightClass()
+                
                 break;
-
+                
                 case 28:
 
+                    
+                    
                     //Parar a música
                     pause()
                     stop()
-
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-Espadachim">
                     Vocator foi um desafio maior ainda que Securis, por suas invocações tomarem o seu lugar, lhe fornecendo segurança a maior parte do tempo. Mesmo derrotado entretanto, o mesmo não havia voltado ao seu estado normal, por estar completamente tomado pelas trevas. Aparentemente, até uma princesa tem mais força do que um mago experiente? Isso apenas comprova o quão banana era. Obviamente, era uma pena não conseguir extrair informações do mago, mas tal problema foi totalmente resolvido apenas olhando um pouco para seu esconderijo, coincidentemente, intelectuais adoravam escrever e anotar tudo o que tinham conhecimento, inclusive a localização de seus parceiros.
                     ${hero.nome} foi capaz de encontrar o próximo oficial a eliminar, ou melhor, os dois próximos.
-
+                    
                     
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(29)"> Continuar </button>
-        
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                   containerSize()
-        
                     
-
+                    
+                    addStoryClass()
+                    
 
                 break;
 
                 case 29:
 
+                    
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-Espadachim">
                     Os próximos oficiais baseiam-se em dois antigos servos reais, o segundo mais habilidoso Espadachim do Reino dos espadachins, ficando para trás apenas em relação ao rei, e um dos antigos magos que construíram os Guardiões, a última tentativa da humanidade de repelir Ufattelig, infelizmente, ambos estavam completamente corrompidos pelo mal, por terem sido um dos primeiros a cair durante a grande guerra, afinal, estavam na linha de frente da aliança. 
                     Isso significava que, não haveria uma situação de tanta sorte quanto Securis, a batalha seria até a morte, não que todas até agora não fossem, mas salvá-los não era uma opção.
                     Seus nomes, mesmo que marcados na história por décadas, haviam sido perdidos, banhados por histórias de suas brutalidades enquanto na governança de Ufattelig, mesmo sendo pessoas extraordinárias, capazes de receberem posições reais, apenas suas ocupações, como “Mago” e “Espadachim” havia lhe restado. Um triste fim.
-
-
+                    
+                    
                     
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(30)">  Irei lutar contra o segundo melhor Espadachim, claro que quando eu derrotá-lo, EU me tornarei o melhor Espadachim! </button>
-
+                    
                     <button class="botao-historia" type="button" onclick="select(36)">  Irei lutar contra o mago real, é uma boa oportunidade de saber um pouco mais do porque os guardiões existem, e também bater em mago é muito legal! </button>
-        
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
+                    
         
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                  
-                        
-                break;
-
-                case 30: 
-
+                    
+                    addStoryClass()
+                    
+                    break;
+                    
+                    case 30: 
+                    
+                    
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-Espadachim">
                     Claro, o pensamento individualista, egoísta, e detestável de ${hero.nome} existia até no fim do mundo, “serei o melhor, com total certeza!”, uma linha de decisão simples, mas que querendo ou não, iria progredir na missão de salvar o mundo. Então, ${hero.nome} partiu em direção ao seu oponente Espadachim, confiante que iria ganhar, porém não sabendo o desafio que estaria por vir.
-
+                    
                     
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(31)"> Continuar </button>
-        
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-Espadachim')
                     typeWrite(titulo)
-                   
-
+                    
+                    addStoryClass()
+                    
                     break;
-
+                    
                     case 31: 
-
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
                 
                     <div class="historia-personagem"><p id="historia-Espadachim">
@@ -917,17 +926,13 @@ function select(sel){
 
                     case 33: 
 
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
-
+                    
                     audio = new Audio('./music/espadachimMusic.mp3')
                     audio.play()  
-
+                    
                     hero.dialogo = `<p> Espadachim Corrompido: <span class="bossText">“Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</span></p> <p>${hero.nome}: <span class="heroText">Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</span></p> <p>Espadachim Corrompido: <span class="bossText">Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</span></p>`
                     
-
+                    
                     boss.nome = 'Espadachim Corrompido'
                     boss.hp = 235
                     boss.sprite = './sprites/bossEspadachim.gif'
@@ -937,47 +942,51 @@ function select(sel){
                     boss.acerto = 9
                     boss.crit = 10 
                     boss.animacao = 3400
-
+                    
                     hero.historia = 'select(34)'
-
+                    
                     combateFake('combate()')
-
+                    
+                    addFightClass()
 
                     break;
 
                     case 34: 
 
+                   
+                    
                     //Parar a música 
                     pause()
                     stop()
-
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-espadachim">
                     Não surpreendentemente, o espadachim era realmente muito feroz com seus ataques, arrastando sua espada na estrada, fazendo inúmeras faíscas a cada golpe, a cada estocada quase fazendo com que ${hero.nome} caísse no chão, porém, havia emergido vitoriosamente. 
                     ${hero.nome}: “MINHA NOSSA SENHORA, EU SOU O SEGUNDO MELHOR ESPADACHIM DO REINO! YEES!”
                     O espadachim restante não conseguia colocar seus dois neurônios juntos a fim de perceber que, seu reino não exatamente “existia” mais, teoricamente, ele poderia ser o último espadachim do mundo, porém caso viesse a essa realização, era capaz dele se auto-proclamar o melhor espadachim do reino, por não existir mais nenhum.
-
-
+                    
+                    
                     
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(35)"> Continuar </button>
-        
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                   containerSize()
-
+                    
+                    addStoryClass()
+                    
                     break;
 
                     case 35: 
@@ -1081,19 +1090,15 @@ function select(sel){
                     
                     case 38: 
 
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
-
+                    
                     //Trilha sonora
                     audio = new Audio('./music/magoMusic.mp3')
                     audio.play()  
-
+                    
                     hero.dialogo = `<p>Mago Corrompido:<span class="bossText">Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</span></p> <p>${hero.nome}:<span class="heroText">Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</span></p> <p>Mago Corrompido:<span class="bossText">Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</span></p>`
                     
                     hero.historia = 'select(39)'
-
+                    
                     boss.nome = 'Mago Corrompido'
                     boss.hp = 150
                     boss.sprite = './sprites/bossMago.gif'
@@ -1103,54 +1108,53 @@ function select(sel){
                     boss.acerto = 9
                     boss.crit = 10
                     boss.animacao = 4500
-
+                    
                     combateFake('combate()')
-
-                    container.style.display ='flex'
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px';
-
-
+                    
+                    
+                    addFightClass()
+                    
                     break;
-
+                    
                     case 39: 
 
+                    
+                    
                     //Parar a música
                     pause()
                     stop()
-
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-espadachim">
                     Quem diria que um mago seria tão poderoso assim? ${hero.nome} que o diga. Derrotá-lo foi mais difícil do que matar barata com veneno, nem quando achava que ganharia havia ganhado de fato, e a batalha havia se alastrado demais. Obviamente, após derrotá-lo, roubar seus pertences e roupa era o mais cordial, o que um cadáver tem a dizer sobre perder o que é seu?
                     Entre seus itens, havia um mapa da localização do castelo de Ufattelig, o qual usou para seguir em frente, no caminho, acaba lembrando-se de um fator indispensável!
                     ${hero.nome}: “AHH! EU NEM CONSEGUI SEQUER UMA PISTA DOS GUARDIÕES!”
                     Mesmo que tivesse seus arrependimentos, a sua jornada estava beirando ao fim.
-
-
+                    
+                    
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(40)"> Continuar
                     </button>
-
+                    
                    
-        
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                   containerSize()
-
+                    
+                    addStoryClass()
+                    
                     break;
 
                     case 40: 
@@ -1265,23 +1269,18 @@ function select(sel){
 
                     break;
 
-                    case 43: 
-
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
-
+                    case 43:     
+                    
                     hero.dialogo = `<p>Dragão: <span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}: <span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Dragão: <span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>` 
-
+                    
                     hero.ataque= 0,
                     hero.erro= 0,
                     hero.acerto=0,
                     hero.crit= [9],
                     hero.historia = 'select(4333)'
                     
-
-
+                    
+                    
                     boss.nome = 'Dragão'
                     boss.hp = 100
                     boss.sprite = './sprites/dragon.gif'
@@ -1291,23 +1290,16 @@ function select(sel){
                     boss.acerto = 9
                     boss.crit = 10 
                     boss.animacao = 6200
-
+                    
                     combateFake('combate()')
-
-                    container.style.display ='flex'
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px';
-
+                    
+                    addFightClass()
+                    
                     break;
-
+                    
                     case 4333: 
 
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
+                    
                     
                     hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
                     combateFake('select(44)')
@@ -1316,35 +1308,38 @@ function select(sel){
 
                     case 44: 
 
+                    
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-espadachim">
                     O dragão, mesmo contorcendo-se e implorando por ajuda de Ufattelig, não a recebia de jeito algum. Seu líder assistia sua derrota de ínicio ao fim, e por estar usando um elmo fechado, sua reação e olhar era impossível de distinguir, quem sabe ele estava sadicamente assistindo seu servo perecer em sua frente, ou simplesmente sentia que precisava ajudar, porém não podia mexer seu corpo por algum motivo. Havia várias variáveis, porém, todas levavam a uma única alternativa; não importava. Tudo o que importava, é que ao subir as escadas do castelo, ${hero.nome} iria estar cara a cara com o rei do mal, o motivo de sua jornada, o motivo dessa calamidade estar acontecendo ao redor dos reinos.
-
-
-
-
+                    
+                    
+                    
+                    
                     </p>
-        
+                    
                     <button class="botao-historia" type="button" onclick="select(45)"> Ir para a batalha final
                     </button>
-
-        
+                    
+                    
         
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                   containerSize()
-
+                    
+                    addStoryClass()
+                    
                     break;
 
                     case 45: 
@@ -1446,36 +1441,27 @@ function select(sel){
 
                     case 4888:
 
-                        document.addEventListener('mousemove', () => {
-                            mediaJS()
-                            
-                        })
                         
-
+                        boss.nome = 'Ufattelig'
+                        boss.hp = 1500
+                        boss.sprite = './sprites/bossFinal.gif'
+                        boss.img = './img/img/bossFinal.jpg'
+                        boss.ataque = hero.hp - 1
+                        boss.erro = 0
+                        boss.acerto = 10
+                        boss.crit = 0 
+                        boss.animacao = 5800
                         
-                    container.style.display ='flex'
-                    container.style.maxWidth = "1400px";
-                    container.style.height = '500px';
-
-                    boss.nome = 'Ufattelig'
-                    boss.hp = 1500
-                    boss.sprite = './sprites/bossFinal.gif'
-                    boss.img = './img/img/bossFinal.jpg'
-                    boss.ataque = hero.hp - 1
-                    boss.erro = 0
-                    boss.acerto = 10
-                    boss.crit = 0 
-                    boss.animacao = 5800
-
-                    combateFake('combateFinal()')
-                    
-
-                    
-
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-
-                    
+                        combateFake('combateFinal()')
+                        
+                        
+                        
+                        
+                        var titulo = document.getElementById('historia-espadachim')
+                        typeWrite(titulo)
+                        
+                        
+                        addFightClass()
 
                     
 
@@ -1483,35 +1469,38 @@ function select(sel){
 
                     case 48: 
 
+                    
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-espadachim">
                     ${hero.nome}: “Impossível! Como?? Só com um golpe…”
-
+                    
                     Ufattelig estava prestes a acabar com a vida do espadachim. Uma jornada inteira, apenas para acabar logo no final, por não ser forte o suficiente, ele realmente não era o bastante? Tantos inimigos derrotados, e ele era incapaz de terminar a jornada sozinho? De que aquelas lutas bastavam, se nenhuma delas lhe deixava mais forte? Do que a vida adiantava?
                     Mas então…
-
-
+                    
+                    
                     </p>
         
                     <button class="botao-historia" type="button" onclick="select(49)"> Continuar
                     </button>
-
-        
-        
+                    
+                    
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                   containerSize()
+                    
+                    addStoryClass()
 
                     break;
 
@@ -1549,11 +1538,9 @@ function select(sel){
 
                     case 50: 
 
-                    document.addEventListener('mousemove', () => {
-                        mediaJS()
-                        
-                    })
-
+                    
+                    
+                    
                     boss.nome = 'Ufattelig'
                     boss.hp = 1500
                     boss.sprite = './sprites/bossFinal.gif'
@@ -1563,7 +1550,7 @@ function select(sel){
                     boss.acerto = 8
                     boss.crit = 10 
                     boss.animacao = 2300
-
+                    
                     hero.nome = 'Guardião'
                     hero.hp = 1000
                     hero.sprite = './sprites/guardion.gif'
@@ -1574,16 +1561,14 @@ function select(sel){
                     hero.crit = 10 
                     hero.animacao = 2300
                     hero.historia = 'select(5000)'
-
+                    
                     hero.dialogo = `<p>Guardião: <span class="heroText">“Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</span></p> <p> Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
                     </p>Guardião:<span class="heroText"> “Não importa. Tenho que lhe deter aqui, e agora.”</span></p>`
                     
                     combateFake('combate()')
-
                     
-                   
-                
-                    
+                    addFightClass()
+       
 
                     break;
 
@@ -1598,86 +1583,91 @@ function select(sel){
 
                     case 51: 
 
+                    
+                    
                     container.innerHTML = `
-
+                    
                     <div class="envelope-historia-personagem">
-                
+                    
                     <div class="historia-personagem"><p id="historia-espadachim">
                     Havia acabado. Tantas eras em guerra constante, tantas vidas perdidas, tantas famílias destruídas e lares queimados ao chão, tantos sonhos despedaçados e tantos reinos dizimados.
                     E havia acabado.
                     O Rei Lanceiro havia completado seu objetivo. Ufattelig está morto. O que quer que ele fosse, não iria mais interferir com os reinos, e tudo voltaria à paz.
                     As pálpebras de Ru’thra se permitiam fechar mais uma vez, pela última vez, sua fornalha de almas, antes capaz de só permitir movimentos simples, estava completamente vazia, e ele não planejava sacrificar mais ninguém para manter sua longevidade, qual seria o motivo, reinar? Nada disso importava, o rei do mal havia caído naquele dia, a vitória era da humanidade.
                     Ru’thra, ajoelhado em frente ao antigo rei do mal, lentamente fecha os olhos, e aceita o seu destino; a sua morte, que deveria ter acontecido dezenas de anos atrás, que fora empurrada até hoje por rituais e magias capazes de alimentar um ser a base de almas.
-
-
-                    </p>
-        
                     
-
-        
-        
+                    
+                    </p>
+                    
+                    
+                    
+                    
+                    
                     <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
-        
-        
+                    
+                    
                     </div>
                     </div>
-        
-        
+                    
+                    
                     `
                     var titulo = document.getElementById('historia-espadachim')
                     typeWrite(titulo)
-                    containerSize()
+
+                    addStoryClass()
+                    
                     break;    
                     
                     case 100:
-
                         
-                            hero.nome = 'Ronaldo'
-                            hero.hp = 100
-                            hero.sprite = './sprites/Axe_M.gif'
-                            hero.img ='./img/img/Axe_M1.jpg'
-                            hero.perfil ='./img/rostoHero/rostoQuebra-M.png'
-                            hero.ataque = 100
-                            hero.erro = 6 
-                            hero.acerto = 8
-                            hero.crit = 10
-                            hero.pocao = 4
-                            hero.animacao = 1100
-                            
-
-
+                        
+                        
+                        
+                        hero.nome = 'Ronaldo'
+                        hero.hp = 100
+                        hero.sprite = './sprites/Axe_M.gif'
+                        hero.img ='./img/img/Axe_M1.jpg'
+                        hero.perfil ='./img/rostoHero/rostoQuebra-M.png'
+                        hero.ataque = 100
+                        hero.erro = 6 
+                        hero.acerto = 8
+                        hero.crit = 10
+                        hero.pocao = 4
+                        hero.animacao = 1100
+                        
+                        
+                        
                         container.innerHTML = `
-            
+                        
                         <div class="envelope-historia-personagem">
                     
                         <div class="historia-personagem"><p id="historia-quebra-escudos-m">
                         A busca da força, o mais puro conceito de ser extraordinário em todos os aspectos possíveis, ser o melhor em quebrar crânios só com o flexionar dos músculos. Esse é o caminho do Reino do Sul. Esse, também, é o caminho do Quebra-Escudos chamado Vigvisir, que a vida toda acreditou que se a violência não resolvia as coisas, era porque a violência não estava sendo devidamente aplicada. Teimoso, extremamente forte, porém, infelizmente, por contrapartida, também sem muito cérebro, o que lhe fazia errar seus alvos mais do que acertá-los.
                         
                         </p>
-            
+                        
                         <button class="botao-historia" type="button" onclick="select(101)"> Continuar </button>
-            
+                        
                         <div class="imagem-personagem"><img  src="../img/img/Axe_M1.jpg"></div>
-            
+                        
                         </div>
                         </div>
                         `
                         var titulo = document.getElementById('historia-quebra-escudos-m')
                         typeWrite(titulo)
-                        container.style.display = 'flex'
-                        container.style.maxWidth = '700px';
-                        container.style.maxHeight = '700px';
-                        container.style.height= '700px';
-                        break;
-            
-                        case 101:
-                        container.innerHTML = `
-            
-                        <div class="envelope-historia-personagem">
-                    
-                        <div class="historia-personagem"><p id="historia-quebra-escudos-m">
-                        A guerra contra Ufattelig foi uma terrível guerra para todos os reinos, os cavaleiros foram dizimados, os espadachins, que meio que já estavam separados mesmo, ficaram ainda mais distantes, os lanceiros, com sua disciplina e lealdade, haviam perdido seu mártir mais valioso, seu próprio rei, e as terras além do reino ficaram ainda mais caótica do que eram antes, com o ressurgimento e ocupação de forças malignas, que impregnava as florestas como rios, e matava a plantação como se fossem um poderoso veneno.
                         
+                        addStoryClass()
+                        
+                        break;
+                        
+                        case 101:
+                            container.innerHTML = `
+                            
+                            <div class="envelope-historia-personagem">
+                            
+                            <div class="historia-personagem"><p id="historia-quebra-escudos-m">
+                            A guerra contra Ufattelig foi uma terrível guerra para todos os reinos, os cavaleiros foram dizimados, os espadachins, que meio que já estavam separados mesmo, ficaram ainda mais distantes, os lanceiros, com sua disciplina e lealdade, haviam perdido seu mártir mais valioso, seu próprio rei, e as terras além do reino ficaram ainda mais caótica do que eram antes, com o ressurgimento e ocupação de forças malignas, que impregnava as florestas como rios, e matava a plantação como se fossem um poderoso veneno.
+                            
                         </p>
             
                         <div class="envelope-botoes-historia"><button class="botao-historia" type="button" onclick="select(102)"> Continuar </button></div>
@@ -1691,10 +1681,7 @@ function select(sel){
                         var titulo = document.getElementById('historia-quebra-escudos-m')
                         typeWrite(titulo)
             
-                        container.style.display = 'flex'
-                        container.style.maxWidth = '700px';
-                        container.style.maxHeight = '700px';
-                        container.style.height= '700px';
+                        
                         break;
             
                         case 102:
@@ -1717,10 +1704,7 @@ function select(sel){
                         `
                         var titulo = document.getElementById('historia-quebra-escudos-m')
                         typeWrite(titulo)
-                        container.style.display = 'flex'
-                        container.style.maxWidth = '700px';
-                        container.style.maxHeight = '700px';
-                        container.style.height= '700px';
+                        
                         break;
             
                         case 103:
@@ -1742,10 +1726,7 @@ function select(sel){
                         `
                         var titulo = document.getElementById('historia-quebra-escudos-m')
                         typeWrite(titulo)
-                        container.style.display = 'flex'
-                        container.style.maxWidth = '700px';
-                        container.style.maxHeight = '700px';
-                        container.style.height= '700px';
+                        
                         break;
             
                         case 104:
@@ -1773,38 +1754,36 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
                             
                             
                         break;
             
                         case 106:
                                     
-                                    document.addEventListener('mousemove', () => {
-                                        mediaJS()
-                                    })
-                    
-                                    boss.nome = 'Guardião'
-                                    boss.hp = 3000
-                                    boss.sprite = './sprites/guardion.gif'
-                                    boss.img = './img/img/guardion.jpg'
-                                    boss.ataque = 200
-                                    boss.erro = 4
-                                    boss.acerto = 8
-                                    boss.crit = 10 
-                                    boss.animacao = 2300
+                            
+                            
+                            boss.nome = 'Guardião'
+                            boss.hp = 3000
+                            boss.sprite = './sprites/guardion.gif'
+                            boss.img = './img/img/guardion.jpg'
+                            boss.ataque = 200
+                            boss.erro = 4
+                            boss.acerto = 8
+                            boss.crit = 10 
+                            boss.animacao = 2300
+                            
+                            combateFake('select(107)')
+                            ataqueFake()
+                            opcoesCombate.style.display = 'block'
+                            
+                            addFightClass()
                                     
-                                    combateFake('select(107)')
-                                    ataqueFake()
-                                    opcoesCombate.style.display = 'block'
-             
-                                    
-                                break;
+                            break;
             
                         case 107:
+                           
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -1827,10 +1806,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -1856,10 +1832,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -1887,10 +1860,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -1917,10 +1887,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -1947,10 +1914,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -1978,10 +1942,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2008,10 +1969,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2030,7 +1988,7 @@ function select(sel){
                             </p>
                 
                             <button class="botao-historia" type="button" onclick="select(115)"> E-Espera! Eu estava zoando! É só zoeira!</button>
-                            <button class="botao-historia" type="button" onclick="select()"> Vamo nessa monte de lata. Eu vou te matar até você morrer  </button>
+                            <button class="botao-historia" type="button" onclick="select(116)"> Vamo nessa monte de lata. Eu vou te matar até você morrer  </button>
                             
                             
             
@@ -2041,10 +1999,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2075,14 +2030,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 116:
+
+                            addFightClass()
+                            
                                     boss.nome = 'Guardião'
                                     boss.hp = 3000
                                     boss.sprite = './sprites/guardion.gif'
@@ -2095,9 +2050,7 @@ function select(sel){
                                     boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
             
                                     combate()
-                                    container.style.display ='flex'
-                                    container.style.maxWidth = "1400px";
-                                    container.style.height = '500px';
+                                    
             
                                     ataqueHero()
             
@@ -2113,6 +2066,9 @@ function select(sel){
                         break;    
             
                         case 117:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2140,47 +2096,39 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 119:
             
-                            
-            
-                            // Chamar o combate contra a Lacerta
+
+                            addFightClass()
+                    
                         
                            
                              hero.dialogo = `<p>Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p><p>Vigvisir: “Já comi lagarto queimado em expedições.. Espero que não queime esse.”</p><p>Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”</p>`
                             
-                                    boss.nome = 'Lagartixa Falante'
-                                    boss.hp = 45
-                                    boss.sprite = './sprites/calango.gif'
-                                    boss.img = './img/img/calango.jpg'
-                                    boss.ataque = 18
-                                    boss.erro = 4
-                                    boss.acerto = 8
-                                    boss.crit = 10 
-                                    boss.animacao = 2300
-            
-                                    hero.historia = 'select(120)'
-            
-                                    combateFake('combate()')
-                                    
-                                    container.style.display ='flex'
-                                    container.style.maxWidth = "1400px";
-                                    container.style.height = '500px';
-                                    break;
-            
-                            
-                           
-            
+                            boss.nome = 'Lagartixa Falante'
+                            boss.hp = 45
+                            boss.sprite = './sprites/calango.gif'
+                            boss.img = './img/img/calango.jpg'
+                            boss.ataque = 18
+                            boss.erro = 4
+                            boss.acerto = 8
+                            boss.crit = 10 
+                            boss.animacao = 2300
+    
+                            hero.historia = 'select(120)'
+    
+                            combateFake('combate()')
+              
                         break;
             
                         case 120:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2203,10 +2151,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2233,16 +2178,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 122:
             
-                            // Combate contra a Securis
+                            addFightClass()
+                    
             
                            
                              hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p>`
@@ -2260,21 +2203,13 @@ function select(sel){
                             combateFake('combate()')
                             hero.historia = 'select(123)'
             
-                                    
-            
-            
-            
-                                container.style.display ='flex'
-            
-                                container.style.maxWidth = "1400px";
-            
-                                container.style.height = '500px';
-            
-                             
             
                         break;
             
                         case 123:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2297,16 +2232,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 124:
             
-                            // Combate contra o Vocator
+                            addFightClass()
+                    
             
                            hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>`
             
@@ -2327,6 +2260,9 @@ function select(sel){
                         break;
             
                         case 125:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2351,10 +2287,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2387,10 +2320,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2420,10 +2350,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2453,10 +2380,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2486,16 +2410,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 130:
             
-                            // Combate do Vigsivir contra o Espadachim
+                            addFightClass()
+                   
             
                          hero.dialogo = `<p>Espadachim Corrompido: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Vigvisir: “Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.”</p> <p>Espadachim Corrompido: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”</p>`
 
@@ -2517,6 +2439,9 @@ function select(sel){
                         break;
             
                         case 131:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2542,10 +2467,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2577,10 +2499,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2610,10 +2529,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2645,10 +2561,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2679,16 +2592,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 136:
             
-                            // Combate entre o Vigvisir
+                            addFightClass()
+                    
             
                             hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.”</p> <p>Vigvisir: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!”</p> <p>Mago Corrompido: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…”</p>`
                                         
@@ -2710,6 +2621,9 @@ function select(sel){
                         break;
             
                         case 137:
+
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2739,10 +2653,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2777,10 +2688,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2818,10 +2726,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2852,14 +2757,14 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
                         case 141:
+
+                            addFightClass()
+                            
             
                           hero.dialogo = `<p> Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?” </p> <p>Vigvisir: “Até o largartão parecia mais desafiante que você!” </p> <p>Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!” </p>` 
             
@@ -2890,6 +2795,8 @@ function select(sel){
                         break;
             
                         case 142:
+                            
+                            addStoryClass()
             
                             container.innerHTML = `
             
@@ -2916,20 +2823,15 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
-                        /*Batalha final */
-                        /*Batalha final */
-                        /*Batalha final */
-                        /*Batalha final */
-                        /*Batalha final */
+                        
             
                         case 143:
+
+                            
             
                             container.innerHTML = `
             
@@ -2953,10 +2855,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -2987,10 +2886,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -3019,10 +2915,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
 
                             hero.historia = 'select(146)'
             
@@ -3054,10 +2947,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -3088,10 +2978,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             
@@ -3119,10 +3006,7 @@ function select(sel){
                             `
                             var titulo = document.getElementById('historia-quebra-escudos-m')
                             typeWrite(titulo)
-                            container.style.display = 'flex'
-                            container.style.maxWidth = '700px';
-                            container.style.maxHeight = '700px';
-                            container.style.height= '700px';
+                            
             
                         break;
             

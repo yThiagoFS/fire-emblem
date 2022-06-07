@@ -22,7 +22,7 @@
       flex-direction:column;
       align-items:center;
       max-height:1100px;
-  }
+    }
     .conteudo1,
     .conteudo-meio,
     .conteudo2{
@@ -35,7 +35,6 @@
     .atributo2{
       display:none;
     }
-    
      #hero, 
      #boss{
        height:20%;
@@ -53,7 +52,6 @@
     left:50%;
     display:flex;
     margin-top:30px;
-    
   }
   .middle{
     display:flex;
@@ -62,7 +60,6 @@
   .classe{
     width:200px;
   }
-  
   .envelope-botoes-genero{
     max-width:300px;
     width:100%;
@@ -80,8 +77,6 @@
     justify-content:center;
     
   }
-  
-
   #botao-feminino{
     
     padding:20px;
@@ -106,7 +101,6 @@
     font-variant:small-caps;
     border-radius:20px;
   }
-
   .botoes-genero>h1{
     position:relative;
     top:0;
@@ -114,6 +108,17 @@
     transform:translateX(-50%)
     
   }
+}
+
+@media screen and (max-width:1300px){
+  #container.fight{
+    max-width: 700px;
+    width: 100%;
+    height: 700px;
+    row-gap: 15px;
+    flex-direction: column;
+  }
+  
 }
 
 

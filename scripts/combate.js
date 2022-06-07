@@ -232,9 +232,7 @@ opcoesCombate.innerHTML = `
             </form>
 
 `
-
-
-   
+ 
 container.innerHTML = `
 
                 <div id="hero">
@@ -248,7 +246,7 @@ container.innerHTML = `
 
             <div id="textos">
 
-                <div id='res' class="dialogos">
+                <div id='res' class="dialogos fight">
 
                 </div>
 
@@ -274,20 +272,11 @@ container.innerHTML = `
                         
             `
            
-                    container.style.display = 'flex'
-                   
-
-                    container.style.maxWidth = "1400px";
-
-                    container.style.height = '500px'; 
+                    
     
 }
 
 function combateFake(selCombate){
-
-   
-                
-
                     const res = document.getElementById('res')    
                     
                     opcoesCombate.style.display = 'block'
@@ -304,9 +293,7 @@ function combateFake(selCombate){
                         </div>
                     </div>
                     </form>`
-                    
-                    
-                    
+            
                     
                     container.innerHTML = `
     
@@ -321,7 +308,7 @@ function combateFake(selCombate){
     
                 <div id="textos">
     
-                    <div class="dialogos" id='res'>
+                    <div class="dialogos fight" id='res'>
                         ${hero.dialogo}
                     </div>
     
@@ -345,18 +332,11 @@ function combateFake(selCombate){
     
                 </div>            
                             
-                `
-
-                container.style.display = 'flex';
-                  
+                `                  
 
                 
         
     }
-
-   
-                    
-
 
     //FINAL DO JOGO
 
@@ -382,9 +362,7 @@ function combateFake(selCombate){
                     </form>
         
         `
-        
-        
-           
+       
         container.innerHTML = `
         
                         <div id="hero">
@@ -398,7 +376,7 @@ function combateFake(selCombate){
         
                     <div id="textos">
         
-                        <div id='res' class="dialogos">
+                        <div id='res' class="dialogos fight">
         
                         </div>
         
@@ -423,12 +401,8 @@ function combateFake(selCombate){
                     </div>            
                                 
                     `
-                   
-                     
-            
+
         }
-
-
 
         function atacarFinal(){
             ataqueFinalHero() 
@@ -492,12 +466,8 @@ function combateFake(selCombate){
                 }
         
             }, delay);
-
-            
+ 
         }
-
-       
-    
 
         function ataqueFinal(){
             //boss
@@ -564,9 +534,6 @@ function combateFake(selCombate){
                 
         
             }, delay);
-            
-            
-        
         }
 
     function combateVitoria(){
@@ -604,7 +571,7 @@ function combateFake(selCombate){
     
                     var contador = document.getElementById('vida')
                     hero.pocao -= 1
-                    console.log(hero.pocao)
+                    
 
                     
 
@@ -642,16 +609,15 @@ function combateFake(selCombate){
                          heroVida.value = val 
                          ataqueBoss()
                      }
-                    
                 }
-
-
-         
             }
 
 
 
-    
+    function openModalMorte(){
+        const modal = document.getElementById("modal-morte")
+        modal.style.display = "flex"
+    }
         
 
     
