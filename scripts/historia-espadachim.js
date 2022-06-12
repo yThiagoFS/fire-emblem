@@ -14,7 +14,7 @@ var hero = {
     progresso: [0],
     chefes: [0],
     historia: ['']
-    
+
 }
 
 var boss = {
@@ -32,30 +32,30 @@ var boss = {
 
 }
 
-function select(sel){
+function select(sel) {
 
     opcoesCombate.style.display = 'none'
 
-    switch(sel){
-        
-            
+    switch (sel) {
+
+
 
         case 5:
 
             addStoryClass()
-                hero.nome = 'Ronaldo'
-                hero.hp = 60
-                hero.sprite ='./sprites/Sword.gif'
-                hero.img = './img/img/Sword1.jpg'
-                hero.perfil = './img/rostoHero/rostoEspadachim.png'
-                hero.ataque = [18]
-                hero.erro = 2
-                hero.acerto =6
-                hero.crit = 7
-                hero.pocao = 3
-                hero.animacao = 2900
-                
-            
+            hero.nome = 'Ronaldo'
+            hero.hp = 60
+            hero.sprite = './sprites/Sword.gif'
+            hero.img = './img/img/Sword1.jpg'
+            hero.perfil = './img/rostoHero/rostoEspadachim.png'
+            hero.ataque = [18]
+            hero.erro = 2
+            hero.acerto = 6
+            hero.crit = 7
+            hero.pocao = 3
+            hero.animacao = 2900
+
+
 
             container.innerHTML = `
 
@@ -78,12 +78,12 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            
+
             break;
 
-            
 
-            case 6:
+
+        case 6:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -105,12 +105,12 @@ function select(sel){
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
 
-            
+
             break;
 
-            
 
-            case 7:
+
+        case 7:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -132,10 +132,10 @@ function select(sel){
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
 
-            
+
             break;
 
-            case 8:
+        case 8:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -156,11 +156,11 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            
+
             break;
 
 
-            case 9:
+        case 9:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -181,42 +181,42 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            
+
             break;
 
-            case 10:
+        case 10:
 
-                
-                boss.nome = 'Guardião'
-                boss.hp = 3000
-                boss.sprite = './sprites/guardion.gif'
-                boss.img = './img/img/guardion.jpg'
-                boss.ataque = 200
-                boss.erro = 4
-                boss.acerto = 8
-                boss.crit = 10 
-                boss.animacao = 2300
-                
-                
-                
-                
-                
-                combateFake('select(11)')
-                ataqueFake()
-                opcoesCombate.style.display = 'block'
-                
-                addFightClass()
-                
-                
+
+            boss.nome = 'Guardião'
+            boss.hp = 3000
+            boss.sprite = './sprites/guardion.gif'
+            boss.img = './img/img/guardion.jpg'
+            boss.ataque = 200
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
+
+
+
+
+
+            combateFake('select(11)')
+            ataqueFake()
+            opcoesCombate.style.display = 'block'
+
+            addFightClass()
+
+
             break;
 
-            case 11:
-                
-                
-                
-                
-                opcoesCombate.style.display = 'none'
-                container.innerHTML = `
+        case 11:
+
+
+
+
+            opcoesCombate.style.display = 'none'
+            container.innerHTML = `
                 
                 <div class="envelope-historia-personagem">
                 
@@ -232,17 +232,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-                
-                addStoryClass()
+
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
+            addStoryClass()
 
             break;
 
-            case 12:
-                container.innerHTML = `
+        case 12:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -258,14 +258,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
 
             break;
 
-            case 12:
-                container.innerHTML = `
+        case 12:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -280,14 +280,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
 
             break;
 
-            case 13:
-                container.innerHTML = `
+        case 13:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -307,14 +307,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
             break;
 
-            case 14:
-                container.innerHTML = `
+        case 14:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -335,14 +335,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
             break;
 
-            case 15:
-                container.innerHTML = `
+        case 15:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -363,14 +363,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
             break;
 
-            case 16:
-                container.innerHTML = `
+        case 16:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -391,14 +391,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
             break;
 
-            case 17:
-                container.innerHTML = `
+        case 17:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -421,19 +421,19 @@ function select(sel){
                 </div>
                 </div>
                 `
-                //Ajustar
+            //Ajustar
 
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
-                pause()
-                stop()
-            
+
+            pause()
+            stop()
+
             break;
 
-            case 18:
-                container.innerHTML = `
+        case 18:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -458,19 +458,19 @@ function select(sel){
                 </div>
                 </div>
                 `
-                
 
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
 
-                pause()
-                stop()
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+
+            pause()
+            stop()
+
             break;
 
-            case 19:
-                container.innerHTML = `
+        case 19:
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -488,54 +488,54 @@ function select(sel){
                 <button class="botao-historia" type="button" onclick="select(21)">Continuar</button>
 
                 `
-                //Ajustar
+            //Ajustar
 
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
-                pause()
-                stop()
-            
+
+            pause()
+            stop()
+
             break;
 
-            case 20:
+        case 20:
 
-                
-                boss.nome = 'Guardião'
-                boss.hp = 3000
-                boss.sprite = './sprites/guardion.gif'
-                boss.img = './img/img/guardion.jpg'
-                boss.ataque = 300
-                boss.erro = 0
-                boss.acerto = 10
-                boss.crit = 100 
-                boss.animacao = 8500
-                boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
-                
-                combate()
-                
-                
-                ataqueHero()
-                
-                //ARRUMAR MODAL DE MORTE  
-                
-                addFightClass()
 
-                
-            
+            boss.nome = 'Guardião'
+            boss.hp = 3000
+            boss.sprite = './sprites/guardion.gif'
+            boss.img = './img/img/guardion.jpg'
+            boss.ataque = 300
+            boss.erro = 0
+            boss.acerto = 10
+            boss.crit = 100
+            boss.animacao = 8500
+            boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
+
+            combate()
+
+
+            ataqueHero()
+
+            //ARRUMAR MODAL DE MORTE  
+
+            addFightClass()
+
+
+
             break;
 
-            case 21:
-                
-                
-                //Trilha sonora de batalha
-                
-                audio = new Audio('./music/calangoMusic.mp3')
-                audio.play()   
-                
-                
-                container.innerHTML = `
+        case 21:
+
+
+            //Trilha sonora de batalha
+
+            audio = new Audio('./music/calangoMusic.mp3')
+            audio.play()
+
+
+            container.innerHTML = `
                 
                 <div class="envelope-historia-personagem">
                 
@@ -554,53 +554,53 @@ function select(sel){
                 
                 
                 `
-                var titulo = document.getElementById('historia-Espadachim')
+            var titulo = document.getElementById('historia-Espadachim')
             typeWrite(titulo)
-            
+
             addStoryClass()
-            
+
             break;
-            
-            case  22:
-                
-                
-                
-                
-                hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Mas que diabos é isso? Uma lagartixa falante? </span></p> 
+
+        case 22:
+
+
+
+
+            hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Mas que diabos é isso? Uma lagartixa falante? </span></p> 
                 <p> Largatixa Falante: <span class="bossText"> Eu irei lhe estripar e adornar seu corpo na frente das ruínas!</p>
                 </span>`
-                
-                
-                boss.nome = 'Lagartixa Falante'
-                boss.hp = 45
-                boss.sprite = './sprites/calango.gif'
-                boss.img = './img/img/calango.jpg'
-                boss.ataque = 18
-                boss.erro = 4
-                boss.acerto = 8
-                boss.crit = 10 
-                boss.animacao = 2300
-                
-                hero.historia = 'select(23)'
-                
-                combateFake('combate()')
-                
-                addFightClass()
-                
-                break;
-                
-                
-                
-                case 23:
 
-                    
-                    
-                    //Parar a música
-                    pause()
-                    stop()
-                    
-                    
-                    container.innerHTML = `
+
+            boss.nome = 'Lagartixa Falante'
+            boss.hp = 45
+            boss.sprite = './sprites/calango.gif'
+            boss.img = './img/img/calango.jpg'
+            boss.ataque = 18
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
+
+            hero.historia = 'select(23)'
+
+            combateFake('combate()')
+
+            addFightClass()
+
+            break;
+
+
+
+        case 23:
+
+
+
+            //Parar a música
+            pause()
+            stop()
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -619,19 +619,19 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
-                    
-                    
-                    case 24:
-                        
-                
-                        
-                        container.innerHTML = `
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+            addStoryClass()
+
+            break;
+
+
+        case 24:
+
+
+
+            container.innerHTML = `
                         
                         <div class="envelope-historia-personagem">
                         
@@ -650,60 +650,60 @@ function select(sel){
                         
                         
                         `
-                        var titulo = document.getElementById('historia-Espadachim')
-                        typeWrite(titulo)
-                        
-                        
-                        addStoryClass()
-                        
-                        break;
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
 
-                case 25:
-                    
+            addStoryClass()
 
-                    
-                    
-                    
-                    //Trilha Sonora
-                    audio = new Audio('./music/princessMusic.mp3')
-                    audio.play()  
-                    
-                    hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Droga, odeio bater em mulheres. Olha, você não pode só se render?</span></p> <p>Securis:<span class="bossText">MACHISTA!</span></p>`
-                    
-                    
-                    boss.nome = 'Securis'
-                    boss.hp = 80
-                    boss.sprite = './sprites/princess.gif'
-                    boss.img = './img/img/princess.jpg'
-                    boss.ataque = 40
-                    boss.erro = 7
-                    boss.acerto = 8
-                    boss.crit = 8
-                    boss.animacao = 4800
-                    
-                    hero.historia = 'select(26)'
-                    
-                    combateFake('combate()')
-                
-                
-                    addFightClass()
-                
-                
-                
-                
-                break;
+            break;
 
-            case 26:
 
-                
-                
-                //Parar a música
-                pause()
-                stop()
-                
-                
-                container.innerHTML = `
+        case 25:
+
+
+
+
+
+            //Trilha Sonora
+            audio = new Audio('./music/princessMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Droga, odeio bater em mulheres. Olha, você não pode só se render?</span></p> <p>Securis:<span class="bossText">MACHISTA!</span></p>`
+
+
+            boss.nome = 'Securis'
+            boss.hp = 80
+            boss.sprite = './sprites/princess.gif'
+            boss.img = './img/img/princess.jpg'
+            boss.ataque = 40
+            boss.erro = 7
+            boss.acerto = 8
+            boss.crit = 8
+            boss.animacao = 4800
+
+            hero.historia = 'select(26)'
+
+            combateFake('combate()')
+
+
+            addFightClass()
+
+
+
+
+            break;
+
+        case 26:
+
+
+
+            //Parar a música
+            pause()
+            stop()
+
+
+            container.innerHTML = `
                 
                 <div class="envelope-historia-personagem">
                 
@@ -722,55 +722,55 @@ function select(sel){
                 
                 
                 `
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-                
-                
-                addStoryClass()
-                
-                break;
-                
-                
-                case 27:
-                    
-                    
-                    
-                    
-                    
-                //Trilha sonora
-                audio = new Audio('./music/volcatorMusic.mp3')
-                audio.play()  
-                
-                hero.dialogo = `<p>Vocator: <span class="bossText">Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</span></p> <p>${hero.nome}: <span class="heroText">Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</span></p> <p>Vocator: <span class="bossText">Impossível! Você não vai passar!</span></p>`
-                    
-                hero.historia = 'select(28)'
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
-                boss.nome = 'Vocator'
-                boss.hp = 110 
-                boss.sprite = './sprites/volcator.gif'
-                boss.img = './img/img/volcator.jpg'
-                boss.ataque = 25
-                boss.erro = 4
-                boss.acerto = 8
-                boss.crit = 10 
-                boss.animacao = 5100
-                
-                combateFake('combate()')
-                
-                
-                addFightClass()
-                
-                break;
-                
-                case 28:
 
-                    
-                    
-                    //Parar a música
-                    pause()
-                    stop()
-                    
-                    container.innerHTML = `
+            addStoryClass()
+
+            break;
+
+
+        case 27:
+
+
+
+
+
+            //Trilha sonora
+            audio = new Audio('./music/volcatorMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p>Vocator: <span class="bossText">Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</span></p> <p>${hero.nome}: <span class="heroText">Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</span></p> <p>Vocator: <span class="bossText">Impossível! Você não vai passar!</span></p>`
+
+            hero.historia = 'select(28)'
+
+            boss.nome = 'Vocator'
+            boss.hp = 110
+            boss.sprite = './sprites/volcator.gif'
+            boss.img = './img/img/volcator.jpg'
+            boss.ataque = 25
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 5100
+
+            combateFake('combate()')
+
+
+            addFightClass()
+
+            break;
+
+        case 28:
+
+
+
+            //Parar a música
+            pause()
+            stop()
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -791,20 +791,20 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                    
-                    
-                    addStoryClass()
-                    
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
-                break;
 
-                case 29:
+            addStoryClass()
 
-                    
-                    
-                    container.innerHTML = `
+
+            break;
+
+        case 29:
+
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -829,18 +829,18 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
-                    
-                    case 30: 
-                    
-                    
-                    
-                    container.innerHTML = `
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+            addStoryClass()
+
+            break;
+
+        case 30:
+
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -860,16 +860,16 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
-                    
-                    case 31: 
-                    
-                    container.innerHTML = `
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
+            addStoryClass()
+
+            break;
+
+        case 31:
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                 
@@ -889,15 +889,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 32: 
+            break;
 
-                    container.innerHTML = `
+        case 32:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -917,49 +917,49 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-Espadachim')
-                    typeWrite(titulo)
-                  
-
-                    break;
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
 
 
-                    case 33: 
+            break;
 
-                    
-                    audio = new Audio('./music/espadachimMusic.mp3')
-                    audio.play()  
-                    
-                    hero.dialogo = `<p> Espadachim Corrompido: <span class="bossText">“Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</span></p> <p>${hero.nome}: <span class="heroText">Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</span></p> <p>Espadachim Corrompido: <span class="bossText">Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</span></p>`
-                    
-                    
-                    boss.nome = 'Espadachim Corrompido'
-                    boss.hp = 235
-                    boss.sprite = './sprites/bossEspadachim.gif'
-                    boss.img = './img/img/bossEspadachim.jpg'
-                    boss.ataque = 15
-                    boss.erro = 4
-                    boss.acerto = 9
-                    boss.crit = 10 
-                    boss.animacao = 3400
-                    
-                    hero.historia = 'select(34)'
-                    
-                    combateFake('combate()')
-                    
-                    addFightClass()
 
-                    break;
+        case 33:
 
-                    case 34: 
 
-                   
-                    
-                    //Parar a música 
-                    pause()
-                    stop()
-                    
-                    container.innerHTML = `
+            audio = new Audio('./music/espadachimMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p> Espadachim Corrompido: <span class="bossText">“Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</span></p> <p>${hero.nome}: <span class="heroText">Olha, significa que se eu ir saltitando, eu posso passar? Tecnicamente não vou dar passos.</span></p> <p>Espadachim Corrompido: <span class="bossText">Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</span></p>`
+
+
+            boss.nome = 'Espadachim Corrompido'
+            boss.hp = 235
+            boss.sprite = './sprites/bossEspadachim.gif'
+            boss.img = './img/img/bossEspadachim.jpg'
+            boss.ataque = 15
+            boss.erro = 4
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 3400
+
+            hero.historia = 'select(34)'
+
+            combateFake('combate()')
+
+            addFightClass()
+
+            break;
+
+        case 34:
+
+
+
+            //Parar a música 
+            pause()
+            stop()
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -982,16 +982,16 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    case 35: 
+            addStoryClass()
 
-                    container.innerHTML = `
+            break;
+
+        case 35:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1016,15 +1016,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 36: 
+            break;
 
-                    container.innerHTML = `
+        case 36:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1048,14 +1048,14 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
-                    break;
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    case 37: 
+            break;
 
-                    container.innerHTML = `
+        case 37:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1081,50 +1081,50 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    
-                    case 38: 
+            break;
 
-                    
-                    //Trilha sonora
-                    audio = new Audio('./music/magoMusic.mp3')
-                    audio.play()  
-                    
-                    hero.dialogo = `<p>Mago Corrompido:<span class="bossText">Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</span></p> <p>${hero.nome}:<span class="heroText">Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</span></p> <p>Mago Corrompido:<span class="bossText">Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</span></p>`
-                    
-                    hero.historia = 'select(39)'
-                    
-                    boss.nome = 'Mago Corrompido'
-                    boss.hp = 150
-                    boss.sprite = './sprites/bossMago.gif'
-                    boss.img = './img/img/bossMago.jpg'
-                    boss.ataque = 25
-                    boss.erro = 6
-                    boss.acerto = 9
-                    boss.crit = 10
-                    boss.animacao = 4500
-                    
-                    combateFake('combate()')
-                    
-                    
-                    addFightClass()
-                    
-                    break;
-                    
-                    case 39: 
 
-                    
-                    
-                    //Parar a música
-                    pause()
-                    stop()
-                    
-                    container.innerHTML = `
+        case 38:
+
+
+            //Trilha sonora
+            audio = new Audio('./music/magoMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p>Mago Corrompido:<span class="bossText">Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</span></p> <p>${hero.nome}:<span class="heroText">Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!</span></p> <p>Mago Corrompido:<span class="bossText">Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…</span></p>`
+
+            hero.historia = 'select(39)'
+
+            boss.nome = 'Mago Corrompido'
+            boss.hp = 150
+            boss.sprite = './sprites/bossMago.gif'
+            boss.img = './img/img/bossMago.jpg'
+            boss.ataque = 25
+            boss.erro = 6
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 4500
+
+            combateFake('combate()')
+
+
+            addFightClass()
+
+            break;
+
+        case 39:
+
+
+
+            //Parar a música
+            pause()
+            stop()
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -1150,16 +1150,16 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    case 40: 
+            addStoryClass()
 
-                    container.innerHTML = `
+            break;
+
+        case 40:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1187,15 +1187,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 41: 
+            break;
 
-                    container.innerHTML = `
+        case 41:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1228,15 +1228,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 42: 
+            break;
 
-                    container.innerHTML = `
+        case 42:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1263,54 +1263,54 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 43:     
-                    
-                    hero.dialogo = `<p>Dragão: <span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}: <span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Dragão: <span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>` 
-                    
-                    hero.ataque= 0,
-                    hero.erro= 0,
-                    hero.acerto=0,
-                    hero.crit= [9],
-                    hero.historia = 'select(4333)'
-                    
-                    
-                    
-                    boss.nome = 'Dragão'
-                    boss.hp = 100
-                    boss.sprite = './sprites/dragon.gif'
-                    boss.img = './img/img/dragon.jpeg'
-                    boss.ataque = 35
-                    boss.erro = 7
-                    boss.acerto = 9
-                    boss.crit = 10 
-                    boss.animacao = 6200
-                    
-                    combateFake('combate()')
-                    
-                    addFightClass()
-                    
-                    break;
-                    
-                    case 4333: 
+            break;
 
-                    
-                    
-                    hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>` 
-                    combateFake('select(44)')
+        case 43:
 
-                    break;
+            hero.dialogo = `<p>Dragão: <span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}: <span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Dragão: <span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>`
 
-                    case 44: 
+            hero.ataque = 0,
+                hero.erro = 0,
+                hero.acerto = 0,
+                hero.crit = [9],
+                hero.historia = 'select(4333)'
 
-                    
-                    
-                    container.innerHTML = `
+
+
+            boss.nome = 'Dragão'
+            boss.hp = 100
+            boss.sprite = './sprites/dragon.gif'
+            boss.img = './img/img/dragon.jpeg'
+            boss.ataque = 35
+            boss.erro = 7
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 6200
+
+            combateFake('combate()')
+
+            addFightClass()
+
+            break;
+
+        case 4333:
+
+
+
+            hero.dialogo = `<p>Dragão: <span class="bossText">“Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</span></p> <p>Dragão: <span class="bossText">Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” </span></p> <p>${hero.nome}: <span class="heroText">"Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</span></p>`
+            combateFake('select(44)')
+
+            break;
+
+        case 44:
+
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -1335,16 +1335,16 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
-                    
-                    break;
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    case 45: 
+            addStoryClass()
 
-                    container.innerHTML = `
+            break;
+
+        case 45:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1369,15 +1369,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 46: 
+            break;
 
-                    container.innerHTML = `
+        case 46:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1401,15 +1401,15 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                   
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
-                    
-                    case 47: 
 
-                    container.innerHTML = `
+            break;
+
+        case 47:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1431,47 +1431,48 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    hero.historia = 'select(48)'
-                  
+            hero.historia = 'select(48)'
 
-                    break;
 
-                    case 4888:
+            break;
 
-                        
-                        boss.nome = 'Ufattelig'
-                        boss.hp = 1500
-                        boss.sprite = './sprites/bossFinal.gif'
-                        boss.img = './img/img/bossFinal.jpg'
-                        boss.ataque = hero.hp - 1
-                        boss.erro = 0
-                        boss.acerto = 10
-                        boss.crit = 0 
-                        boss.animacao = 5800
-                        
-                        combateFake('combateFinal()')
-                        
-                        
-                        
-                        
-                        var titulo = document.getElementById('historia-espadachim')
-                        typeWrite(titulo)
-                        
-                        
-                        addFightClass()
+        case 4888:
 
-                    
+            addFightClass()
 
-                    break;
+            boss.nome = 'Ufattelig'
+            boss.hp = 1500
+            boss.sprite = './sprites/bossFinal.gif'
+            boss.img = './img/img/bossFinal.jpg'
+            boss.ataque = hero.hp - 1
+            boss.erro = 0
+            boss.acerto = 10
+            boss.crit = 0
+            boss.animacao = 5800
 
-                    case 48: 
+            combateFake('combateFinal()')
 
-                    
-                    
-                    container.innerHTML = `
+
+
+
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
+
+
+            
+
+
+
+            break;
+
+        case 48:
+
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -1497,16 +1498,16 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                    
-                    addStoryClass()
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
+            addStoryClass()
 
-                    case 49: 
+            break;
 
-                    container.innerHTML = `
+        case 49:
+
+            container.innerHTML = `
 
                     <div class="envelope-historia-personagem">
                 
@@ -1530,62 +1531,62 @@ function select(sel){
         
         
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
-                  
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    break;
 
-                    case 50: 
+            break;
 
-                    
-                    
-                    
-                    boss.nome = 'Ufattelig'
-                    boss.hp = 1500
-                    boss.sprite = './sprites/bossFinal.gif'
-                    boss.img = './img/img/bossFinal.jpg'
-                    boss.ataque = 150
-                    boss.erro = 5
-                    boss.acerto = 8
-                    boss.crit = 10 
-                    boss.animacao = 2300
-                    
-                    hero.nome = 'Guardião'
-                    hero.hp = 1000
-                    hero.sprite = './sprites/guardion.gif'
-                    hero.img = './img/img/guardion.jpg'
-                    hero.ataque = 200
-                    hero.erro = 4
-                    hero.acerto = 8
-                    hero.crit = 10 
-                    hero.animacao = 2300
-                    hero.historia = 'select(5000)'
-                    
-                    hero.dialogo = `<p>Guardião: <span class="heroText">“Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</span></p> <p> Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
+        case 50:
+
+
+
+
+            boss.nome = 'Ufattelig'
+            boss.hp = 1500
+            boss.sprite = './sprites/bossFinal.gif'
+            boss.img = './img/img/bossFinal.jpg'
+            boss.ataque = 150
+            boss.erro = 5
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
+
+            hero.nome = 'Guardião'
+            hero.hp = 1000
+            hero.sprite = './sprites/guardion.gif'
+            hero.img = './img/img/guardion.jpg'
+            hero.ataque = 200
+            hero.erro = 4
+            hero.acerto = 8
+            hero.crit = 10
+            hero.animacao = 2300
+            hero.historia = 'select(5000)'
+
+            hero.dialogo = `<p>Guardião: <span class="heroText">“Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”</span></p> <p> Ufattelig:<span class="bossText"> “&%^@*$%+!!, *#@^&$!%.”</span></p>
                     </p>Guardião:<span class="heroText"> “Não importa. Tenho que lhe deter aqui, e agora.”</span></p>`
-                    
-                    combateFake('combate()')
-                    
-                    addFightClass()
-       
 
-                    break;
+            combateFake('combate()')
 
-                    case 5000:
-                    
-                    hero.dialogo = `<p>Ufattelig: <span class="bossText">“Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</span></p> <p>Guardião: <span class="heroText">“Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</span></p>   `
-                    combateFake('select(51)')
+            addFightClass()
 
-                    
 
-                    break;
+            break;
 
-                    case 51: 
+        case 5000:
 
-                    
-                    
-                    container.innerHTML = `
+            hero.dialogo = `<p>Ufattelig: <span class="bossText">“Vo%ê @ão$%+!!,os *#@^im&$d!rá%..”</span></p> <p>Guardião: <span class="heroText">“Morra imediatamente, praga! Não me importo com o que você tem a dizer!”</span></p>   `
+            combateFake('select(51)')
+
+
+
+            break;
+
+        case 51:
+
+
+
+            container.innerHTML = `
                     
                     <div class="envelope-historia-personagem">
                     
@@ -1603,7 +1604,7 @@ function select(sel){
                     
                     
                     
-                    <div class="imagem-personagem"><img  src="./img/img/Sword1.jpg"></div>
+                    <div class="imagem-personagem"><img  src="${hero.img}"></div>
                     
                     
                     </div>
@@ -1611,33 +1612,33 @@ function select(sel){
                     
                     
                     `
-                    var titulo = document.getElementById('historia-espadachim')
-                    typeWrite(titulo)
+            var titulo = document.getElementById('historia-espadachim')
+            typeWrite(titulo)
 
-                    addStoryClass()
-                    
-                    break;    
-                    
-                    case 100:
-                        
-                        
-                        
-                        
-                        hero.nome = 'Ronaldo'
-                        hero.hp = 100
-                        hero.sprite = './sprites/Axe_M.gif'
-                        hero.img ='./img/img/Axe_M1.jpg'
-                        hero.perfil ='./img/rostoHero/rostoQuebra-M.png'
-                        hero.ataque = 100
-                        hero.erro = 6 
-                        hero.acerto = 8
-                        hero.crit = 10
-                        hero.pocao = 4
-                        hero.animacao = 1100
-                        
-                        
-                        
-                        container.innerHTML = `
+            addStoryClass()
+
+            break;
+
+        case 100:
+
+
+
+
+            hero.nome = 'Ronaldo'
+            hero.hp = 100
+            hero.sprite = './sprites/Axe_M.gif'
+            hero.img = './img/img/Axe_M1.jpg'
+            hero.perfil = './img/rostoHero/rostoQuebra-M.png'
+            hero.ataque = 100
+            hero.erro = 6
+            hero.acerto = 8
+            hero.crit = 10
+            hero.pocao = 4
+            hero.animacao = 1100
+
+
+
+            container.innerHTML = `
                         
                         <div class="envelope-historia-personagem">
                     
@@ -1653,15 +1654,15 @@ function select(sel){
                         </div>
                         </div>
                         `
-                        var titulo = document.getElementById('historia-quebra-escudos-m')
-                        typeWrite(titulo)
-                        
-                        addStoryClass()
-                        
-                        break;
-                        
-                        case 101:
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+            addStoryClass()
+
+            break;
+
+        case 101:
+            container.innerHTML = `
                             
                             <div class="envelope-historia-personagem">
                             
@@ -1678,14 +1679,14 @@ function select(sel){
                         </div>
                         </div>
                         `
-                        var titulo = document.getElementById('historia-quebra-escudos-m')
-                        typeWrite(titulo)
-            
-                        
-                        break;
-            
-                        case 102:
-                        container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 102:
+            container.innerHTML = `
             
                         <div class="envelope-historia-personagem">
                     
@@ -1702,13 +1703,13 @@ function select(sel){
                         </div>
                         </div>
                         `
-                        var titulo = document.getElementById('historia-quebra-escudos-m')
-                        typeWrite(titulo)
-                        
-                        break;
-            
-                        case 103:
-                        container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+            break;
+
+        case 103:
+            container.innerHTML = `
             
                         <div class="envelope-historia-personagem">
                     
@@ -1724,15 +1725,15 @@ function select(sel){
                         </div>
                         </div>
                         `
-                        var titulo = document.getElementById('historia-quebra-escudos-m')
-                        typeWrite(titulo)
-                        
-                        break;
-            
-                        case 104:
-            
-                           
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+            break;
+
+        case 104:
+
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1752,40 +1753,40 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-                            
-                            
-                        break;
-            
-                        case 106:
-                                    
-                            
-                            
-                            boss.nome = 'Guardião'
-                            boss.hp = 3000
-                            boss.sprite = './sprites/guardion.gif'
-                            boss.img = './img/img/guardion.jpg'
-                            boss.ataque = 200
-                            boss.erro = 4
-                            boss.acerto = 8
-                            boss.crit = 10 
-                            boss.animacao = 2300
-                            
-                            combateFake('select(107)')
-                            ataqueFake()
-                            opcoesCombate.style.display = 'block'
-                            
-                            addFightClass()
-                                    
-                            break;
-            
-                        case 107:
-                           
-                            addStoryClass()
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+
+            break;
+
+        case 106:
+
+
+
+            boss.nome = 'Guardião'
+            boss.hp = 3000
+            boss.sprite = './sprites/guardion.gif'
+            boss.img = './img/img/guardion.jpg'
+            boss.ataque = 200
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
+
+            combateFake('select(107)')
+            ataqueFake()
+            opcoesCombate.style.display = 'block'
+
+            addFightClass()
+
+            break;
+
+        case 107:
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1804,15 +1805,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 108:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 108:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1830,15 +1831,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 109:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 109:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1858,15 +1859,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 110:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 110:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1885,15 +1886,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 111:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 111:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1912,15 +1913,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 112:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 112:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1940,15 +1941,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 113:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 113:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1967,15 +1968,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 114:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 114:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -1997,15 +1998,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 115:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 115:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2028,49 +2029,49 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 116:
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            addFightClass()
-                            
-                                    boss.nome = 'Guardião'
-                                    boss.hp = 3000
-                                    boss.sprite = './sprites/guardion.gif'
-                                    boss.img = './img/img/guardion.jpg'
-                                    boss.ataque = 300
-                                    boss.erro = 0
-                                    boss.acerto = 10
-                                    boss.crit = 100 
-                                    boss.animacao = 8500
-                                    boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
-            
-                                    combate()
-                                    
-            
-                                    ataqueHero()
-            
-            
-            
-                            // COMBATE QUE FAZ O JOGADOR PERDER
-            
-            
-            
-            
-            
-            
-                        break;    
-            
-                        case 117:
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+            break;
+
+        case 116:
+
+            addFightClass()
+
+            boss.nome = 'Guardião'
+            boss.hp = 3000
+            boss.sprite = './sprites/guardion.gif'
+            boss.img = './img/img/guardion.jpg'
+            boss.ataque = 300
+            boss.erro = 0
+            boss.acerto = 10
+            boss.crit = 100
+            boss.animacao = 8500
+            boss.fala = 'Guardião: “Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…”'
+
+            combate()
+
+
+            ataqueHero()
+
+
+
+            // COMBATE QUE FAZ O JOGADOR PERDER
+
+
+
+
+
+
+            break;
+
+        case 117:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2094,43 +2095,43 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 119:
-            
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            addFightClass()
-                    
-                        
-                           
-                             hero.dialogo = `<p>Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p><p>Vigvisir: “Já comi lagarto queimado em expedições.. Espero que não queime esse.”</p><p>Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”</p>`
-                            
-                            boss.nome = 'Lagartixa Falante'
-                            boss.hp = 45
-                            boss.sprite = './sprites/calango.gif'
-                            boss.img = './img/img/calango.jpg'
-                            boss.ataque = 18
-                            boss.erro = 4
-                            boss.acerto = 8
-                            boss.crit = 10 
-                            boss.animacao = 2300
-    
-                            hero.historia = 'select(120)'
-    
-                            combateFake('combate()')
-              
-                        break;
-            
-                        case 120:
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+            break;
+
+        case 119:
+
+
+            addFightClass()
+
+
+
+            hero.dialogo = `<p>Lacerta: “Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</p><p>Vigvisir: “Já comi lagarto queimado em expedições.. Espero que não queime esse.”</p><p>Lacerta: “Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!”</p>`
+
+            boss.nome = 'Lagartixa Falante'
+            boss.hp = 45
+            boss.sprite = './sprites/calango.gif'
+            boss.img = './img/img/calango.jpg'
+            boss.ataque = 18
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
+
+            hero.historia = 'select(120)'
+
+            combateFake('combate()')
+
+            break;
+
+        case 120:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2149,15 +2150,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 121:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 121:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2176,42 +2177,42 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 122:
-            
-                            addFightClass()
-                    
-            
-                           
-                             hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p>`
-            
-                             boss.nome = 'Securis'
-                             boss.hp = 80
-                             boss.sprite = './sprites/princess.gif'
-                             boss.img = './img/img/princess.jpg'
-                             boss.ataque = 40
-                             boss.erro = 6
-                             boss.acerto = 7
-                             boss.crit = 8
-                             boss.animacao = 2300
-                        
-                            combateFake('combate()')
-                            hero.historia = 'select(123)'
-            
-            
-                        break;
-            
-                        case 123:
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+
+            break;
+
+        case 122:
+
+            addFightClass()
+
+
+
+            hero.dialogo = `<p>Securis: ”Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?”</p> <p> Vigvisir: “Perdão, princesa, eu juro que vou te socar só um pouquinho.”</p> <p> Securis: ”Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Quebra-Escudo!”</p>`
+
+            boss.nome = 'Securis'
+            boss.hp = 80
+            boss.sprite = './sprites/princess.gif'
+            boss.img = './img/img/princess.jpg'
+            boss.ataque = 40
+            boss.erro = 6
+            boss.acerto = 7
+            boss.crit = 8
+            boss.animacao = 2300
+
+            combateFake('combate()')
+            hero.historia = 'select(123)'
+
+
+            break;
+
+        case 123:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2230,41 +2231,41 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 124:
-            
-                            addFightClass()
-                    
-            
-                           hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>`
-            
-                            boss.nome = 'Vocator'
-                            boss.hp = 110 
-                            boss.sprite = './sprites/voLcator.gif'
-                            boss.img = './img/img/volcator.jpg'
-                            boss.ataque = 25
-                            boss.erro = 4
-                            boss.acerto = 8
-                            boss.crit = 10 
-                            boss.animacao = 7200 
-                         
-                            combateFake('combate()')
-                            hero.historia = 'select(125)'
-            
-                                    
-                        break;
-            
-                        case 125:
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+
+            break;
+
+        case 124:
+
+            addFightClass()
+
+
+            hero.dialogo = `<p> Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”</p><p>Vigvisir: “Senhor, eu preciso apenas da localização de Ufattelig, se você só me der eu posso só deixar você com o nariz intacto.”</p><p> Vocator: “Impossível! Você não vai passar!”</p>`
+
+            boss.nome = 'Vocator'
+            boss.hp = 110
+            boss.sprite = './sprites/voLcator.gif'
+            boss.img = './img/img/volcator.jpg'
+            boss.ataque = 25
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 7200
+
+            combateFake('combate()')
+            hero.historia = 'select(125)'
+
+
+            break;
+
+        case 125:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2285,15 +2286,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 126:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 126:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2318,15 +2319,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 127:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 127:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2348,15 +2349,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 128:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 128:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2378,15 +2379,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 129:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 129:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2408,42 +2409,42 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 130:
-            
-                            addFightClass()
-                   
-            
-                         hero.dialogo = `<p>Espadachim Corrompido: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Vigvisir: “Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.”</p> <p>Espadachim Corrompido: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”</p>`
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                        boss.nome = 'Espadachim Corrompido'
-                        boss.hp = 235
-                        boss.sprite = './sprites/bossEspadachim.gif'
-                        boss.img = './img/img/bossEspadachim.jpg'
-                        boss.ataque = 15
-                        boss.erro = 4
-                        boss.acerto = 9
-                        boss.crit = 10 
-                        boss.animacao = 2300
 
-                        combateFake('combate()')
-                        hero.historia = 'select(131)'
-            
-                                        
-            
-                        break;
-            
-                        case 131:
+            break;
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+        case 130:
+
+            addFightClass()
+
+
+            hero.dialogo = `<p>Espadachim Corrompido: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“</p> <p>Vigvisir: “Olha, não tem segredo, eu afundo a sua cara, e você me deixa passar, ou, eu afundo você na terra, e você me deixa passar.”</p> <p>Espadachim Corrompido: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”</p>`
+
+            boss.nome = 'Espadachim Corrompido'
+            boss.hp = 235
+            boss.sprite = './sprites/bossEspadachim.gif'
+            boss.img = './img/img/bossEspadachim.jpg'
+            boss.ataque = 15
+            boss.erro = 4
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 2300
+
+            combateFake('combate()')
+            hero.historia = 'select(131)'
+
+
+
+            break;
+
+        case 131:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2465,15 +2466,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 132:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 132:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2497,15 +2498,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 133:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 133:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2527,15 +2528,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 134:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 134:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2559,15 +2560,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 135:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 135:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2590,42 +2591,42 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 136:
-            
-                            addFightClass()
-                    
-            
-                            hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.”</p> <p>Vigvisir: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!”</p> <p>Mago Corrompido: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…”</p>`
-                                        
-            
-                            boss.nome = 'Mago Corrompido'
-                            boss.hp = 150
-                            boss.sprite = './sprites/bossMago.gif'
-                            boss.img = './img/img/bossMago.jpg'
-                            boss.ataque = 25
-                            boss.erro = 6
-                            boss.acerto = 9
-                            boss.crit = 10
-                            boss.animacao = 2300
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            combateFake('combate()')
-                            hero.historia = 'select(137)'
-            
-            
-                        break;
-            
-                        case 137:
 
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+            break;
+
+        case 136:
+
+            addFightClass()
+
+
+            hero.dialogo = `<p>Mago Corrompido: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.”</p> <p>Vigvisir: “Ahh… Eu achei que todo mago era pamonha, mas parece que são loucos também, não tá vendo que nem arma você tem amigo?!”</p> <p>Mago Corrompido: “Não seja por isso “amigo”, um mago como eu nem ao menos precisa de armas contra você…”</p>`
+
+
+            boss.nome = 'Mago Corrompido'
+            boss.hp = 150
+            boss.sprite = './sprites/bossMago.gif'
+            boss.img = './img/img/bossMago.jpg'
+            boss.ataque = 25
+            boss.erro = 6
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 2300
+
+            combateFake('combate()')
+            hero.historia = 'select(137)'
+
+
+            break;
+
+        case 137:
+
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2651,15 +2652,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 138:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 138:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2686,15 +2687,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 139:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 139:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2724,15 +2725,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 140:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 140:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2755,50 +2756,50 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 141:
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            addFightClass()
-                            
-            
-                          hero.dialogo = `<p> Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?” </p> <p>Vigvisir: “Até o largartão parecia mais desafiante que você!” </p> <p>Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!” </p>` 
-            
 
-                          boss.nome = 'Dragão'
-                          boss.hp = 800
-                          boss.sprite = './sprites/dragon.gif'
-                          boss.img = './img/img/dragon.jpeg'
-                          boss.ataque = 35
-                          boss.erro = 7
-                          boss.acerto = 9
-                          boss.crit = 10 
-                          boss.animacao = 6200
+            break;
 
-                          combateFake('combate()')
-                          hero.historia = 'select(4333)'
-            
-            
-                                        
-            
-                        break;
+        case 141:
 
-                        case 4333: 
-            
-                        hero.dialogo = `<p>Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</p> <p>Dragão: “Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, UFATTELIG!?” </p> <p>${hero.nome}: Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</p>` 
-                        combateFake('select(142)')
-            
-                        break;
-            
-                        case 142:
-                            
-                            addStoryClass()
-            
-                            container.innerHTML = `
+            addFightClass()
+
+
+            hero.dialogo = `<p> Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA LÂMINA FÉTIDA CONTRA MINHA NOBRE CARNE?” </p> <p>Vigvisir: “Até o largartão parecia mais desafiante que você!” </p> <p>Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!” </p>`
+
+
+            boss.nome = 'Dragão'
+            boss.hp = 800
+            boss.sprite = './sprites/dragon.gif'
+            boss.img = './img/img/dragon.jpeg'
+            boss.ataque = 35
+            boss.erro = 7
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 6200
+
+            combateFake('combate()')
+            hero.historia = 'select(4333)'
+
+
+
+
+            break;
+
+        case 4333:
+
+            hero.dialogo = `<p>Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”</p> <p>Dragão: “Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, UFATTELIG!?” </p> <p>${hero.nome}: Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”</p>`
+            combateFake('select(142)')
+
+            break;
+
+        case 142:
+
+            addStoryClass()
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2821,19 +2822,19 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        
-            
-                        case 143:
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            
-            
-                            container.innerHTML = `
+
+            break;
+
+
+
+        case 143:
+
+
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2853,15 +2854,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 144:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 144:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2884,15 +2885,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 145:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 145:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2913,18 +2914,18 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                            hero.historia = 'select(146)'
-            
-                        break;
-        
-            
-                        case 146:
-            
-                            container.innerHTML = `
+
+            hero.historia = 'select(146)'
+
+            break;
+
+
+        case 146:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2945,15 +2946,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 147:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 147:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -2976,15 +2977,15 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
-            
-                        case 148:
-            
-                            container.innerHTML = `
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
+
+
+            break;
+
+        case 148:
+
+            container.innerHTML = `
             
                             <div class="envelope-historia-personagem">
                         
@@ -3004,19 +3005,19 @@ function select(sel){
                             </div>
                             </div>
                             `
-                            var titulo = document.getElementById('historia-quebra-escudos-m')
-                            typeWrite(titulo)
-                            
-            
-                        break;
+            var titulo = document.getElementById('historia-quebra-escudos-m')
+            typeWrite(titulo)
 
-                        case 300:
+
+            break;
+
+        case 300:
 
             addStoryClass()
 
             hero.nome = 'Ronaldo'
             hero.hp = 70
-            hero.sprite ='./sprites/Lance_M.gif'
+            hero.sprite = './sprites/Lance_M.gif'
             hero.img = './img/img/Lance_M1.jpg'
             hero.perfil = './img/rostoHero/rostoLanceiro.png'
             hero.ataque = 25
@@ -3044,10 +3045,10 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-lanceiro-m')
             typeWrite(titulo)
-            
+
             break;
 
-            case 301:
+        case 301:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -3068,10 +3069,10 @@ function select(sel){
             var titulo = document.getElementById('historia-lanceiro-m')
             typeWrite(titulo)
 
-            
+
             break;
 
-            case 302:
+        case 302:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -3092,10 +3093,10 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-lanceiro-m')
             typeWrite(titulo)
-            
+
             break;
 
-            case 303:
+        case 303:
             container.innerHTML = `
 
             <div class="envelope-historia-personagem">
@@ -3114,13 +3115,13 @@ function select(sel){
             `
             var titulo = document.getElementById('historia-lanceiro-m')
             typeWrite(titulo)
-            
+
             break;
 
-            case 304:
+        case 304:
 
-               
-                container.innerHTML = `
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3139,37 +3140,37 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
-                
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
+
+
             break;
 
-            case 305:
+        case 305:
 
-                boss.nome = 'Guardião'
-                boss.hp = 3000
-                boss.sprite = './sprites/guardion.gif'
-                boss.img = './img/img/guardion.jpg'
-                boss.ataque = 200
-                boss.erro = 4
-                boss.acerto = 8
-                boss.crit = 10 
-                boss.animacao = 2300
-                
-                combateFake('select(3005)')
-                ataqueFake()
-                opcoesCombate.style.display = 'block'
+            boss.nome = 'Guardião'
+            boss.hp = 3000
+            boss.sprite = './sprites/guardion.gif'
+            boss.img = './img/img/guardion.jpg'
+            boss.ataque = 200
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 2300
 
-                addFightClass()
-                        
+            combateFake('select(3005)')
+            ataqueFake()
+            opcoesCombate.style.display = 'block'
+
+            addFightClass()
+
             break;
 
-            case 3005:
-                addStoryClass()
+        case 3005:
+            addStoryClass()
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3184,14 +3185,14 @@ function select(sel){
                 </div>
                 `
 
-                var titulo = document.getElementById('historia-Espadachim')
-                typeWrite(titulo)
-            
+            var titulo = document.getElementById('historia-Espadachim')
+            typeWrite(titulo)
+
             break;
 
-            case 306:
+        case 306:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3211,15 +3212,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 307:
+        case 307:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3237,15 +3238,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 308:
+        case 308:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3265,15 +3266,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 309:
+        case 309:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3292,15 +3293,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 310:
+        case 310:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3321,15 +3322,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 311:
+        case 311:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3349,15 +3350,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 312:
+        case 312:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3373,14 +3374,14 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
             break;
 
-            case 313:
+        case 313:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3399,15 +3400,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 314:
+        case 314:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3424,38 +3425,38 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
 
-                pause()
-                stop()
+            pause()
+            stop()
 
             break;
 
-            case 315:
-                
+        case 315:
 
-                boss.fala = "Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…"
-                combate()
- 
-                ataqueHero()
 
-                addFightClass()
+            boss.fala = "Nunca imaginaria que houvesse alguém tão incapaz de entender a situação…"
+            combate()
 
-                //ARRUMAR MODAL DE MORTE  
+            ataqueHero()
 
-            break;    
-            
-            case 316:
+            addFightClass()
+
+            //ARRUMAR MODAL DE MORTE  
+
+            break;
+
+        case 316:
 
             addStoryClass()
 
-                //Trilha sonora de batalha
+            //Trilha sonora de batalha
 
-                audio = new Audio('./music/calangoMusic.mp3')
-                audio.play()  
+            audio = new Audio('./music/calangoMusic.mp3')
+            audio.play()
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3474,13 +3475,13 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 317:
+        case 317:
 
             hero.dialogo = `<p>Lagartixa Falante:<span class="bossText">Como você ousa invadir o território de Lorde Ufattelig? Você é louco?!</span></p> <p>${hero.nome}:<span class="heroText">Será que lagartixa no espeto fica bom?</span></p><p> Largatixa Falante: <span class="bossText">Vou te informar que eu sou descendente de um dragão de komodo, cuidado comigo!</p></span>`
 
@@ -3491,7 +3492,7 @@ function select(sel){
             boss.ataque = 18
             boss.erro = 4
             boss.acerto = 8
-            boss.crit = 10 
+            boss.crit = 10
             boss.animacao = 2300
 
             hero.historia = 'select(318)'
@@ -3501,13 +3502,13 @@ function select(sel){
             addFightClass()
 
             break;
-           
 
-            case 318:
 
-                addStoryClass()
+        case 318:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3526,12 +3527,12 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
             break;
 
-            case 319:
+        case 319:
 
             pause()
             stop()
@@ -3558,15 +3559,15 @@ function select(sel){
             var titulo = document.getElementById('historia-lanceiro-m')
             typeWrite(titulo)
 
-            
-                
+
+
 
             break;
 
-            case 320:
+        case 320:
 
             hero.dialogo = `<p>Securis:<span class="bossText">Quem é você? Quem ousa pisar no território de Securis, serva de Ufattelig?</span></p> <p>${hero.nome}: <span class="heroText">Perdão, princesa, tentarei fazer com que isso não doe tanto.</span></p> <p>Securis:<span class="bossText">Eu te ordeno a ajoelhar-se agora perante sua princesa, relés Lanceiro!</span></p>`
-            
+
             boss.nome = 'Securis'
             boss.hp = 80
             boss.sprite = './sprites/princess.gif'
@@ -3585,16 +3586,16 @@ function select(sel){
 
             break;
 
-            case 321:
+        case 321:
 
-                addStoryClass()
+            addStoryClass()
 
-                //Trilha Sonora
+            //Trilha Sonora
 
-                audio = new Audio('./music/princessMusic.mp3')
-                audio.play()  
+            audio = new Audio('./music/princessMusic.mp3')
+            audio.play()
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3610,37 +3611,49 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
-
-            break;
-
-            case 322:
-
-               
-            // Combate: Hámaval vs Magnólia
-
-            /*
-
-            Vocator: “Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…”
-            ${hero.nome}: “Senhor, apenas preciso de direções, não há necessidade de violência, por favor só me deixe passar…
-            Vocator: “Impossível! Você não vai passar!”
-
-
-            
-            */
-
-           //addFightClass()
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
 
 
             break;
 
-            case 323:
+        case 322:
 
-                addStoryClass()
 
-                container.innerHTML = `
+            //Trilha sonora
+
+            audio = new Audio('./music/volcatorMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p>Vocator: <span class="bossText">Como você encontrou esse lugar? Eu tive certeza de contar apenas aos oficiais de Ufattelig! Não pode ser…</span></p> <p>${hero.nome}: <span class="heroText">Ah mas pode ser sim velhote. Já foram dois, e você é o próximo.</span></p> <p>Vocator: <span class="bossText">Impossível! Você não vai passar!</span></p>`
+
+            hero.historia = 'select(28)'
+
+            boss.nome = 'Vocator'
+            boss.hp = 110
+            boss.sprite = './sprites/volcator.gif'
+            boss.img = './img/img/volcator.jpg'
+            boss.ataque = 25
+            boss.erro = 4
+            boss.acerto = 8
+            boss.crit = 10
+            boss.animacao = 5100
+
+            hero.historia = 'select(323)'
+
+            combateFake('combate()')
+
+
+            addFightClass()
+
+
+            break;
+
+        case 323:
+
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3658,20 +3671,22 @@ function select(sel){
                 
                 
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 324:
+        case 324:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3691,20 +3706,22 @@ function select(sel){
                 
                 
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 325:
+        case 325:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3731,15 +3748,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 326:
+        case 326:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3762,15 +3781,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 327:
+        case 327:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3794,32 +3815,41 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 328:
+        case 328:
 
-                // Combate: ${hero.nome} vs Espadachim
+            audio = new Audio('./music/espadachimMusic.mp3')
+            audio.play()
 
-                /* Falas:
-               Espadachim: “Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!“ 
-               ${hero.nome}: “Não posso, nobre espadachim. Preciso acabar com toda essa loucura, preciso lhe libertar das correntes de Ufattelig!”
-               Espadachim: “Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!”
+            addFightClass()
 
-                */
+            hero.dialogo = `<p>Espadachim: <span class="bossText">Guerreiro! Dê meia volta imediatamente, lhe aviso que mais um passo, e eu lhe corto em vários pedaços que nem uma melância do Fruit Ninja!</span></p> <p>${hero.nome}: <span class="heroText">Não posso, nobre espadachim. Preciso acabar com toda essa loucura, preciso lhe libertar das correntes de Ufattelig!</span></p> <p>Espadachim: <span class="bossText">Bela piada, vamos ver se você consegue cuspir mais palavras decapitado!</span></p>`
 
-               // addFightClass()
+            boss.nome = 'Espadachim Corrompido'
+            boss.hp = 235
+            boss.sprite = './sprites/bossEspadachim.gif'
+            boss.img = './img/img/bossEspadachim.jpg'
+            boss.ataque = 15
+            boss.erro = 4
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 2300
+
+            combateFake('combate()')
+            hero.historia = 'select(329)'
 
             break;
 
-            case 329:
+        case 329:
 
-                addStoryClass()
+            addStoryClass()
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3844,15 +3874,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 330:
+        case 330:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3878,16 +3910,18 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-               
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
+
 
             break;
 
-            case 331:
+        case 331:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3913,14 +3947,16 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
             break;
 
-            case 332:
+        case 332:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3950,15 +3986,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 333:
+        case 333:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -3972,46 +4010,50 @@ function select(sel){
     
                 <button class="botao-historia" type="button" onclick="select(334)"> Continuar </button>
 
-                
-                
-                
-                
-                
-                
-
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
-
-            break;
-
-            case 334:
-
-                // Combate: ${hero.nome} vs Mago
-
-                /*
-                Mago: “Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.” 
-                ${hero.nome}: “Mago! Por favor, me diga, o que aconteceu com meu Rei? O que aconteceu com todos os outros Reis, eu preciso saber!”
-                Mago: “Temo que você deverá saber com o meu cadáver…”
-
-
-                */
-
-                // addFightClass()
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
 
 
             break;
 
-            case 335:
+        case 334:
 
-                addStoryClass()
+            addFightClass()
 
-                container.innerHTML = `
+
+
+            //Trilha sonora
+            audio = new Audio('./music/magoMusic.mp3')
+            audio.play()
+
+            hero.dialogo = `<p>Mago Corrompido:<span class="bossText">Saudações, guerreiro. Perdão pela minha falta de sutileza, porém como você derrotou vários oficiais de Ufattelig, fui encarregado de formalmente acabar com a sua raça, da forma mais rápida possível.</span></p> <p>${hero.nome}:<span class="heroText">Mago! Por favor, me diga, o que aconteceu com meu Rei? O que aconteceu com todos os outros Reis, eu preciso saber!</span></p> <p>Mago Corrompido:<span class="bossText">Temo que você deverá saber com o meu cadáver…</span></p>`
+
+            hero.historia = 'select(335)'
+
+            boss.nome = 'Mago Corrompido'
+            boss.hp = 150
+            boss.sprite = './sprites/bossMago.gif'
+            boss.img = './img/img/bossMago.jpg'
+            boss.ataque = 25
+            boss.erro = 6
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 4500
+
+            combateFake('combate()')
+
+            break;
+
+        case 335:
+
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4035,20 +4077,22 @@ function select(sel){
             
                 
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 336:
+        case 336:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4074,15 +4118,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 337:
+        case 337:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4111,15 +4157,17 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 338:
+        case 338:
 
-                container.innerHTML = `
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4138,45 +4186,44 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 339:
+        case 339:
 
-                // Combate: ${hero.nome} vs Dragão
+            addFightClass()
 
-                /*
-
-               Dragão: Dragão: “CRIATURA INSOLENTE, OUSASTE DESFERIR SUA L MINA FÉTIDA CONTRA MINHA NOBRE CARNE?” 
-               ${hero.nome}: “Até o largartão parecia mais desafiante que você!” 
-               Dragão: “IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!”
+            hero.dialogo = `<p>Dragão:<span class="bossText">CRIATURA INSOLENTE, OUSASTE DESFERIR SUA L MINA FÉTIDA CONTRA MINHA NOBRE CARNE?</span></p> <p>${hero.nome}:<span class="heroText">Até o largartão parecia mais desafiante que você!</span></p> <p>Mago Corrompido:<span class="bossText">IREI LHE MOSTRAR O QUE ACONTECE QUANDO UM MERO BÍPEDE XEXELENTO DESAFIA O REI DOS CÉUS!</span></p>`
 
 
+            boss.nome = 'Dragão'
+            boss.hp = 800
+            boss.sprite = './sprites/dragon.gif'
+            boss.img = './img/img/dragon.jpeg'
+            boss.ataque = 35
+            boss.erro = 7
+            boss.acerto = 9
+            boss.crit = 10
+            boss.animacao = 6200
 
-                 */
+            combateFake('combate()')
+            hero.historia = 'select(340)'
 
-                /*Diálogo final da batalha:
-                
-                Dragão: “Ó, Ufattelig, REI DAS TREVAS E PAI DA MALDADE, SENHOR DO CAOS E SERVENTE DA DOR, ESTE MERO SOLDADO IMPLORA POR ASSISTÊNCIA, JUNTE-SE A MIM E VAMOS TRANSFORMAR ESSE BÁRBARO EM PÓ!”
-                “Ufattelig? POR QUÉ ME IGNORAS? NÃO SOU O DRAGÃO CARMESIM, ENCARNAÇÃO DAS TREVAS, REI DOS CÉUS? POR QUÊ DESCARTASTES A MIM, Ufattelig!?” 
-                ${hero.nome}: “Caraca, até o Rei do mal te deixou na mão! Você realmente vale menos do que o lagartão”
+            
 
 
-                */
-
-                // addFightClass()
 
             break;
 
 
-            case 340:
+        case 340:
 
-                addStoryClass()
+            addStoryClass()
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4195,15 +4242,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 341:
+        case 341:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4217,19 +4264,19 @@ function select(sel){
                 <button class="botao-historia" type="button" onclick="select(342)"> Continuar </button>
   
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-               
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
             break;
 
-            case 342:
+        case 342:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4253,15 +4300,15 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 343:
+        case 343:
 
-                container.innerHTML = `
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4273,22 +4320,30 @@ function select(sel){
                 
                 </p>
     
-                <button class="botao-historia" type="button" onclick="select(344)"> Continuar </button>
+                <button class="botao-historia" type="button" onclick="select(4888)"> Continuar </button>
   
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+
+                hero.historia = 'select(344)'
+
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
             break;
 
-            case 344:
 
-                container.innerHTML = `
+
+
+        case 344:
+
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4309,20 +4364,21 @@ function select(sel){
                 <button class="botao-historia" type="button" onclick="select(345)"> Continuar </button>
   
 
-                <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
+                <div class="imagem-personagem"><img  src="../img/img/Lance_M1.jpg"></div>
     
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
 
-            case 345:
+        case 345:
 
-                container.innerHTML = `
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4340,7 +4396,7 @@ function select(sel){
                 
                 </p>
     
-                <button class="botao-historia" type="button" onclick="select(346)"> Continuar </button>
+                <button class="botao-historia" type="button" onclick="select(50)"> Continuar </button>
   
 
                 <div class="imagem-personagem"><img  src="../img/img/guardion.jpg"></div>
@@ -4348,40 +4404,40 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
-            break;
-
-            case 346:
-
-                // Combate: Guardião vs Ufattelig
-
-                /*
-                Falas: 
-                Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”
-                Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
-                Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”
-
-
-                */
-
-                /*Falas finais:
-                Ufattelig: “Vo%ê @ão$%+!!,os *#@^im&$d!rá%...”
-                Guardião: “Morra imediatamente, praga! Não me importo com o que você tem a dizer!”
-
-
-                 */
-
-                // addFightClass()
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
 
             break;
 
-            case 347:
+        case 346:
 
-                addStoryClass()
+            // Combate: Guardião vs Ufattelig
 
-                container.innerHTML = `
+            /*
+            Falas: 
+            Guardião: “Ufattelig… Então esse era seu segredo, você nem mesmo é do nosso reino, você nem mesmo é “humano”, ou sequer um ser daqui…”
+            Ufattelig: “&%^@*$%+!!, *#@^&$!%.”
+            Guardião: “Não importa. Tenho que lhe deter aqui, e agora.”
+
+
+            */
+
+            /*Falas finais:
+            Ufattelig: “Vo%ê @ão$%+!!,os *#@^im&$d!rá%...”
+            Guardião: “Morra imediatamente, praga! Não me importo com o que você tem a dizer!”
+
+
+             */
+
+            // addFightClass()
+
+            break;
+
+        case 347:
+
+            addStoryClass()
+
+            container.innerHTML = `
 
                 <div class="envelope-historia-personagem">
             
@@ -4411,20 +4467,20 @@ function select(sel){
                 </div>
                 </div>
                 `
-                var titulo = document.getElementById('historia-lanceiro-m')
-                typeWrite(titulo)
-                
+            var titulo = document.getElementById('historia-lanceiro-m')
+            typeWrite(titulo)
+
 
             break;
-            
-            
 
-            
+
+
+
     }
 
-                
 
 
-    
-    
+
+
+
 }
