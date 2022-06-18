@@ -194,7 +194,7 @@ function classF() {
                             <a href="#" class="classe classe1">Lanceira</a>
                         </button>
 
-                        <button onclick="select(2)">
+                        <button onclick="select(400)">
                             <a href="#" class="classe classe2">Caçadora</a>
                         </button>
 
